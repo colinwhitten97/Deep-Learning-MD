@@ -1,8 +1,8 @@
 # DeepMD-kit- Colin's tutorial so far
 
 # Table of Contents
-- [Heading](#heading)
-  * [Sub-heading](#sub-heading)
+- [About](#heading)
+  * [License and Credits](#sub-heading)
     + [Sub-sub-heading](#sub-sub-heading)
 - [Heading](#heading-1)
   * [Sub-heading](#sub-heading-1)
