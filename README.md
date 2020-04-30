@@ -4,7 +4,7 @@
 - [About](#About)
   * [How DeePMD- kit works](#How DeepMD- kit works)
     + [Sub-sub-heading](#sub-sub-heading)
-  * [License and Credits]
+  * [License and Credits](#License and Credits)
 - [Installation](#heading-1)
   * [Linux](#sub-heading-1)
     + [Sub-sub-heading](#sub-sub-heading-1)
