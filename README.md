@@ -3,17 +3,10 @@
 # Table of Contents
 - [About](#About)
   * [How DeePMD- kit works]
-   
   * [License and Credits]
 - [Installation](#Installation)
-  * [Download using Conda]
-    + [Conda or Miniconda]
-  * [
 - [Running Simulations]
-  * [1](#sub-heading-2)
-    + [Sub-sub-heading](#sub-sub-heading-2)
-  * [2]
-    + [Sub-sub-heading](#sub-sub-heading-3)
+  
   
 # About
 <!-- toc -->
@@ -30,9 +23,7 @@ Han Wang, Linfeng Zhang, Jiequn Han, and Weinan E. "DeePMD-kit: A deep learning 
 
 # Installation
 
-If some video tutorials are necessary to guide someone through the installation and use of DeePMD- kit I could put some here:
 
-[Youtube Link](https://www.youtube.com/watch?v=E-Yi_3pVUow&t=1s)
 
 ## Create instance of Linux to use DeePMD-kit 
 
