@@ -30,7 +30,7 @@ Han Wang, Linfeng Zhang, Jiequn Han, and Weinan E. "DeePMD-kit: A deep learning 
 
 # Installation
 
-If some video tutorials are necessary to guide someone through the installation and use of DeePMD- kit I will put some here:
+If some video tutorials are necessary to guide someone through the installation and use of DeePMD- kit I could put some here:
 
 [Youtube Link](https://www.youtube.com/watch?v=E-Yi_3pVUow&t=1s)
 
@@ -46,8 +46,10 @@ Install Anaconda here or Miniconda here.
 
 From here on I will only focus on the CPU version of this kit. If I find out that the GPU version may also be necessary, then I will include it. 
 
+Open the terminal in Linux, and begin the installation. 
 To install the CPU version via Conda: 
 
+`conda install deepmd-kit=*=*cpu lammps-dp=*=*cpu -c deepmodeling`
 
 ## 
 
