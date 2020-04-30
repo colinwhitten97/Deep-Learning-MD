@@ -2,14 +2,14 @@
 
 # Table of Contents
 - [About](#About)
-  * [How DeePMD- kit works](#How DeePMD- kit works)
-    + [Sub-sub-heading](#sub-sub-heading)
-  * [License and Credits](#License and Credits)
+  * [How DeePMD- kit works]
+   
+  * [License and Credits]
 - [Installation](#Installation)
-  * [Download using Conda](#Download using Docker or Conda)
-    + [Conda or Miniconda](#Miniconda)
+  * [Download using Conda]
+    + [Conda or Miniconda]
   * [
-- [Running Simulations](#heading-2)
+- [Running Simulations]
   * [1](#sub-heading-2)
     + [Sub-sub-heading](#sub-sub-heading-2)
   * [2]
