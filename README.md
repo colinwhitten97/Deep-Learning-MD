@@ -2,7 +2,7 @@
 
 # Table of Contents
 - [About](#About)
-  * [How DeePMD- kit works](#How DeepMD- kit works)
+  * [How DeePMD- kit works](#How DeePMD- kit works)
     + [Sub-sub-heading](#sub-sub-heading)
   * [License and Credits](#License and Credits)
 - [Installation](#Installation)
@@ -15,8 +15,9 @@
     + [Sub-sub-heading](#sub-sub-heading-3)
   
 # About
+<!-- toc -->
 
-## How DeepMD- kit works
+## How DeePMD- kit works
 
 Here is where I will give a more comprehensive report on DeepMD-kit and specifically its potential usefulness to the lab- or researchers in general
 
