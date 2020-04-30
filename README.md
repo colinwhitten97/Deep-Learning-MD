@@ -16,7 +16,7 @@
 Here is where I will give a more comprehensive report on DeepMD-kit and specifically its potential usefulness to the lab- or researchers in general
 
 ## License and Credits
-None of this kit and its code is mine, and you use this code you can use the citation below. The project DeePMD-kit is licensed under GNU LGPLv3.0.
+None of this kit nor its code are mine, and if you use the DeePMD-kit you can use the citation below. The project DeePMD-kit is licensed under GNU LGPLv3.0.
 
 Han Wang, Linfeng Zhang, Jiequn Han, and Weinan E. "DeePMD-kit: A deep learning package for many-body potential energy representation and molecular dynamics." Computer Physics Communications 228 (2018): 178-184.
 
@@ -176,7 +176,7 @@ This should end up with an executable `lmp_mpi` FIND MPI!
 # Colin's next plans for the tutorial?
 
 
-- Try to make my own example for MD simulations with deepmd kit
+- Try to make my own example for MD simulations with deepmd kit and give thorough detailed explanation of how it works
 
 - Give detailed walkthrough for incorporating LAMMPS with DeePMD-kit 
 
