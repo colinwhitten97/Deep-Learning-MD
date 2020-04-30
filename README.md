@@ -2,7 +2,7 @@
 
 # Table of Contents
 - [About](#About)
-  * [How DeePMD- kit works](#How DeePMD- kit works)
+  * [How DeePMD- kit works](#How DeepMD- kit works)
     + [Sub-sub-heading](#sub-sub-heading)
   * [License and Credits]
 - [Installation](#heading-1)
