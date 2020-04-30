@@ -32,9 +32,7 @@ Han Wang, Linfeng Zhang, Jiequn Han, and Weinan E. "DeePMD-kit: A deep learning 
 
 If some video tutorials are necessary to guide someone through the installation and use of DeePMD- kit I will put some here:
 
-<a href="http://www.youtube.com/watch?v=E-Yi_3pVUow
-" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+[![Youtube Link](http://img.youtube.com/vi/E-Yi_3pVUow&t=1s/0.jpg)](https://www.youtube.com/watch?v=E-Yi_3pVUow&t=1s)
 
 # Create instance of Linux to use DeePMD-kit 
 
