@@ -34,7 +34,7 @@ If some video tutorials are necessary to guide someone through the installation 
 
 [Youtube Link](https://www.youtube.com/watch?v=E-Yi_3pVUow&t=1s)
 
-# Create instance of Linux to use DeePMD-kit 
+## Create instance of Linux to use DeePMD-kit 
 
 DeePMD- kit is native to Linux, so you are required to run it there. If you already have an instance of Linux, skip this step. If you need to install Linux, I will provide a quick tutorial on what I found to be the best way to install and run Linux on a PC.
 
