@@ -104,7 +104,7 @@ You can record the location of the source with `deepmd_source_dir`
 
 Then execute
 
-`pip install`
+`pip install .`
 
 To test the installation, you may execute
 
