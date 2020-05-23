@@ -2,10 +2,11 @@
 
 # Table of Contents
 - [About](#About)
-  * [How DeePMD- kit works]
+  * [How DeePMD- kit works](## How DeePMD- kit works)
   * [License and Credits]
 - [Installation](#Installation)
 - [Running Simulations]
+- [Pitfalls/Troubleshooting]
   
   
 # About
@@ -27,7 +28,7 @@ Han Wang, Linfeng Zhang, Jiequn Han, and Weinan E. "DeePMD-kit: A deep learning 
 
 ## Create instance of Linux to use DeePMD-kit 
 
-DeePMD- kit is native to Linux, so you are required to run it there. If you already have an instance of Linux, skip this step. If you need to install Linux, I will provide a quick tutorial on what I found to be the best way to install and run Linux on a PC.
+DeePMD- kit is native to Linux, so you are required to run it there. If you already have an instance of Linux, skip this step. If you are using a Windows PC, there is a tutorial on how to set up an instance of Linux in the troubleshooting section **here**. 
 
 ## Download using Conda
 
@@ -172,6 +173,20 @@ This should end up with an executable `lmp_mpi` FIND MPI!
 ### Use model to run simulation with native MD code
 
 ### Use model with LAMMPS to run simulation
+
+# Pitfalls/ Troubleshooting
+
+## Linux OS
+
+If you are starting completely from scratch and want to run DeepMD-kit from a Windows PC, here is a video tutorial detailing how to use Oracle VirtualBox to set up and run a usable Ubuntu instance from your Windows PC. 
+
+[YouTube Tutorial- How to Install Ubuntu on VirtualBox in Windows](https://www.youtube.com/watch?v=QbmRXJJKsvs)
+
+In all, installing the DeepMD kit, LAMMPS, and all the components necessary to run them will take up roughly ~14 GB of disk space. Therefore, allocating at least **minimum 15 GB** of disk space to your Ubuntu VirtualBox is necessary to run DeePMD-kit and LAMMPS. However, adding more is much better. Feel free to allocate as much disk space as you may see fit- however many GB you may decide to allocate- it is not all allocated at once, but rather it is allocated accordingly by how much space you have so far used in Ubuntu, so do not worry about allocating too much disk space and having it depleted from your main hard drive immediately. 
+
+## MD: cannot make user in DeePMD-kit
+
+One major pitfall I experienced in using LAMMPS with DeePMD-kit was "make user." 
 
 # Colin's next plans for the tutorial?
 
