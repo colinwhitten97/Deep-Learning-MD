@@ -24,7 +24,7 @@ Han Wang, Linfeng Zhang, Jiequn Han, and Weinan E. "DeePMD-kit: A deep learning 
 
 # Installation
 
-
+These following instructions will direct you to install all necessary components for DeePMD-kit and LAMMPS when starting completely from scratch. 
 
 ## Create instance of Linux to use DeePMD-kit 
 
@@ -32,14 +32,15 @@ DeePMD- kit is native to Linux, so you are required to run it there. If you alre
 
 ## Download using Conda
 
-To install the DeePMD-kit, you must first install Anaconda or Miniconda. If storage space on your instance of Linux is an issue, use Miniconda. If you already have one of these, skip the next step. 
+To install the DeePMD-kit, you must first install Anaconda or Miniconda. If storage space on your instance of Linux is an issue, use Miniconda. If you already have conda, skip this step. 
 
-Install Anaconda here or Miniconda here. 
+Instructions on installing Miniconda [here.](https://www.youtube.com/watch?v=Ye4epph6Gzo) 
 
+## Install CPU version of DeePMD-kit
 From here on I will only focus on the CPU version of this kit. If I find out that the GPU version may also be necessary, then I will include it. 
 
 Open the terminal in Linux, and begin the installation. 
-To install the CPU version via Conda: 
+To install the CPU version via Conda: virtu
 
 `conda install deepmd-kit=*=*cpu lammps-dp=*=*cpu -c deepmodeling`
 
@@ -55,7 +56,7 @@ First, check and ensure that you have python and the compiler on your machine:
 
 `virtualenv -- version`
 
-If not, install them using directions tbd. 
+If you are missing any of these above packages and if you are using a local machine, install them using `sudo apt install`.  
 
 It is recommended to create a virtual environment in order to isolate package installation from the system. In doing so, in the future when doing work with DeePMD-kit or TensorFlow, it will be necessary to activate the virtual environment. 
 
@@ -182,7 +183,7 @@ If you are starting completely from scratch and want to run DeepMD-kit from a Wi
 
 [YouTube Tutorial- How to Install Ubuntu on VirtualBox in Windows](https://www.youtube.com/watch?v=QbmRXJJKsvs)
 
-In all, installing the DeepMD kit, LAMMPS, and all the components necessary to run them will take up roughly ~14 GB of disk space. Therefore, allocating at least **minimum 15 GB** of disk space to your Ubuntu VirtualBox is necessary to run DeePMD-kit and LAMMPS. However, adding more is much better. Feel free to allocate as much disk space as you may see fit- however many GB you may decide to allocate- it is not all allocated at once, but rather it is allocated accordingly by how much space you have so far used in Ubuntu, so do not worry about allocating too much disk space and having it depleted from your main hard drive immediately. 
+In all, installing the DeepMD kit, LAMMPS, and all the components necessary to run them will take up roughly ~14 GB of disk space. Therefore, allocating at least **minimum 15 GB** of disk space to your Ubuntu VirtualBox virtual hard drive is necessary to run DeePMD-kit and LAMMPS. However, adding more is much better. Feel free to allocate as much disk space as you may see fit- however many GB you may decide to allocate- it is not all allocated at once, but rather it is allocated accordingly by how much space you have so far used in Ubuntu, so do not worry about allocating too much disk space and having it depleted from your main hard drive immediately. 
 
 ## MD: cannot make user in DeePMD-kit
 
