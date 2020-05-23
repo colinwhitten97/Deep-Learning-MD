@@ -2,7 +2,7 @@
 
 # Table of Contents
 - [About](#About)
-  * [How DeePMD- kit works](## How DeePMD- kit works)
+  * [How DeePMD- kit works](##How DeePMD- kit works)
   * [License and Credits]
 - [Installation](#Installation)
 - [Running Simulations]
