@@ -2,8 +2,8 @@
 
 # Table of Contents
 - [About](#About)
-  * [How DeePMD- kit works](##How DeePMD- kit works)
-  * [License and Credits]
+  * [How DeePMD- kit works](#how-DeePMD-kit-works)
+  * [License and Credits](#license-and-credits)
 - [Installation](#Installation)
 - [Running Simulations]
 - [Pitfalls/Troubleshooting]
@@ -12,7 +12,7 @@
 # About
 <!-- toc -->
 
-## How DeePMD- kit works
+## How DeePMD kit works
 
 Here is where I will give a more comprehensive report on DeepMD-kit and specifically its potential usefulness to the lab- or researchers in general
 
@@ -83,11 +83,9 @@ Verify the install:
 
 `python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"`
 
-To verify the installation, run:
-
-`python -c "import tensorflow as tf; sess=tf.Session(); print(sess.run(tf.reduce_sum(tf.random_normal([1000, 1000]))))"`
-
 TensorFlow should now be installed.
+
+**Note:** here is where one pitfall may occur in installing tensorflow. If the installation and verification does not work, refer [here](
 
 ## Install DeePMD-kit's python interface
 
@@ -119,6 +117,8 @@ cd build`
 To install DeePMD-kit into path `$deepmd_root` then execute cmake
 
 `cmake -DTENSORFLOW_ROOT=$tensorflow_root -DCMAKE_INSTALL_PREFIX=$deepmd_root ..`
+
+You may have to first install cmake with `sudo apt install cmake`
 
 The GPU and CUDA tool-kit may be necessary here...
 
