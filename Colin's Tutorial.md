@@ -10,7 +10,7 @@
   
   
 # About
-<!-- toc -->
+
 
 ## How DeePMD kit works
 
@@ -89,7 +89,7 @@ TensorFlow should now be installed.
 
 ## Install DeePMD-kit's python interface
 
-First, clone the DeePMD-kit source code
+First, clone the DeePMD-kit source code into some workspace where you want to clone it to. 
 
 `cd /some/workspace`
 
@@ -107,6 +107,8 @@ Then execute
 To test the installation, you may execute
 
 `dp -h`
+
+This, if the installation is successful, will bring up a small help menu that describes a few commands for the DeePMD-kit. 
 
 ## Install the C++ Interface IMPORTANT
 
@@ -136,7 +138,7 @@ dp_ipi
 $ ls $deepmd_root/lib
 libdeepmd_ipi.so  libdeepmd_op.so  libdeepmd.so`
 
-
+This is where I suppose the most pitfalls in installation occur. Refer to the help [here](#installing-c++-interface). 
 
 ## Install LAMMPS DeePMD-kit module ALSO IMPORTANT
 
@@ -185,6 +187,10 @@ If you are starting completely from scratch and want to run DeepMD-kit from a Wi
 
 In all, installing the DeepMD kit, LAMMPS, and all the components necessary to run them will take up roughly ~14 GB of disk space. Therefore, allocating at least **minimum 15 GB** of disk space to your Ubuntu VirtualBox virtual hard drive is necessary to run DeePMD-kit and LAMMPS. However, adding more is much better. Feel free to allocate as much disk space as you may see fit- however many GB you may decide to allocate- it is not all allocated at once, but rather it is allocated accordingly by how much space you have so far used in Ubuntu, so do not worry about allocating too much disk space and having it depleted from your main hard drive immediately. 
 
+## Installing C++ Interface
+
+This is where I ran into the most difficulty in installation. The most confusing step is where to define the "tensorflow_root" to be in the step `cmake -DTENSORFLOW_ROOT=$tensorflow_root -DCMAKE_INSTALL_PREFIX=$deepmd_root ..`. There is a thorough forum thread [here](https://github.com/deepmodeling/deepmd-kit/issues/10) that 
+
 ## MD: cannot make user in DeePMD-kit
 
 One major pitfall I experienced in using LAMMPS with DeePMD-kit was "make user." 
@@ -204,12 +210,6 @@ Then, to verify the installation you can quickly create a small python file whic
 
 
 
-# Colin's next plans for the tutorial?
-
-
-- Try to make my own example for MD simulations with deepmd kit and give thorough detailed explanation of how it works
-
-- Give detailed walkthrough for incorporating LAMMPS with DeePMD-kit 
 
 
 
