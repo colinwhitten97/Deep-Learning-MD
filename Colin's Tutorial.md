@@ -6,7 +6,7 @@
   * [License and Credits](#license-and-credits)
 - [Installation](#Installation)
 - [Running Simulations](#running-simulations)
-- [Pitfalls/Troubleshooting](#pitfalls/troubleshooting)
+- [Pitfalls/Troubleshooting](#pitfalls-and-troubleshooting)
   
   
 # About
@@ -85,7 +85,7 @@ Verify the install:
 
 TensorFlow should now be installed.
 
-**Note:** here is where one pitfall may occur in installing tensorflow. If the installation and verification does not work, refer [here](
+**Note:** here is where one pitfall may occur in installing tensorflow. If the installation and verification does not work, refer [here](#tensorflow-installation)
 
 ## Install DeePMD-kit's python interface
 
@@ -175,7 +175,7 @@ This should end up with an executable `lmp_mpi` FIND MPI!
 
 ### Use model with LAMMPS to run simulation
 
-# Pitfalls/ Troubleshooting
+# Pitfalls and Troubleshooting
 
 ## Linux OS
 
