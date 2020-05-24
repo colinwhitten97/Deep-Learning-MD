@@ -5,8 +5,8 @@
   * [How DeePMD- kit works](#how-DeePMD-kit-works)
   * [License and Credits](#license-and-credits)
 - [Installation](#Installation)
-- [Running Simulations]
-- [Pitfalls/Troubleshooting]
+- [Running Simulations](#running-simulations)
+- [Pitfalls/Troubleshooting](#pitfalls/troubleshooting)
   
   
 # About
@@ -188,6 +188,28 @@ In all, installing the DeepMD kit, LAMMPS, and all the components necessary to r
 ## MD: cannot make user in DeePMD-kit
 
 One major pitfall I experienced in using LAMMPS with DeePMD-kit was "make user." 
+
+## Tensorflow Installation
+
+You may run into a pitfall during the installation of tensorflow. I experienced trouble during this step, and was able to successfully install tensorflow using a different process. The original DeePMD-kit documentation leaves little instruction on how to accomplish this. While the installation steps may be straightforward, in case you are unfamiliar with Ubuntu and Linux and referred here, follow these steps.
+
+`sudo apt-get install python3`
+
+`sudo apt-get install python3-pip`
+
+`pip install tensorflow`
+
+Then, to verify the installation you can quickly create a small python file which utilizes tensorflow: Create a test file such as "tensor.py" and write these lines into it:
+
+`import tensorflow as tf;
+graph = tf.Graph();
+with graph.as_default();
+ x = tf.constant(5, name = "x_value");
+ y = tf.constant(2, name = "y_value");
+ sum = tf.add(x,y, name = "xy_sum");
+ with tf.compat.v1.Session() as session:
+  print("Result:" sum.eval());`
+
 
 # Colin's next plans for the tutorial?
 
