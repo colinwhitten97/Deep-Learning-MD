@@ -25,6 +25,7 @@
   * [Installing C++ Interface](#installing-c++-interface)
   * [MD: cannot make user in DeePMD-kit](#md-cannot-make-user-in-deepmd-kit)
   * [Tensorflow Installation](#tensorflow-installation)
+- [More information on DeePMD-kit](#more-information-on-deepmd-kit)
   
   
 # About
@@ -46,11 +47,17 @@ These following instructions will direct you to install all necessary components
 
 ## Create instance of Linux to use DeePMD-kit 
 
-DeePMD- kit is native to Linux, so you are required to run it there. If you already have an instance of Linux, skip this step. If you are using a Windows PC, there is a tutorial on how to set up an instance of Linux in the troubleshooting section [here](#linux-os)
+DeePMD- kit is native to Linux, so you are required to run it there. If you already have an instance of Linux, skip this step. If you are using a Windows PC, there is a tutorial on how to set up an instance of Linux in the troubleshooting section [here](#linux-os). If you follow those instructions exactly you will be able to use Ubuntu to get started with the DeePMD-kit. 
 
 ## Download using Conda
 
-To install the DeePMD-kit, you must first install Anaconda or Miniconda. If storage space on your instance of Linux is an issue, use Miniconda. If you already have conda, skip this step. 
+To install the DeePMD-kit, you must first install Anaconda or Miniconda. If storage space on your instance of Linux is an issue, use Miniconda. If you already have a conda distribution, skip this step. 
+
+The main difference between the two is that Miniconda just ships the repository management system- which allows you to download and use DeePMD-kit. Installing miniconda gives you just the management system without any further packages. Anaconda on the other hand is a more thorough distribution with some built in packages. 
+
+If you are brand new to conda or Python, you may want to choose Anaconda. It offers the convenience of having Python and over 150 scientific packages automatically installed at once; if you can spare the time (a few minutes) and disk space (~ 3 GB) and do not want to install any packages you want to use individually. 
+
+Choose Miniconda if you don't mind installing each package you want individually and just want fast access to Python and the conda commands. You can still sort out any other programs and packages later. Some find Anaconda to be bloated.  
 
 Instructions on installing Miniconda [here.](https://www.youtube.com/watch?v=Ye4epph6Gzo) 
 
@@ -183,11 +190,23 @@ This should end up with an executable `lmp_mpi` FIND MPI!
 
 # Use the DeePMD-kit
 
-## Running an example simulation?
+## Running an example simulation
+
+We can train a deep neural network which is used to represent the interatomic interactions, or Deep Potential. I will refer to the deep neural network as a **model**. 
 
 ### Prepare Model
 
+To train the deep neural network, or model, we need to provide the simulation box, atom coordinate, atom force, system energy, and virial. The snapshot of the system that contains this information is called a **frame**. 
+
+Time is measured in picoseconds (ps), length in Angstrom (Å), energy in electronvolt (eV), force in electronvolt per Angstrom (eV/Å), and pressure in Bar. 
+
+The frames of the system are stored in two formats: `.raw` files of plain text, and data sets of `numpy` binary data. 
+The default files that provide box, coordinate, force, energy, and virial are `box.raw`, `coord.raw`, `force.raw`, `energy.raw`, and `virial.raw`, respectively. Use these file names!
+
+
 ### Train Model
+
+There is an example given with the kit in `deepmd-kit/examples/water/train/`. The file is `water_se_a.json` is the .json format parameter file that controls the training. It consists of three parts: the model, learning rate, and loss and training. The model section specifies how the deep potential model is built. 
 
 ### Freeze Model
 
