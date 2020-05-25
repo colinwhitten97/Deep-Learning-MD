@@ -46,7 +46,7 @@ These following instructions will direct you to install all necessary components
 
 ## Create instance of Linux to use DeePMD-kit 
 
-DeePMD- kit is native to Linux, so you are required to run it there. If you already have an instance of Linux, skip this step. If you are using a Windows PC, there is a tutorial on how to set up an instance of Linux in the troubleshooting section **here**. 
+DeePMD- kit is native to Linux, so you are required to run it there. If you already have an instance of Linux, skip this step. If you are using a Windows PC, there is a tutorial on how to set up an instance of Linux in the troubleshooting section [here](#linux-os)
 
 ## Download using Conda
 
