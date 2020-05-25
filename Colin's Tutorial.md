@@ -5,8 +5,26 @@
   * [How DeePMD- kit works](#how-DeePMD-kit-works)
   * [License and Credits](#license-and-credits)
 - [Installation](#Installation)
-- [Running Simulations](#running-simulations)
+  * [Create instance of Linux to use DeePMD-kit](#create-instance-of-linux-to-use-deepmd-kit)
+  * [Download using Conda](#download-using-conda)
+  * [Install CPU version of DeePMD-kit](#install-cpu-version-of-deepmd-kit)
+  * [Install python interface with TensorFlow](#install-python-interface-with-tensorflow)
+  * [Install DeePMD-kit's python interface](#install-deepmd-kit's-python-interface)
+  * [Install the C++ Interface](#install-the-c++-interface)
+  * [Install LAMMPS DeePMD-kit module](#install-lammps-deepmd-kit-module)
+   + [How to retrieve LAMMPS and install it](#how-to-retrieve-lammps-and-install-it)
+- [Use the DeePMD-kit](#use-the-deepmd-kit)
+  * [Running an Example Simulation](#running-an-example-simulation)
+   + [Prepare Model](#prepare-model)
+   + [Train Model](#train-model)
+   + [Freeze Model](#freeze-model)
+   + [Use model to run simulation with native MD code](#use-model-to-run-simulation-with-native-md-code)
+   + [Use model with LAMMPS to run simulation](#use-model-with-lammps-to-run-simulation)
 - [Pitfalls/Troubleshooting](#pitfalls-and-troubleshooting)
+  * [Linux OS](#linux-os)
+  * [Installing C++ Interface](#installing-c++-interface)
+  * [MD: cannot make user in DeePMD-kit](#md-cannot-make-user-in-deepmd-kit)
+  * [Tensorflow Installation](#tensorflow-installation)
   
   
 # About
@@ -110,7 +128,7 @@ To test the installation, you may execute
 
 This, if the installation is successful, will bring up a small help menu that describes a few commands for the DeePMD-kit. 
 
-## Install the C++ Interface IMPORTANT
+## Install the C++ Interface
 
 `cd deepmd-kit/source
 mkdir build
@@ -140,7 +158,7 @@ libdeepmd_ipi.so  libdeepmd_op.so  libdeepmd.so`
 
 This is where I suppose the most pitfalls in installation occur. Refer to the help [here](#installing-c++-interface). 
 
-## Install LAMMPS DeePMD-kit module ALSO IMPORTANT
+## Install LAMMPS DeePMD-kit module
 
 The deepmd-kit also provides a module for running MD simulations with LAMMPS. You can make the DeePMD-kit module for LAMMPS
 
