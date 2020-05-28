@@ -1,4 +1,4 @@
-# DeepMD-kit- Colin's tutorial so far
+# Colin's DeePMD-kit Tutorial
 
 # Table of Contents
 - [About](#About)
