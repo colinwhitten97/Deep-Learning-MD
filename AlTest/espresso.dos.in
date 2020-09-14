@@ -1,0 +1,56 @@
+&CONTROL
+    calculation = "nscf"
+    max_seconds =  8.64000e+04
+    pseudo_dir  = "C:\Users\Colin\.burai\.pseudopot"
+/
+
+&SYSTEM
+    a           =  4.03893e+00
+    degauss     =  1.00000e-02
+    ecutrho     =  1.00000e+02
+    ecutwfc     =  2.50000e+01
+    ibrav       = 1
+    nat         = 4
+    nbnd        = 16
+    ntyp        = 1
+    occupations = "smearing"
+    smearing    = "gaussian"
+/
+
+&ELECTRONS
+    conv_thr         =  1.00000e-06
+    electron_maxstep = 200
+    mixing_beta      =  7.00000e-01
+    startingpot      = "atomic"
+    startingwfc      = "atomic+random"
+/
+
+&DOS
+    degauss =  1.00000e-02
+    deltae  =  1.00000e-02
+    emax    =  5.00000e+01
+    emin    = -5.00000e+01
+    ngauss  = 0
+/
+
+&PROJWFC
+    degauss =  1.00000e-02
+    deltae  =  1.00000e-02
+    emax    =  5.00000e+01
+    emin    = -5.00000e+01
+    ngauss  = 0
+/
+
+K_POINTS {automatic}
+ 6  6  6  0 0 0
+
+ATOMIC_SPECIES
+Al     26.98154  Al.pbe-rrkj.UPF
+
+ATOMIC_POSITIONS {angstrom}
+Al      0.000000   0.000000   0.000000
+Al      0.000000   2.019465   2.019465
+Al      2.019465   0.000000   2.019465
+Al      2.019465   2.019465   0.000000
+
+
