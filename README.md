@@ -17,7 +17,7 @@ Then, navigate to the siesta directory to compile an executable file:
 
 `cd siesta-4.1-b2/`
 
-`cd Obj/
+`cd Obj/`
 
 `sh ../Src/obj_setup.sh`
 
@@ -27,4 +27,4 @@ Then, navigate to the siesta directory to compile an executable file:
 
 There will then be a lot of output messages in the terminal, and if successful, you will have a working SIESTA executable.
 
-Running
+`ls -l siesta`
