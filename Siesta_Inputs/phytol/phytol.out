@@ -8,14 +8,14 @@ Directory       : /home/cwhitten/siesta/Deep-Learning-MD-Colin/Siesta_Inputs/phy
 SERIAL version
 
 * Running in serial mode
->> Start of run:  12-DEC-2020  11:32:35
+>> Start of run:  12-DEC-2020  13:47:36
 
                            ***********************       
                            *  WELCOME TO SIESTA  *       
                            ***********************       
 
 reinit: Reading from standard input
-reinit: Dumped input in INPUT_TMP.76507
+reinit: Dumped input in INPUT_TMP.78125
 ************************** Dump of input data file ****************************
 NumberOfAtoms 2671
 SpinPolarized yes
