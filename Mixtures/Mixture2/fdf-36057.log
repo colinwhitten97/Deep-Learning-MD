@@ -1,0 +1,1047 @@
+SystemName           # default value
+SystemLabel     siesta     # default value
+SpinPolarized              T
+NonCollinearSpin              F     # default value
+SpinOrbit              F     # default value
+#:defined? SpinPolarized              T
+#**Warning: FDF symbol 'SpinPolarized' is deprecated.
+#:block? Spin              F
+#:defined? Spin              F
+#           FDF symbol 'Spin' replaces 'SpinPolarized'.
+#:block? NonCollinearSpin              F
+#:defined? NonCollinearSpin              F
+#:block? SpinOrbit              F
+#:defined? SpinOrbit              F
+Spin     polarized                            # default value
+TimeReversalSymmetry              T     # default value
+DebugObjects.Node         0     # default value
+DebugObjects              F     # default value
+XML.Write              F     # default value
+timer_report_threshold          0.000000000         # default value
+UseParallelTimer              T     # default value
+UseTreeTimer              F     # default value
+timing-split-scf-steps              F     # default value
+alloc_report_level         0     # default value
+alloc_report_threshold          0.000000000         # default value
+xc.functional     LDA     # default value
+xc.authors     PZ     # default value
+MM.Cutoff          30.00000000     Bohr     # default value
+MM.UnitsEnergy     eV     # default value
+MM.UnitsDistance     Ang     # default value
+WriteIonPlotFiles              F     # default value
+Atom.Debug.KB.Generation              F     # default value
+KB.New.Reference.Orbitals              F     # default value
+user-basis              F     # default value
+user-basis-netcdf              F     # default value
+#:block? DFTU.proj              F
+#:defined? DFTU.proj              F
+#:block? LDAU.proj              F
+#:defined? LDAU.proj              F
+Number_of_species              4
+%block Chemical_species_label
+ 1  6  C
+ 2  7  N
+ 3  1  H
+ 4  8  O
+%endblock Chemical_species_label
+ReparametrizePseudos              F     # default value
+Restricted.Radial.Grid              T     # default value
+Rmax.Radial.Grid          0.000000000         # default value
+PAO.BasisSize     szp                                                                             
+PAO.BasisType     split          # default value
+PAO.SoftDefault              F     # default value
+PAO.SoftInnerRadius         0.9000000000         # default value
+PAO.SoftPotential          40.00000000         # default value
+PAO.SplitNorm         0.1500000000         # default value
+PAO.SplitNormH         -1.000000000         # default value
+LDAU.ProjectorGenerationMethod         2     # default value
+DFTU.ProjectorGenerationMethod         2     # default value
+LDAU.EnergyShift         0.5000000000E-01 Ry     # default value
+DFTU.EnergyShift         0.5000000000E-01 Ry     # default value
+LDAU.CutoffNorm         0.9000000000         # default value
+DFTU.CutoffNorm         0.9000000000         # default value
+PAO.SoftDefault              F     # default value
+PAO.SoftInnerRadius         0.9000000000         # default value
+PAO.SoftPotential          40.00000000         # default value
+LDAU.ThresholdTol         0.1000000000E-01     # default value
+DFTU.ThresholdTol         0.1000000000E-01     # default value
+LDAU.PopTol         0.1000000000E-02     # default value
+DFTU.PopTol         0.1000000000E-02     # default value
+LDAU.PotentialShift              F     # default value
+DFTU.PotentialShift              F     # default value
+LDAU.FirstIteration              F     # default value
+DFTU.FirstIteration              F     # default value
+FilterCutoff          0.000000000     Ry     # default value
+FilterTol          0.000000000     Ry     # default value
+keep-npotu-bug              F     # default value
+spin-orbit-strength          1.000000000         # default value
+KB.Rmax          6.000000000     Bohr     # default value
+PAO.EnergyShift         0.2000000000E-01         Ry
+# above item originally: PAO.EnergyShift         0.2000000000E-01 Ry        
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+PAO.Filter              F     # default value
+PAO.OldStylePolorbs              T     # default value
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+Vna.Filter              F     # default value
+PCC.Filter              F     # default value
+FilterCutoff          0.000000000     Ry     # default value
+FilterTol          0.000000000     Ry     # default value
+keep-npotu-bug              F     # default value
+spin-orbit-strength          1.000000000         # default value
+KB.Rmax          6.000000000     Bohr     # default value
+PAO.EnergyShift         0.2000000000E-01         Ry
+# above item originally: PAO.EnergyShift         0.2000000000E-01 Ry        
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+PAO.Filter              F     # default value
+PAO.OldStylePolorbs              T     # default value
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+Vna.Filter              F     # default value
+PCC.Filter              F     # default value
+FilterCutoff          0.000000000     Ry     # default value
+FilterTol          0.000000000     Ry     # default value
+keep-npotu-bug              F     # default value
+spin-orbit-strength          1.000000000         # default value
+KB.Rmax          6.000000000     Bohr     # default value
+PAO.EnergyShift         0.2000000000E-01         Ry
+# above item originally: PAO.EnergyShift         0.2000000000E-01 Ry        
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+PAO.OldStylePolorbs              T     # default value
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+Vna.Filter              F     # default value
+FilterCutoff          0.000000000     Ry     # default value
+FilterTol          0.000000000     Ry     # default value
+keep-npotu-bug              F     # default value
+spin-orbit-strength          1.000000000         # default value
+KB.Rmax          6.000000000     Bohr     # default value
+PAO.EnergyShift         0.2000000000E-01         Ry
+# above item originally: PAO.EnergyShift         0.2000000000E-01 Ry        
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+PAO.Filter              F     # default value
+PAO.OldStylePolorbs              T     # default value
+PAO.SplitTailNorm              F     # default value
+PAO.FixSplitTable              F     # default value
+PAO.NewSplitCode              F     # default value
+PAO.Filter              F     # default value
+Vna.Filter              F     # default value
+PCC.Filter              F     # default value
+PAO.BasisType     split          # default value
+Atom-Setup-Only              F     # default value
+UseStructFile              F     # default value
+MD.UseStructFile              F     # default value
+LatticeConstant          1.889726878           Bohr
+# above item originally: LatticeConstant          1.000000000     Ang       
+#:block? LatticeParameters              F
+%block LatticeVectors
+   47.213764 0.0 0.0
+   0.0 48.016287 0.0
+   0.0 0.0 48.02536
+%endblock LatticeVectors
+AtomicCoordinatesFormat     Ang                                                                             
+NumberOfAtoms            463
+#:block? AtomicCoordinatesOrigin              F
+#:defined? AtomicCoordinatesOrigin              F
+ZM.UnitsLength     Bohr           # default value
+ZM.UnitsAngle     rad            # default value
+ZM.ForceTolLength         0.1555740000E-02 Ry/Bohr     # default value
+ZM.ForceTolAngle         0.3565490000E-02 Ry/rad     # default value
+ZM.MaxDisplLength         0.2000000000     Bohr     # default value
+ZM.MaxDisplAngle         0.3000000000E-02 rad     # default value
+ZM.CalcAllForces              F     # default value
+%block AtomicCoordinatesAndAtomicSpecies
+ 32.473148  30.600147 30.280961  1
+ 32.278847  31.491202 29.870747  1
+ 32.526135  31.667647 28.918011  1
+ 32.967724  30.953042 28.375480  1
+ 33.215012  31.129493 27.422736  1
+ 33.656602  30.414889 26.880205  1
+ 33.903890  30.591334 25.927469  1
+ 34.345479  29.876730 25.384938  1
+ 34.592767  30.053181 24.432194  1
+ 35.034357  29.338576 23.889664  1
+ 35.281645  29.515021 22.936927  1
+ 35.723234  28.800417 22.394397  1
+ 35.970522  28.976868 21.441653  1
+ 36.412112  28.262263 20.899122  1
+ 36.659400  28.438708 19.946386  1
+ 37.100989  27.724104 19.403855  1
+ 37.348277  27.900555 18.451111  1
+ 37.789867  27.185950 17.908581  1
+ 38.037155  27.362395 16.955844  1
+ 38.478744  26.647791 16.413314  1
+ 38.726032  26.824242 15.460570  1
+ 39.167622  26.109637 14.918039  1
+ 6.256864  37.415423 38.366924  1
+ 5.224252  36.951990 37.376841  1
+ 5.605821  36.067797 36.364450  1
+ 4.649602  35.639142 35.464923  1
+ 3.356898  36.017993 35.503937  2
+ 2.977044  36.863529 36.476654  1
+ 1.641438  37.239272 36.534613  1
+ 1.159241  38.104672 37.518965  1
+ 2.032005  38.623956 38.463680  1
+ 3.379454  38.267297 38.425320  1
+ 3.873080  37.375375 37.443710  1
+ 7.229339  36.945691 38.183869  3
+ 5.954412  37.148692 39.384756  3
+ 6.394297  38.499116 38.295661  3
+ 6.626651  35.711718 36.275492  3
+ 4.904334  34.951230 34.663789  3
+ 0.953510  36.838688 35.793700  3
+ 0.104838  38.366777 37.541433  3
+ 1.667991  39.300876 39.232097  3
+ 4.042681  38.689327 39.175709  3
+ 32.434499  31.960182 14.614225  1
+ 32.935084  31.275503 13.330732  1
+ 32.084465  30.027547 13.072748  1
+ 32.876817  32.259597 12.144674  1
+ 33.653379  33.501707 12.245826  2
+ 34.978133  33.786659 12.334614  1
+ 35.316179  34.950875 12.098280  4
+ 36.032140  32.695067 12.604884  1
+ 37.104162  33.199274 13.610103  1
+ 36.465637  33.509941 14.970731  1
+ 38.243265  32.190837 13.825688  1
+ 36.619696  32.394600 11.300156  2
+ 36.169851  31.515548 10.355630  1
+ 36.561359  31.654549 9.199700  4
+ 35.127653  30.436781 10.735859  1
+ 35.509283  29.084363 10.069968  1
+ 36.857385  28.565162 10.581428  1
+ 34.445301  28.003087 10.298891  1
+ 33.856010  30.915591 10.194195  2
+ 32.910827  31.749161 10.688326  1
+ 32.084651  32.184119 9.876359  4
+ 32.484718  31.274657 15.467016  3
+ 31.392835  32.285638 14.510813  3
+ 33.040878  32.837777 14.859995  3
+ 33.946661  30.931500 13.533940  3
+ 31.048855  30.291116 12.834402  3
+ 32.073520  29.376817 13.954065  3
+ 32.486933  29.440504 12.242962  3
+ 31.844527  32.645745 12.205079  3
+ 33.145201  34.327617 11.941647  3
+ 35.578836  31.804834 13.014634  3
+ 37.556111  34.125238 13.231485  3
+ 36.054828  32.605560 15.432963  3
+ 35.657728  34.241438 14.877713  3
+ 37.207816  33.931822 15.657350  3
+ 37.863020  31.193562 14.071941  3
+ 38.891538  32.510084 14.651324  3
+ 38.875708  32.107702 12.936239  3
+ 37.170641  33.138042 10.878851  3
+ 35.049476  30.299322 11.809816  3
+ 35.597934  29.226732 8.984113  3
+ 36.822764  28.365739 11.657448  3
+ 37.663694  29.279647 10.391095  3
+ 37.126214  27.632117 10.073306  3
+ 34.257017  27.848795 11.366275  3
+ 34.769749  27.045759 9.874624  3
+ 33.498461  28.265069 9.816168  3
+ 33.776671  30.861599 9.182360  3
+ 35.436758  5.626354 2.701586  1
+ 35.321521  4.910664 3.827336  1
+ 34.383016  5.303242 4.960517  1
+ 33.007263  5.945544 4.791487  1
+ 33.013713  7.285760 4.251181  1
+ 33.900879  8.158130 5.069172  1
+ 33.970269  9.533262 4.284929  1
+ 34.514893  9.310623 2.555966  1
+ 33.634804  8.752709 1.415887  1
+ 32.139978  9.124395 1.163556  1
+ 31.033876  9.059892 2.263079  1
+ 30.857723  10.180291 3.337936  1
+ 31.962122  10.418233 4.305087  1
+ 33.555718  11.169661 3.511381  1
+ 35.373669  10.929487 3.959369  1
+ 36.721159  10.839219 3.160634  1
+ 37.931132  10.455065 4.040171  1
+ 36.268025  3.888708 4.021144  4
+ 36.007358  2.807642 4.939886  1
+ 35.370780  1.579037 4.207815  1
+ 36.174684  0.680298 3.257272  1
+ 37.260977  2.384695 5.757299  1
+ 37.837640  3.289555 6.762991  4
+ 37.176588  3.571459 7.936406  1
+ 35.969902  3.439584 8.079277  4
+ 38.127015  4.165521 9.010187  1
+ 38.381124  3.521889 10.415965  1
+ 37.269906  3.433036 11.491003  1
+ 37.732147  2.773323 12.823455  1
+ 36.657784  2.642086 13.935845  1
+ 35.409470  1.788132 13.682534  1
+ 34.433728  2.107998 12.507198  1
+ 33.522732  3.276825 12.062531  1
+ 33.439160  4.592128 11.715710  1
+ 34.247541  5.899985 11.718268  1
+ 34.595841  6.674495 10.384260  1
+ 35.278351  8.069739 10.645072  1
+ 35.603193  8.879214 9.375122  1
+ 36.365882  10.198923 9.636307  1
+ 36.768678  11.014397 8.393560  1
+ 37.816336  10.346074 7.504254  1
+ 37.415871  9.047125 6.830034  1
+ 34.840590  6.493311 2.515443  3
+ 36.179734  5.435273 1.938959  3
+ 34.978478  5.946907 5.617373  3
+ 34.091942  4.435821 5.526543  3
+ 32.572107  6.086754 5.790167  3
+ 32.320369  5.353151 4.191942  3
+ 31.985018  7.624939 4.207787  3
+ 33.308414  7.282116 3.220627  3
+ 34.954456  7.869052 5.087456  3
+ 33.532813  8.385691 6.085498  3
+ 34.405169  9.945210 5.351047  3
+ 33.594222  10.468677 4.993896  3
+ 35.480759  8.818335 2.520550  3
+ 34.749727  10.331197 1.990839  3
+ 33.723532  7.696451 1.535672  3
+ 34.195204  8.927553 0.459808  3
+ 31.839078  8.371079 0.418491  3
+ 32.050405  10.090634 0.648605  3
+ 31.028637  8.044138 2.664452  3
+ 30.066949  9.102477 1.743915  3
+ 30.000449  9.921669 3.989937  3
+ 30.780851  11.151484 2.902290  3
+ 31.980265  9.401728 4.746181  3
+ 31.787237  10.903381 5.268544  3
+ 33.384457  12.160037 3.018345  3
+ 33.088196  10.529113 2.619306  3
+ 35.697363  9.799058 4.278001  3
+ 35.575955  11.282124 4.981327  3
+ 36.769532  11.810298 2.738794  3
+ 36.838003  10.058815 2.390951  3
+ 38.121531  11.249149 4.752384  3
+ 38.808747  10.285011 3.413610  3
+ 37.813790  9.497771 4.551213  3
+ 35.281805  3.114250 5.681255  3
+ 34.487334  1.918747 3.655060  3
+ 35.009414  0.907639 4.996589  3
+ 36.699823  1.209108 2.458154  3
+ 35.474626  -0.013267 2.763386  3
+ 36.890059  0.048388 3.795781  3
+ 38.079220  2.169811 5.060713  3
+ 37.030059  1.452783 6.284161  3
+ 37.857157  5.220584 9.130840  3
+ 39.120547  4.176580 8.536488  3
+ 39.177273  4.129224 10.871303  3
+ 38.802830  2.521178 10.275516  3
+ 36.466712  2.844104 11.068580  3
+ 36.884111  4.428158 11.728329  3
+ 38.552218  3.374012 13.249925  3
+ 38.175258  1.786729 12.630515  3
+ 36.338502  3.629421 14.275179  3
+ 37.172475  2.189059 14.805762  3
+ 34.853704  1.679710 14.629529  3
+ 35.773561  0.755912 13.508345  3
+ 33.706210  1.277222 12.622153  3
+ 34.950287  1.799971 11.599299  3
+ 32.555160  2.794051 11.834794  3
+ 32.432329  4.839461 11.345812  3
+ 35.149414  5.782473 12.316777  3
+ 33.602520  6.604708 12.267460  3
+ 33.694345  6.847906 9.779721  3
+ 35.270258  6.059584 9.775893  3
+ 36.222833  7.893815 11.175378  3
+ 34.647810  8.699645 11.276194  3
+ 34.709378  9.096501 8.780659  3
+ 36.203749  8.194269 8.806075  3
+ 37.272518  10.009558 10.224168  3
+ 35.721143  10.841860 10.246626  3
+ 37.206086  11.970425 8.732926  3
+ 35.884440  11.300184 7.810761  3
+ 38.733795  10.177458 8.073577  3
+ 38.084685  11.068004 6.728188  3
+ 37.255502  8.200979 7.475937  3
+ 38.249066  8.674682 6.233099  3
+ 36.516156  9.175060 6.224967  3
+ 0.787457  40.003020 17.995413  1
+ -0.036491  39.512201 17.712190  1
+ 0.038889  38.703906 17.128258  1
+ 0.938217  38.386430 16.827547  1
+ 1.013597  37.578136 16.243614  1
+ 1.912915  37.260659 15.942904  1
+ 1.988295  36.452364 15.358971  1
+ 2.887623  36.134889 15.058261  1
+ 2.963003  35.326594 14.474328  1
+ 3.862321  35.009118 14.173618  1
+ 3.937701  34.200823 13.589685  1
+ 4.837029  33.883347 13.288975  1
+ 4.912409  33.075053 12.705042  1
+ 5.811737  32.757577 12.404331  1
+ 5.887117  31.949282 11.820399  1
+ 6.786435  31.631806 11.519688  1
+ 6.861815  30.823511 10.935755  1
+ 7.761143  30.506036 10.635045  1
+ 7.836523  29.697741 10.051112  1
+ 8.735841  29.380264 9.750402  1
+ 8.811221  28.571970 9.166469  1
+ 9.710549  28.254494 8.865759  1
+ 9.785929  27.446199 8.281826  1
+ 10.685247  27.128723 7.981116  1
+ 10.760627  26.320428 7.397183  1
+ 11.659955  26.002953 7.096472  1
+ 11.735335  25.194658 6.512540  1
+ 12.634653  24.877181 6.211829  1
+ 12.710033  24.068887 5.627896  1
+ 13.609361  23.751411 5.327186  1
+ 13.684741  22.943116 4.743253  1
+ 14.584059  22.625640 4.442543  4
+ 10.534487  28.745312 9.148981  4
+ 11.433815  28.427837 8.848271  1
+ 11.509195  27.619542 8.264338  1
+ 12.408513  27.302065 7.963628  1
+ 12.483893  26.493771 7.379695  1
+ 13.383221  26.176295 7.078985  1
+ 13.458601  25.368000 6.495052  1
+ 14.357919  25.050524 6.194341  1
+ 14.433299  24.242229 5.610409  1
+ 15.332627  23.924754 5.309698  1
+ 15.408007  23.116459 4.725765  1
+ 16.307325  22.798982 4.425055  1
+ 16.382705  21.990688 3.841122  1
+ 17.282033  21.673212 3.540412  1
+ 17.357413  20.864917 2.956479  1
+ 18.256741  20.547442 2.655769  1
+ 18.332121  19.739147 2.071836  1
+ 19.231439  19.421671 1.771126  1
+ 19.306819  18.613376 1.187193  1
+ 20.206147  18.295900 0.886482  1
+ 20.281527  17.487606 0.302550  1
+ 21.180845  17.170129 0.001839  1
+ 12.257752  28.918655 9.131493  1
+ 13.157080  28.601179 8.830783  4
+ 12.182372  29.726949 9.715426  1
+ 13.006320  30.217768 9.998649  1
+ 13.905637  29.900292 9.697938  1
+ 13.981018  29.091997 9.114006  1
+ 14.880345  28.774522 8.813295  1
+ 14.955726  27.966227 8.229362  1
+ 15.855043  27.648750 7.928652  1
+ 15.930424  26.840456 7.344719  1
+ 16.829751  26.522980 7.044009  1
+ 16.905132  25.714685 6.460076  4
+ 28.754862  5.196689 33.934641  1
+ 29.551507  6.480714 34.090183  1
+ 30.909524  6.307258 34.801609  1
+ 31.734999  7.585904 34.959188  1
+ 31.227930  8.804907 34.461539  1
+ 31.943569  9.983418 34.677103  1
+ 31.607082  11.276833 34.337807  2
+ 30.750504  11.536518 33.881897  3
+ 32.554964  12.133022 34.826374  1
+ 32.525791  13.584404 34.834925  1
+ 31.747934  14.343526 33.991993  1
+ 31.728339  15.690271 34.003430  2
+ 32.473340  16.350720 34.916850  1
+ 32.449890  17.756141 34.930851  1
+ 31.739396  18.518971 33.810033  1
+ 30.631339  19.428672 34.360082  1
+ 32.732614  19.294521 32.905131  1
+ 33.770357  18.427293 32.165151  1
+ 33.175636  17.425134 31.184233  1
+ 33.125820  18.461067 35.947363  1
+ 33.873339  17.788571 36.904442  1
+ 33.961269  16.400244 36.850024  1
+ 33.275337  15.662810 35.857288  1
+ 33.352990  14.249550 35.766359  1
+ 34.238165  13.409702 36.691892  1
+ 34.681788  12.047886 36.103248  1
+ 33.532490  11.379697 35.438013  1
+ 33.162309  10.016142 35.337999  1
+ 33.712035  8.803295 35.776216  1
+ 32.994368  7.593946 35.605207  1
+ 33.640039  6.352553 36.178409  1
+ 33.252969  6.117684 37.646855  1
+ 33.874921  4.843797 38.264564  1
+ 33.414074  3.599207 37.501787  1
+ 35.409932  4.960742 38.348680  1
+ 36.100038  3.755522 38.969727  1
+ 27.759496  5.431766 33.538767  3
+ 28.623597  4.686640 34.892494  3
+ 29.238522  4.513712 33.230325  3
+ 28.933456  7.190663 34.654104  3
+ 29.704529  6.901542 33.088550  3
+ 31.503613  5.572045 34.246468  3
+ 30.716914  5.899672 35.802079  3
+ 30.281019  8.859571 33.942291  3
+ 31.101851  13.895109 33.242966  3
+ 31.208832  17.814491 33.160816  3
+ 31.016176  20.245643 34.978364  3
+ 29.928174  18.849508 34.970708  3
+ 30.059140  19.873118 33.537853  3
+ 33.279304  20.037315 33.500994  3
+ 32.165777  19.862566 32.156461  3
+ 34.401861  17.895573 32.885322  3
+ 34.442101  19.090361 31.604370  3
+ 32.448825  16.764885 31.659630  3
+ 33.965671  16.789902 30.768709  3
+ 32.681278  17.932660 30.350165  3
+ 33.079291  19.547604 35.990151  3
+ 34.395450  18.334284 37.680047  3
+ 34.557145  15.906357 37.608767  3
+ 33.676177  13.239739 37.619723  3
+ 35.154488  13.952804 36.947367  3
+ 35.108278  11.423762 36.894640  3
+ 35.467640  12.216168 35.355109  3
+ 34.677978  8.806022 36.275067  3
+ 34.728584  6.463506 36.095282  3
+ 33.392247  5.494929 35.549045  3
+ 32.160700  6.054085 37.732391  3
+ 33.547531  6.986905 38.251149  3
+ 33.491031  4.760709 39.291218  3
+ 33.778313  3.599868 36.470500  3
+ 32.319958  3.549519 37.476685  3
+ 33.771198  2.680073 37.973056  3
+ 35.664661  5.847356 38.943327  3
+ 35.839123  5.113271 37.353649  3
+ 35.686894  3.523675 39.955476  3
+ 37.169266  3.961043 39.086114  3
+ 36.008201  2.871291 38.331959  3
+ 18.506798  13.066206 34.498419  1
+ 19.711103  12.163445 34.333134  1
+ 20.933172  13.000641 33.900692  1
+ 21.178760  13.935746 35.126231  1
+ 20.061390  15.000664 35.220508  1
+ 18.676616  14.469702 34.839306  1
+ 17.627286  15.422146 34.676310  1
+ 16.445635  14.944490 34.115340  1
+ 16.350776  13.541105 33.929603  1
+ 17.268240  12.531502 34.131984  1
+ 15.115201  13.155408 33.472407  1
+ 14.711837  11.862910 33.336176  1
+ 15.647156  10.823515 33.463597  1
+ 16.926002  11.220667 33.869816  2
+ 15.342289  15.876139 33.792568  1
+ 14.086020  15.370153 33.294570  1
+ 14.072934  14.031395 33.176510  1
+ 17.713094  16.731356 34.961423  2
+ 16.635279  17.558944 34.709445  1
+ 15.384528  17.208175 34.119373  1
+ 14.135637  18.031993 33.975475  1
+ 12.875247  17.363513 33.727566  1
+ 12.844311  16.030393 33.370569  1
+ 11.676492  15.190660 33.454741  1
+ 11.658165  13.834045 33.103446  1
+ 12.922178  13.281222 33.060492  1
+ 13.998529  19.410863 34.172853  1
+ 12.802913  20.077142 34.268300  2
+ 11.653155  19.357041 34.215133  1
+ 11.644317  17.993443 34.000279  1
+ 10.359117  17.187611 34.092166  1
+ 10.577854  15.700998 34.377932  1
+ 20.689174  13.702633 32.516846  1
+ 20.406881  12.724797 31.352700  1
+ 20.085215  13.406642 30.013566  1
+ 18.846132  14.290019 30.074390  1
+ 22.588713  14.539622 35.263088  1
+ 23.688465  13.489458 35.422503  1
+ 15.413597  9.339901 33.257351  1
+ 14.466972  8.909631 32.103904  1
+ 14.363916  7.402065 31.969677  1
+ 13.036214  9.386082 32.230994  1
+ 10.841650  15.344609 35.900205  1
+ 12.014976  15.965830 36.695316  1
+ 13.393407  15.498408 36.317101  1
+ 10.380643  20.165597 34.292335  1
+ 9.852374  20.357317 35.722069  1
+ 8.542431  21.180309 35.772245  1
+ 7.419024  20.484216 34.996353  1
+ 8.075653  21.497709 37.216256  1
+ 7.669847  20.272655 38.044186  1
+ 7.190639  20.637977 39.441690  1
+ 13.350592  11.992496 33.145598  2
+ 15.178566  20.340236 34.216818  1
+ 19.522198  11.392337 33.580678  3
+ 19.903821  11.632445 35.272381  3
+ 21.779134  12.317776 33.777788  3
+ 21.071235  13.313211 36.028565  3
+ 20.308799  15.836917 34.553837  3
+ 20.021775  15.395665 36.243593  3
+ 16.820329  18.556980 35.084393  3
+ 10.771839  13.213127 33.160670  3
+ 9.701837  17.574334 34.878004  3
+ 9.826982  17.292785 33.137954  3
+ 9.638618  15.179256 34.121298  3
+ 21.545020  14.334189 32.256301  3
+ 19.835228  14.380676 32.583530  3
+ 19.556769  12.075690 31.589255  3
+ 21.275898  12.072062 31.213566  3
+ 19.916461  12.629717 29.255352  3
+ 20.943231  13.995766 29.672688  3
+ 17.980745  13.727185 30.439578  3
+ 18.602782  14.682297 29.081820  3
+ 19.003943  15.148191 30.733019  3
+ 22.612697  15.163416 36.168082  3
+ 22.821190  15.195902 34.419775  3
+ 23.553009  12.912918 36.345066  3
+ 24.669603  13.972792 35.478940  3
+ 23.717751  12.789098 34.584568  3
+ 15.094374  8.905984 34.212228  3
+ 16.397452  8.895551 33.038254  3
+ 14.865070  9.327073 31.170854  3
+ 13.996652  6.956253 32.900083  3
+ 15.324948  6.964861 31.702814  3
+ 13.644218  7.156622 31.177962  3
+ 12.702274  9.375410 33.279057  3
+ 12.284939  8.863926 31.637252  3
+ 13.028695  10.356913 31.746493  3
+ 10.911752  14.252450 36.003046  3
+ 9.938138  15.634262 36.454500  3
+ 11.917253  15.716856 37.753495  3
+ 11.970436  17.057217 36.613907  3
+ 13.482428  14.441383 36.058189  3
+ 14.215602  15.840580 36.947102  3
+ 13.601224  16.065563 35.458100  3
+ 9.628640  19.691925 33.650328  3
+ 10.585292  21.138333 33.833439  3
+ 10.623909  20.854279 36.323033  3
+ 9.686007  19.379323 36.186945  3
+ 8.736334  22.146231 35.285154  3
+ 7.337370  19.430515 35.283624  3
+ 7.597675  20.525189 33.918104  3
+ 6.453616  20.965802 35.182132  3
+ 7.210942  22.173486 37.153845  3
+ 8.860671  22.058001 37.738810  3
+ 8.510104  19.576823 38.128499  3
+ 6.850501  19.741785 37.548621  3
+ 7.977853  21.122565 40.027199  3
+ 6.882679  19.730742 39.973005  3
+ 6.326057  21.307618 39.396502  3
+ 12.651909  11.279193 33.207514  3
+ 14.872098  21.349588 33.941191  3
+ 15.936219  20.030312 33.488760  3
+ 15.604074  20.372513 35.223432  3
+%endblock AtomicCoordinatesAndAtomicSpecies
+MD.UseSaveXV              F     # default value
+MD.UseSaveZM              F     # default value
+WriteCoorInitial              T     # default value
+MD.TypeOfRun     nose                                                                            
+MD.TypeOfRun     nose                                                                            
+MaxBondDistance          6.000000000     Bohr     # default value
+Output-Structure-Only              F     # default value
+WriteCoorXmol              T
+#:physical? MaxWalltime              F
+MaxWalltime         0.1797693135+309     # default value
+#:physical? MaxWalltime.Slack              F
+MaxWalltime.Slack          5.000000000         # default value
+HSetupOnly              F     # default value
+LongOutput              T
+WriteDenchar              T
+WriteMullikenPop         0     # default value
+WriteOrbMom              F     # default value
+WriteHirshfeldPop              F     # default value
+WriteVoronoiPop              F     # default value
+PartialChargesAtEveryGeometry              F     # default value
+PartialChargesAtEveryScfStep              F     # default value
+MeshCutoff          100.0000000             Ry
+# above item originally: MeshCutoff          100.0000000     Ry        
+NetCharge          0.000000000    
+MinSCFIterations         0     # default value
+MaxSCFIterations            100
+SCF.MustConverge              T     # default value
+#:block? TS.MixH              F
+#:defined? TS.MixH              F
+#:block? MixHamiltonian              F
+#:defined? MixHamiltonian              F
+#:block? MixCharge              F
+#:defined? MixCharge              F
+TS.MixH              T     # default value
+MixHamiltonian              T     # default value
+MixCharge              F     # default value
+SCF.Mix     Hamiltonian     # default value
+Compat-pre-v4-DM-H              F     # default value
+SCF.MixAfterConvergence              F     # default value
+SCF.Recompute-H-After-Scf              F     # default value
+DM.NumberPulay              3
+DM.NumberBroyden         0     # default value
+DM.FIRE.Mixing              F     # default value
+DM.MixSCF1              T     # default value
+SCF.Mix.First              T     # default value
+SCF.Mix.First.Force              F     # default value
+DM.PulayOnFile              F     # default value
+DM.MixingWeight         0.2500000000         # default value
+DM.OccupancyTolerance         0.1000000000E-11     # default value
+DM.NumberKick         0     # default value
+DM.KickMixingWeight         0.5000000000         # default value
+DM.RequireHarrisConvergence              F     # default value
+SCF.Harris.Converge              F     # default value
+DM.HarrisTolerance         0.7349806700E-05 Ry     # default value
+SCF.Harris.Tolerance         0.7349806700E-05 Ry     # default value
+SCF.DM.Converge              T     # default value
+DM.Tolerance         0.1000000000E-02
+SCF.DM.Tolerance         0.1000000000E-02     # default value
+SCF.EDM.Converge              F     # default value
+SCF.EDM.Tolerance         0.7349806700E-04 Ry     # default value
+SCF.H.Converge              T     # default value
+SCF.H.Tolerance         0.7349806700E-04 Ry     # default value
+DM.RequireEnergyConvergence              F     # default value
+SCF.FreeE.Converge              F     # default value
+DM.EnergyTolerance         0.7349806700E-05 Ry     # default value
+SCF.FreeE.Tolerance         0.7349806700E-05 Ry     # default value
+MonitorForcesInSCF              F     # default value
+SCF.MonitorForces              F     # default value
+DM.InitSpin.AF              F     # default value
+UseSaveData              F     # default value
+DM.UseSaveDM              F     # default value
+NeglNonOverlapInt              F     # default value
+SolutionMethod     diagon     # default value
+ElectronicTemperature         0.1900000000E-02 Ry     # default value
+FixSpin              F     # default value
+Spin.Fix              F     # default value
+ON.MaxNumIter      1000     # default value
+ON.etol         0.1000000000E-07     # default value
+ON.eta          0.000000000     Ry     # default value
+ON.eta_alpha          0.000000000     Ry     # default value
+ON.eta_beta          0.000000000     Ry     # default value
+On.RcLWF          9.500000000     Bohr     # default value
+ON.UseSaveLWF              F     # default value
+ON.functional     kim     # default value
+ON.ChemicalPotentialUse              F     # default value
+ON.ChemicalPotential              F     # default value
+ON.ChemicalPotentialRc          9.500000000     Bohr     # default value
+ON.ChemicalPotentialTemperature         0.5000000000E-01 Ry     # default value
+ON.ChemicalPotentialOrder       100     # default value
+TDED.WF.Initialize              F     # default value
+TDED.Saverho              F     # default value
+TDED.Nsaverho       100     # default value
+TDED.Write.Etot              T     # default value
+TDED.Write.Eig              F     # default value
+TDED.Write.Dipole              F     # default value
+TDED.Extrapolate              F     # default value
+TDED.TimeStep         0.1000000000E-02 fs     # default value
+TDED.Nsteps         1     # default value
+TDED.Extrapolate.Substeps         3     # default value
+TDED.Inverse.Linear              T     # default value
+TDED.WF.Save              F     # default value
+MD.VariableCell              F     # default value
+compat-pre-v4-dynamics              F     # default value
+MD.TypeOfRun     nose                                                                            
+MD.NumCGsteps         0     # default value
+MD.Steps         0     # default value
+MD.MaxCGDispl         0.2000000000     Bohr     # default value
+MD.MaxDispl         0.2000000000     Bohr     # default value
+MD.MaxForceTol         0.1555740000E-02 Ry/Bohr     # default value
+MD.MaxStressTol         0.6797730000E-04 Ry/Bohr**3     # default value
+GeometryMustConverge              F     # default value
+MD.InitialTimeStep         1     # default value
+#:block? MD.Steps              F
+#:defined? MD.Steps              F
+MD.FinalTimeStep             10
+MD.LengthTimeStep         0.5000000000             fs
+# above item originally: MD.LengthTimeStep         0.5000000000     fs        
+MD.Quench              F     # default value
+MD.FireQuench              F     # default value
+MD.InitialTemperature          300.0000000              K
+# above item originally: MD.InitialTemperature          300.0000000     K         
+MD.TargetTemperature          300.0000000              K
+# above item originally: MD.TargetTemperature          300.0000000     K         
+MD.TargetPressure          0.000000000     Ry/Bohr**3     # default value
+MD.NoseMass          100.0000000     Ry*fs**2     # default value
+MD.ParrinelloRahmanMass          100.0000000     Ry*fs**2     # default value
+MD.AnnealOption     TemperatureAndPressure     # default value
+MD.TauRelax          100.0000000     fs     # default value
+MD.BulkModulus         0.6797730000E-02 Ry/Bohr**3     # default value
+MD.FCDispl         0.4000000000E-01 Bohr     # default value
+MD.FCfirst         1     # default value
+MD.FClast       463     # default value
+UseSpatialDecomposition              F     # default value
+UseDomainDecomposition              F     # default value
+SCF.Mix.Spin     all     # default value
+Mixer.Debug              F     # default value
+Mixer.Debug.MPI              F     # default value
+DM.NumberPulay              3
+DM.NumberBroyden         0     # default value
+DM.MixingWeight         0.2500000000         # default value
+DM.NumberKick         0     # default value
+DM.KickMixingWeight         0.5000000000         # default value
+SCF.LinearMixingAfterPulay              F     # default value
+SCF.MixingWeightAfterPulay         0.2500000000         # default value
+SCF.Mixer.History         3     # default value
+SCF.Mixer.Weight         0.2500000000         # default value
+SCF.Mixer.Kick         0     # default value
+SCF.Mixer.Kick.Weight         0.5000000000         # default value
+SCF.Mixer.Restart         0     # default value
+SCF.Mixer.Restart.Save         1     # default value
+SCF.Mixer.Method     Pulay     # default value
+SCF.Mixer.Variant     original     # default value
+SCF.Mixer.Linear.After        -1     # default value
+SCF.Mixer.Linear.After.Weight         0.2500000000         # default value
+#:block? ChargeGeometries              F
+#:defined? ChargeGeometries              F
+#:block? ChargeGeometries              F
+#:defined? ChargeGeometries              F
+Harris_functional              F     # default value
+ForceAuxCell              F     # default value
+#:block? Optim.Broyden.History.Steps              F
+#:defined? Optim.Broyden.History.Steps              F
+#:block? Optim.Broyden.Cycle.On.Maxit              F
+#:defined? Optim.Broyden.Cycle.On.Maxit              F
+#:block? Optim.Broyden.Variable.Weight              F
+#:defined? Optim.Broyden.Variable.Weight              F
+#:block? Optim.Broyden.Debug              F
+#:defined? Optim.Broyden.Debug              F
+#:block? Optim.Broyden.Initial.Inverse.Jacobian              F
+#:defined? Optim.Broyden.Initial.Inverse.Jacobian              F
+Write.Kpoints              T     # default value
+Write.Forces              T     # default value
+Write.DM              T     # default value
+Write.DM.End.Of.Cycle              T     # default value
+Write.H              F     # default value
+Write.H.End.Of.Cycle              F     # default value
+Write.DM.NetCDF              F     # default value
+WriteDM.History.NetCDF              F     # default value
+WriteDMHS.NetCDF              F     # default value
+WriteDMHS.History.NetCDF              F     # default value
+SCF.Read.Charge.NetCDF              F     # default value
+SCF.Read.Deformation.Charge.NetCDF              F     # default value
+Write.TSHS.History              F     # default value
+SaveInitialChargeDensity              F     # default value
+AnalyzeChargeDensityOnly              F     # default value
+UseNewDiagk              F     # default value
+Diag.WFS.Cache     none     # default value
+WriteBands              T     # default value
+WriteKbands              T     # default value
+WriteEigenvalues              T     # default value
+WriteCoorStep              T     # default value
+WriteMDhistory              F     # default value
+WriteMDXmol              T
+WriteOrbitalIndex              T     # default value
+Write.Graphviz     none     # default value
+WriteCoorStep              T     # default value
+SaveHS              F     # default value
+ReInitialiseDM              T     # default value
+DM.AllowReuse              T     # default value
+DM.AllowExtrapolation              T     # default value
+DM.History.Depth         1     # default value
+DM.NormalizationTolerance         0.1000000000E-04     # default value
+DM.NormalizeDuringSCF              T     # default value
+MullikenInSCF              F     # default value
+SpinInSCF              T     # default value
+WarningMinimumAtomicDistance          1.000000000     Bohr     # default value
+BornCharge              F     # default value
+ChangeKgridInMD              F     # default value
+MD.RelaxCellOnly              F     # default value
+MD.RemoveIntraMolecularPressure              F     # default value
+COOP.Write              F     # default value
+SaveRho              T     # default value
+SaveDeltaRho              F     # default value
+SaveRhoXC              F     # default value
+SaveElectrostaticPotential              F     # default value
+SaveNeutralAtomPotential              F     # default value
+SaveTotalPotential              F     # default value
+SaveIonicCharge              F     # default value
+SaveBaderCharge              F     # default value
+SaveTotalCharge              F     # default value
+Siesta2Wannier90.WriteMmn              F     # default value
+Siesta2Wannier90.WriteUnk              F     # default value
+Siesta2Wannier90.WriteAmn              F     # default value
+Siesta2Wannier90.WriteEig              F     # default value
+#:block? Siesta2Wannier90.NumberOfBandsUp              F
+#:defined? Siesta2Wannier90.NumberOfBandsUp              F
+#:block? Siesta2Wannier90.NumberOfBandsDown              F
+#:defined? Siesta2Wannier90.NumberOfBandsDown              F
+#:block? Siesta2Wannier90.NumberOfBands              F
+#:defined? Siesta2Wannier90.NumberOfBands              F
+Siesta2Wannier90.NumberOfBandsUp         0     # default value
+Siesta2Wannier90.NumberOfBandsDown         0     # default value
+Siesta2Wannier90.NumberOfBands         0     # default value
+DM.AllowReuse              T     # default value
+DM.AllowExtrapolation              T     # default value
+NumberOfEigenStates      3107     # default value
+RcSpatial          0.000000000     Bohr     # default value
+ProcessorGridX         1     # default value
+ProcessorGridY         1     # default value
+ProcessorGridZ         1     # default value
+Spin.Spiral              F     # default value
+TimeReversalSymmetryForKpoints              T     # default value
+%block kgrid.MonkhorstPack
+ 1 0 0 0.0
+  0 1 0 0.0
+  0 0 1 0.0
+%endblock kgrid.MonkhorstPack
+#:block? ProjectedDensityOfStates              T
+Spin.Spiral              F     # default value
+TimeReversalSymmetryForKpoints              T     # default value
+#:list? PDOS.kgrid.MonkhorstPack                                                                                                                                                                                                                                                      F
+#:block? PDOS.kgrid.Cutoff                                                                                                                                                                                                                                                             F
+#:defined? PDOS.kgrid.Cutoff                                                                                                                                                                                                                                                             F
+#:block? PDOS.kgrid.File                                                                                                                                                                                                                                                               F
+#:defined? PDOS.kgrid.File                                                                                                                                                                                                                                                               F
+Spin.Spiral              F     # default value
+TimeReversalSymmetryForKpoints              T     # default value
+#:list? DOS.kgrid.MonkhorstPack                                                                                                                                                                                                                                                       F
+#:block? DOS.kgrid.Cutoff                                                                                                                                                                                                                                                              F
+#:defined? DOS.kgrid.Cutoff                                                                                                                                                                                                                                                              F
+#:block? DOS.kgrid.File                                                                                                                                                                                                                                                                F
+#:defined? DOS.kgrid.File                                                                                                                                                                                                                                                                F
+Spin.Spiral              F     # default value
+TimeReversalSymmetryForKpoints              T     # default value
+%block kgrid.MonkhorstPack
+ 1 0 0 0.0
+  0 1 0 0.0
+  0 0 1 0.0
+%endblock kgrid.MonkhorstPack
+#:block? LocalDensityOfStates              F
+Diag.ProcessorY         1     # default value
+Diag.BlockSize         8     # default value
+Diag.Use2D              F     # default value
+Diag.UpperLower     lower     # default value
+Diag.DivideAndConquer              T     # default value
+Diag.MRRR              F     # default value
+Diag.NoExpert              F     # default value
+Diag.Algorithm     Divide-and-Conquer     # default value
+Diag.AbsTol         0.1000000000E-15     # default value
+Diag.OrFac         0.1000000000E-05     # default value
+Diag.Memory          1.000000000         # default value
+#:block? BandLines              T
+#:defined? BandLines              T
+#:block? BandPoints              F
+#:defined? BandPoints              F
+BandLinesScale     pi/a     # default value
+LatticeConstant          1.889726878           Bohr
+# above item originally: LatticeConstant          1.000000000     Ang       
+%block BandLines
+ 1  1.000  1.000 1.000  L
+ 20 0.00   0.00   0.00  \Gamma
+ 25 2.00   0.000  0.00  X
+ 30 2.00   2.00   2.00  \Gamma
+%endblock BandLines
+#:block? BandLines              T
+#:defined? BandLines              T
+#:block? BandPoints              F
+#:defined? BandPoints              F
+BandLinesScale     pi/a     # default value
+LatticeConstant          1.889726878           Bohr
+# above item originally: LatticeConstant          1.000000000     Ang       
+%block BandLines
+ 1  1.000  1.000 1.000  L
+ 20 0.00   0.00   0.00  \Gamma
+ 25 2.00   0.000  0.00  X
+ 30 2.00   2.00   2.00  \Gamma
+%endblock BandLines
+LongOutput              T
+WriteWaveFunctions              T     # default value
+#:block-line-count? MetaForce (iirrr)   0
+#:block? TS.BufferAtomsLeft              F
+#:defined? TS.BufferAtomsLeft              F
+#:block? TS.BufferAtomsRight              F
+#:defined? TS.BufferAtomsRight              F
+#:list? TS.Atoms.Buffer              F
+TS.HS.Save              F     # default value
+TS.DE.Save              F     # default value
+TS.onlyS              F     # default value
+TS.S.Save              F     # default value
+Spin.Spiral              F     # default value
+TimeReversalSymmetryForKpoints              T     # default value
+#:list? TS.kgrid.MonkhorstPack                                                                                                                                                                                                                                                        F
+#:block? TS.kgrid.Cutoff                                                                                                                                                                                                                                                               F
+#:defined? TS.kgrid.Cutoff                                                                                                                                                                                                                                                               F
+#:block? TS.kgrid.File                                                                                                                                                                                                                                                                 F
+#:defined? TS.kgrid.File                                                                                                                                                                                                                                                                 F
+AtomicCoordinatesFormat     Ang                                                                             
+AtomCoorFormatOut     Ang                        # default value
+LatticeConstant          1.889726878           Bohr
+# above item originally: LatticeConstant          1.000000000     Ang       
+debug-folding              F     # default value
+Save.Overlap.Gradient              F     # default value
+Sonly              F     # default value
+DM.Init     atomic     # default value
+DM.Init.RandomStates         0     # default value
+Sonly              F     # default value
+Debug.DHSCF              F     # default value
+MeshSubDivisions         2     # default value
+#:list? Mesh.Sizes              F
+#:block? MeshSizes              F
+#:defined? MeshSizes              F
+XC.Use.BSC.CellXC              F     # default value
+DirectPhi              F     # default value
+SimulateDoping              F     # default value
+Slab.DipoleCorrection     none     # default value
+timing-split-scf-steps              F     # default value
+Read-H-from-file              F     # default value
+SingleExcitation              F     # default value
+OccupationFunction     FD     # default value
+OccupationFunction     FD     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value
+timing-split-scf-steps              F     # default value

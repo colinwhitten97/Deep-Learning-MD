@@ -1,0 +1,2360 @@
+Siesta Version  : master-post-4.1-266
+Architecture    : unknown
+Compiler version: GNU Fortran (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+Compiler flags  : gfortran -O2 -fPIC -ftree-vectorize
+PP flags        : -DFC_HAVE_ABORT -DSIESTA__DIAG_2STAGE -DSIESTA__MRRR
+Libraries       : libsiestaLAPACK.a libsiestaBLAS.a
+Directory       : /home/cwhitten/siesta/Deep-Learning-MD-Colin/Mixtures/Mixture2
+SERIAL version
+
+* Running in serial mode
+>> Start of run:  13-DEC-2020  10:31:54
+
+                           ***********************       
+                           *  WELCOME TO SIESTA  *       
+                           ***********************       
+
+reinit: Reading from standard input
+reinit: Dumped input in INPUT_TMP.36056
+************************** Dump of input data file ****************************
+NumberOfAtoms 463
+SpinPolarized yes
+#FixSpin .true.
+#TotalSpin
+NumberOfSpecies 4
+MD.TypeOfRun  nose
+MD.FinalTimeStep 10
+MD.LengthTimeStep 0.5  fs
+MD.InitialTemperature 300 K
+MD.TargetTemperature  300  K
+%block ChemicalSpeciesLabel
+1  6  C
+2  7  N
+3  1  H
+4  8  O
+%endblock ChemicalSpeciesLabel
+PAO.BasisSize szp
+ PAO.EnergyShift 0.02 Ry
+MeshCutoff          100 Ry
+MaxSCFIterations    100
+DM.NumberPulay       3
+DM.Tolerance         1e-3
+WriteDenchar	.true.
+%block ProjectedDensityOfStates
+-10.0 10.0 0.200 500 eV
+%endblock ProjectedDensityOfStates
+NetCharge 0.00
+%block BandLines
+1  1.000  1.000 1.000  L
+20 0.00   0.00   0.00  \Gamma
+25 2.00   0.000  0.00  X
+30 2.00   2.00   2.00  \Gamma
+%endblock BandLines
+LongOutput .true.
+WriteCoorXmol .true.
+LatticeConstant 1 Ang
+%block LatticeVectors
+  47.213764 0.0 0.0
+  0.0 48.016287 0.0
+  0.0 0.0 48.02536
+%endblock LatticeVectors
+#UseSaveData .true.
+%block kgrid_Monkhorst_Pack
+1 0 0 0.0
+ 0 1 0 0.0
+ 0 0 1 0.0
+%endblock kgrid_Monkhorst_Pack
+WriteMDXmol .true.
+AtomicCoordinatesFormat Ang
+%block AtomicCoordinatesAndAtomicSpecies
+32.473148  30.600147 30.280961  1
+32.278847  31.491202 29.870747  1
+32.526135  31.667647 28.918011  1
+32.967724  30.953042 28.375480  1
+33.215012  31.129493 27.422736  1
+33.656602  30.414889 26.880205  1
+33.903890  30.591334 25.927469  1
+34.345479  29.876730 25.384938  1
+34.592767  30.053181 24.432194  1
+35.034357  29.338576 23.889664  1
+35.281645  29.515021 22.936927  1
+35.723234  28.800417 22.394397  1
+35.970522  28.976868 21.441653  1
+36.412112  28.262263 20.899122  1
+36.659400  28.438708 19.946386  1
+37.100989  27.724104 19.403855  1
+37.348277  27.900555 18.451111  1
+37.789867  27.185950 17.908581  1
+38.037155  27.362395 16.955844  1
+38.478744  26.647791 16.413314  1
+38.726032  26.824242 15.460570  1
+39.167622  26.109637 14.918039  1
+6.256864  37.415423 38.366924  1
+5.224252  36.951990 37.376841  1
+5.605821  36.067797 36.364450  1
+4.649602  35.639142 35.464923  1
+3.356898  36.017993 35.503937  2
+2.977044  36.863529 36.476654  1
+1.641438  37.239272 36.534613  1
+1.159241  38.104672 37.518965  1
+2.032005  38.623956 38.463680  1
+3.379454  38.267297 38.425320  1
+3.873080  37.375375 37.443710  1
+7.229339  36.945691 38.183869  3
+5.954412  37.148692 39.384756  3
+6.394297  38.499116 38.295661  3
+6.626651  35.711718 36.275492  3
+4.904334  34.951230 34.663789  3
+0.953510  36.838688 35.793700  3
+0.104838  38.366777 37.541433  3
+1.667991  39.300876 39.232097  3
+4.042681  38.689327 39.175709  3
+32.434499  31.960182 14.614225  1
+32.935084  31.275503 13.330732  1
+32.084465  30.027547 13.072748  1
+32.876817  32.259597 12.144674  1
+33.653379  33.501707 12.245826  2
+34.978133  33.786659 12.334614  1
+35.316179  34.950875 12.098280  4
+36.032140  32.695067 12.604884  1
+37.104162  33.199274 13.610103  1
+36.465637  33.509941 14.970731  1
+38.243265  32.190837 13.825688  1
+36.619696  32.394600 11.300156  2
+36.169851  31.515548 10.355630  1
+36.561359  31.654549 9.199700  4
+35.127653  30.436781 10.735859  1
+35.509283  29.084363 10.069968  1
+36.857385  28.565162 10.581428  1
+34.445301  28.003087 10.298891  1
+33.856010  30.915591 10.194195  2
+32.910827  31.749161 10.688326  1
+32.084651  32.184119 9.876359  4
+32.484718  31.274657 15.467016  3
+31.392835  32.285638 14.510813  3
+33.040878  32.837777 14.859995  3
+33.946661  30.931500 13.533940  3
+31.048855  30.291116 12.834402  3
+32.073520  29.376817 13.954065  3
+32.486933  29.440504 12.242962  3
+31.844527  32.645745 12.205079  3
+33.145201  34.327617 11.941647  3
+35.578836  31.804834 13.014634  3
+37.556111  34.125238 13.231485  3
+36.054828  32.605560 15.432963  3
+35.657728  34.241438 14.877713  3
+37.207816  33.931822 15.657350  3
+37.863020  31.193562 14.071941  3
+38.891538  32.510084 14.651324  3
+38.875708  32.107702 12.936239  3
+37.170641  33.138042 10.878851  3
+35.049476  30.299322 11.809816  3
+35.597934  29.226732 8.984113  3
+36.822764  28.365739 11.657448  3
+37.663694  29.279647 10.391095  3
+37.126214  27.632117 10.073306  3
+34.257017  27.848795 11.366275  3
+34.769749  27.045759 9.874624  3
+33.498461  28.265069 9.816168  3
+33.776671  30.861599 9.182360  3
+35.436758  5.626354 2.701586  1
+35.321521  4.910664 3.827336  1
+34.383016  5.303242 4.960517  1
+33.007263  5.945544 4.791487  1
+33.013713  7.285760 4.251181  1
+33.900879  8.158130 5.069172  1
+33.970269  9.533262 4.284929  1
+34.514893  9.310623 2.555966  1
+33.634804  8.752709 1.415887  1
+32.139978  9.124395 1.163556  1
+31.033876  9.059892 2.263079  1
+30.857723  10.180291 3.337936  1
+31.962122  10.418233 4.305087  1
+33.555718  11.169661 3.511381  1
+35.373669  10.929487 3.959369  1
+36.721159  10.839219 3.160634  1
+37.931132  10.455065 4.040171  1
+36.268025  3.888708 4.021144  4
+36.007358  2.807642 4.939886  1
+35.370780  1.579037 4.207815  1
+36.174684  0.680298 3.257272  1
+37.260977  2.384695 5.757299  1
+37.837640  3.289555 6.762991  4
+37.176588  3.571459 7.936406  1
+35.969902  3.439584 8.079277  4
+38.127015  4.165521 9.010187  1
+38.381124  3.521889 10.415965  1
+37.269906  3.433036 11.491003  1
+37.732147  2.773323 12.823455  1
+36.657784  2.642086 13.935845  1
+35.409470  1.788132 13.682534  1
+34.433728  2.107998 12.507198  1
+33.522732  3.276825 12.062531  1
+33.439160  4.592128 11.715710  1
+34.247541  5.899985 11.718268  1
+34.595841  6.674495 10.384260  1
+35.278351  8.069739 10.645072  1
+35.603193  8.879214 9.375122  1
+36.365882  10.198923 9.636307  1
+36.768678  11.014397 8.393560  1
+37.816336  10.346074 7.504254  1
+37.415871  9.047125 6.830034  1
+34.840590  6.493311 2.515443  3
+36.179734  5.435273 1.938959  3
+34.978478  5.946907 5.617373  3
+34.091942  4.435821 5.526543  3
+32.572107  6.086754 5.790167  3
+32.320369  5.353151 4.191942  3
+31.985018  7.624939 4.207787  3
+33.308414  7.282116 3.220627  3
+34.954456  7.869052 5.087456  3
+33.532813  8.385691 6.085498  3
+34.405169  9.945210 5.351047  3
+33.594222  10.468677 4.993896  3
+35.480759  8.818335 2.520550  3
+34.749727  10.331197 1.990839  3
+33.723532  7.696451 1.535672  3
+34.195204  8.927553 0.459808  3
+31.839078  8.371079 0.418491  3
+32.050405  10.090634 0.648605  3
+31.028637  8.044138 2.664452  3
+30.066949  9.102477 1.743915  3
+30.000449  9.921669 3.989937  3
+30.780851  11.151484 2.902290  3
+31.980265  9.401728 4.746181  3
+31.787237  10.903381 5.268544  3
+33.384457  12.160037 3.018345  3
+33.088196  10.529113 2.619306  3
+35.697363  9.799058 4.278001  3
+35.575955  11.282124 4.981327  3
+36.769532  11.810298 2.738794  3
+36.838003  10.058815 2.390951  3
+38.121531  11.249149 4.752384  3
+38.808747  10.285011 3.413610  3
+37.813790  9.497771 4.551213  3
+35.281805  3.114250 5.681255  3
+34.487334  1.918747 3.655060  3
+35.009414  0.907639 4.996589  3
+36.699823  1.209108 2.458154  3
+35.474626  -0.013267 2.763386  3
+36.890059  0.048388 3.795781  3
+38.079220  2.169811 5.060713  3
+37.030059  1.452783 6.284161  3
+37.857157  5.220584 9.130840  3
+39.120547  4.176580 8.536488  3
+39.177273  4.129224 10.871303  3
+38.802830  2.521178 10.275516  3
+36.466712  2.844104 11.068580  3
+36.884111  4.428158 11.728329  3
+38.552218  3.374012 13.249925  3
+38.175258  1.786729 12.630515  3
+36.338502  3.629421 14.275179  3
+37.172475  2.189059 14.805762  3
+34.853704  1.679710 14.629529  3
+35.773561  0.755912 13.508345  3
+33.706210  1.277222 12.622153  3
+34.950287  1.799971 11.599299  3
+32.555160  2.794051 11.834794  3
+32.432329  4.839461 11.345812  3
+35.149414  5.782473 12.316777  3
+33.602520  6.604708 12.267460  3
+33.694345  6.847906 9.779721  3
+35.270258  6.059584 9.775893  3
+36.222833  7.893815 11.175378  3
+34.647810  8.699645 11.276194  3
+34.709378  9.096501 8.780659  3
+36.203749  8.194269 8.806075  3
+37.272518  10.009558 10.224168  3
+35.721143  10.841860 10.246626  3
+37.206086  11.970425 8.732926  3
+35.884440  11.300184 7.810761  3
+38.733795  10.177458 8.073577  3
+38.084685  11.068004 6.728188  3
+37.255502  8.200979 7.475937  3
+38.249066  8.674682 6.233099  3
+36.516156  9.175060 6.224967  3
+0.787457  40.003020 17.995413  1
+-0.036491  39.512201 17.712190  1
+0.038889  38.703906 17.128258  1
+0.938217  38.386430 16.827547  1
+1.013597  37.578136 16.243614  1
+1.912915  37.260659 15.942904  1
+1.988295  36.452364 15.358971  1
+2.887623  36.134889 15.058261  1
+2.963003  35.326594 14.474328  1
+3.862321  35.009118 14.173618  1
+3.937701  34.200823 13.589685  1
+4.837029  33.883347 13.288975  1
+4.912409  33.075053 12.705042  1
+5.811737  32.757577 12.404331  1
+5.887117  31.949282 11.820399  1
+6.786435  31.631806 11.519688  1
+6.861815  30.823511 10.935755  1
+7.761143  30.506036 10.635045  1
+7.836523  29.697741 10.051112  1
+8.735841  29.380264 9.750402  1
+8.811221  28.571970 9.166469  1
+9.710549  28.254494 8.865759  1
+9.785929  27.446199 8.281826  1
+10.685247  27.128723 7.981116  1
+10.760627  26.320428 7.397183  1
+11.659955  26.002953 7.096472  1
+11.735335  25.194658 6.512540  1
+12.634653  24.877181 6.211829  1
+12.710033  24.068887 5.627896  1
+13.609361  23.751411 5.327186  1
+13.684741  22.943116 4.743253  1
+14.584059  22.625640 4.442543  4
+10.534487  28.745312 9.148981  4
+11.433815  28.427837 8.848271  1
+11.509195  27.619542 8.264338  1
+12.408513  27.302065 7.963628  1
+12.483893  26.493771 7.379695  1
+13.383221  26.176295 7.078985  1
+13.458601  25.368000 6.495052  1
+14.357919  25.050524 6.194341  1
+14.433299  24.242229 5.610409  1
+15.332627  23.924754 5.309698  1
+15.408007  23.116459 4.725765  1
+16.307325  22.798982 4.425055  1
+16.382705  21.990688 3.841122  1
+17.282033  21.673212 3.540412  1
+17.357413  20.864917 2.956479  1
+18.256741  20.547442 2.655769  1
+18.332121  19.739147 2.071836  1
+19.231439  19.421671 1.771126  1
+19.306819  18.613376 1.187193  1
+20.206147  18.295900 0.886482  1
+20.281527  17.487606 0.302550  1
+21.180845  17.170129 0.001839  1
+12.257752  28.918655 9.131493  1
+13.157080  28.601179 8.830783  4
+12.182372  29.726949 9.715426  1
+13.006320  30.217768 9.998649  1
+13.905637  29.900292 9.697938  1
+13.981018  29.091997 9.114006  1
+14.880345  28.774522 8.813295  1
+14.955726  27.966227 8.229362  1
+15.855043  27.648750 7.928652  1
+15.930424  26.840456 7.344719  1
+16.829751  26.522980 7.044009  1
+16.905132  25.714685 6.460076  4
+28.754862  5.196689 33.934641  1
+29.551507  6.480714 34.090183  1
+30.909524  6.307258 34.801609  1
+31.734999  7.585904 34.959188  1
+31.227930  8.804907 34.461539  1
+31.943569  9.983418 34.677103  1
+31.607082  11.276833 34.337807  2
+30.750504  11.536518 33.881897  3
+32.554964  12.133022 34.826374  1
+32.525791  13.584404 34.834925  1
+31.747934  14.343526 33.991993  1
+31.728339  15.690271 34.003430  2
+32.473340  16.350720 34.916850  1
+32.449890  17.756141 34.930851  1
+31.739396  18.518971 33.810033  1
+30.631339  19.428672 34.360082  1
+32.732614  19.294521 32.905131  1
+33.770357  18.427293 32.165151  1
+33.175636  17.425134 31.184233  1
+33.125820  18.461067 35.947363  1
+33.873339  17.788571 36.904442  1
+33.961269  16.400244 36.850024  1
+33.275337  15.662810 35.857288  1
+33.352990  14.249550 35.766359  1
+34.238165  13.409702 36.691892  1
+34.681788  12.047886 36.103248  1
+33.532490  11.379697 35.438013  1
+33.162309  10.016142 35.337999  1
+33.712035  8.803295 35.776216  1
+32.994368  7.593946 35.605207  1
+33.640039  6.352553 36.178409  1
+33.252969  6.117684 37.646855  1
+33.874921  4.843797 38.264564  1
+33.414074  3.599207 37.501787  1
+35.409932  4.960742 38.348680  1
+36.100038  3.755522 38.969727  1
+27.759496  5.431766 33.538767  3
+28.623597  4.686640 34.892494  3
+29.238522  4.513712 33.230325  3
+28.933456  7.190663 34.654104  3
+29.704529  6.901542 33.088550  3
+31.503613  5.572045 34.246468  3
+30.716914  5.899672 35.802079  3
+30.281019  8.859571 33.942291  3
+31.101851  13.895109 33.242966  3
+31.208832  17.814491 33.160816  3
+31.016176  20.245643 34.978364  3
+29.928174  18.849508 34.970708  3
+30.059140  19.873118 33.537853  3
+33.279304  20.037315 33.500994  3
+32.165777  19.862566 32.156461  3
+34.401861  17.895573 32.885322  3
+34.442101  19.090361 31.604370  3
+32.448825  16.764885 31.659630  3
+33.965671  16.789902 30.768709  3
+32.681278  17.932660 30.350165  3
+33.079291  19.547604 35.990151  3
+34.395450  18.334284 37.680047  3
+34.557145  15.906357 37.608767  3
+33.676177  13.239739 37.619723  3
+35.154488  13.952804 36.947367  3
+35.108278  11.423762 36.894640  3
+35.467640  12.216168 35.355109  3
+34.677978  8.806022 36.275067  3
+34.728584  6.463506 36.095282  3
+33.392247  5.494929 35.549045  3
+32.160700  6.054085 37.732391  3
+33.547531  6.986905 38.251149  3
+33.491031  4.760709 39.291218  3
+33.778313  3.599868 36.470500  3
+32.319958  3.549519 37.476685  3
+33.771198  2.680073 37.973056  3
+35.664661  5.847356 38.943327  3
+35.839123  5.113271 37.353649  3
+35.686894  3.523675 39.955476  3
+37.169266  3.961043 39.086114  3
+36.008201  2.871291 38.331959  3
+18.506798  13.066206 34.498419  1
+19.711103  12.163445 34.333134  1
+20.933172  13.000641 33.900692  1
+21.178760  13.935746 35.126231  1
+20.061390  15.000664 35.220508  1
+18.676616  14.469702 34.839306  1
+17.627286  15.422146 34.676310  1
+16.445635  14.944490 34.115340  1
+16.350776  13.541105 33.929603  1
+17.268240  12.531502 34.131984  1
+15.115201  13.155408 33.472407  1
+14.711837  11.862910 33.336176  1
+15.647156  10.823515 33.463597  1
+16.926002  11.220667 33.869816  2
+15.342289  15.876139 33.792568  1
+14.086020  15.370153 33.294570  1
+14.072934  14.031395 33.176510  1
+17.713094  16.731356 34.961423  2
+16.635279  17.558944 34.709445  1
+15.384528  17.208175 34.119373  1
+14.135637  18.031993 33.975475  1
+12.875247  17.363513 33.727566  1
+12.844311  16.030393 33.370569  1
+11.676492  15.190660 33.454741  1
+11.658165  13.834045 33.103446  1
+12.922178  13.281222 33.060492  1
+13.998529  19.410863 34.172853  1
+12.802913  20.077142 34.268300  2
+11.653155  19.357041 34.215133  1
+11.644317  17.993443 34.000279  1
+10.359117  17.187611 34.092166  1
+10.577854  15.700998 34.377932  1
+20.689174  13.702633 32.516846  1
+20.406881  12.724797 31.352700  1
+20.085215  13.406642 30.013566  1
+18.846132  14.290019 30.074390  1
+22.588713  14.539622 35.263088  1
+23.688465  13.489458 35.422503  1
+15.413597  9.339901 33.257351  1
+14.466972  8.909631 32.103904  1
+14.363916  7.402065 31.969677  1
+13.036214  9.386082 32.230994  1
+10.841650  15.344609 35.900205  1
+12.014976  15.965830 36.695316  1
+13.393407  15.498408 36.317101  1
+10.380643  20.165597 34.292335  1
+9.852374  20.357317 35.722069  1
+8.542431  21.180309 35.772245  1
+7.419024  20.484216 34.996353  1
+8.075653  21.497709 37.216256  1
+7.669847  20.272655 38.044186  1
+7.190639  20.637977 39.441690  1
+13.350592  11.992496 33.145598  2
+15.178566  20.340236 34.216818  1
+19.522198  11.392337 33.580678  3
+19.903821  11.632445 35.272381  3
+21.779134  12.317776 33.777788  3
+21.071235  13.313211 36.028565  3
+20.308799  15.836917 34.553837  3
+20.021775  15.395665 36.243593  3
+16.820329  18.556980 35.084393  3
+10.771839  13.213127 33.160670  3
+9.701837  17.574334 34.878004  3
+9.826982  17.292785 33.137954  3
+9.638618  15.179256 34.121298  3
+21.545020  14.334189 32.256301  3
+19.835228  14.380676 32.583530  3
+19.556769  12.075690 31.589255  3
+21.275898  12.072062 31.213566  3
+19.916461  12.629717 29.255352  3
+20.943231  13.995766 29.672688  3
+17.980745  13.727185 30.439578  3
+18.602782  14.682297 29.081820  3
+19.003943  15.148191 30.733019  3
+22.612697  15.163416 36.168082  3
+22.821190  15.195902 34.419775  3
+23.553009  12.912918 36.345066  3
+24.669603  13.972792 35.478940  3
+23.717751  12.789098 34.584568  3
+15.094374  8.905984 34.212228  3
+16.397452  8.895551 33.038254  3
+14.865070  9.327073 31.170854  3
+13.996652  6.956253 32.900083  3
+15.324948  6.964861 31.702814  3
+13.644218  7.156622 31.177962  3
+12.702274  9.375410 33.279057  3
+12.284939  8.863926 31.637252  3
+13.028695  10.356913 31.746493  3
+10.911752  14.252450 36.003046  3
+9.938138  15.634262 36.454500  3
+11.917253  15.716856 37.753495  3
+11.970436  17.057217 36.613907  3
+13.482428  14.441383 36.058189  3
+14.215602  15.840580 36.947102  3
+13.601224  16.065563 35.458100  3
+9.628640  19.691925 33.650328  3
+10.585292  21.138333 33.833439  3
+10.623909  20.854279 36.323033  3
+9.686007  19.379323 36.186945  3
+8.736334  22.146231 35.285154  3
+7.337370  19.430515 35.283624  3
+7.597675  20.525189 33.918104  3
+6.453616  20.965802 35.182132  3
+7.210942  22.173486 37.153845  3
+8.860671  22.058001 37.738810  3
+8.510104  19.576823 38.128499  3
+6.850501  19.741785 37.548621  3
+7.977853  21.122565 40.027199  3
+6.882679  19.730742 39.973005  3
+6.326057  21.307618 39.396502  3
+12.651909  11.279193 33.207514  3
+14.872098  21.349588 33.941191  3
+15.936219  20.030312 33.488760  3
+15.604074  20.372513 35.223432  3
+ %endblock AtomicCoordinatesAndAtomicSpecies
+************************** End of input data file *****************************
+
+reinit: -----------------------------------------------------------------------
+reinit: System Name: 
+reinit: -----------------------------------------------------------------------
+reinit: System Label: siesta
+reinit: -----------------------------------------------------------------------
+
+initatom: Reading input for the pseudopotentials and atomic orbitals ----------
+Species number:   1 Atomic number:    6 Label: C
+Species number:   2 Atomic number:    7 Label: N
+Species number:   3 Atomic number:    1 Label: H
+Species number:   4 Atomic number:    8 Label: O
+
+Ground state valence configuration:   2s02  2p02
+Reading pseudopotential information in formatted form from C.psf
+
+Valence configuration for pseudopotential generation:
+2s( 2.00) rc: 1.54
+2p( 2.00) rc: 1.54
+3d( 0.00) rc: 1.54
+4f( 0.00) rc: 1.54
+Ground state valence configuration:   2s02  2p03
+Reading pseudopotential information in formatted form from N.psf
+
+Valence configuration for pseudopotential generation:
+2s( 2.00) rc: 1.48
+2p( 3.00) rc: 1.48
+3d( 0.00) rc: 1.48
+4f( 0.00) rc: 1.48
+Ground state valence configuration:   1s01
+Reading pseudopotential information in formatted form from H.psf
+
+Valence configuration for pseudopotential generation:
+1s( 1.00) rc: 1.31
+2p( 0.00) rc: 1.31
+3d( 0.00) rc: 0.37
+4f( 0.00) rc: 1.31
+Ground state valence configuration:   2s02  2p04
+Reading pseudopotential information in formatted form from O.psf
+
+Valence configuration for pseudopotential generation:
+2s( 2.00) rc: 1.47
+2p( 4.00) rc: 1.47
+3d( 0.00) rc: 1.47
+4f( 0.00) rc: 1.47
+For C, standard SIESTA heuristics set lmxkb to 3
+ (one more than the basis l, including polarization orbitals).
+Use PS.lmax or PS.KBprojectors blocks to override.
+For N, standard SIESTA heuristics set lmxkb to 3
+ (one more than the basis l, including polarization orbitals).
+Use PS.lmax or PS.KBprojectors blocks to override.
+For H, standard SIESTA heuristics set lmxkb to 2
+ (one more than the basis l, including polarization orbitals).
+Use PS.lmax or PS.KBprojectors blocks to override.
+For O, standard SIESTA heuristics set lmxkb to 3
+ (one more than the basis l, including polarization orbitals).
+Use PS.lmax or PS.KBprojectors blocks to override.
+
+<basis_specs>
+===============================================================================
+C                    Z=   6    Mass=  12.010        Charge= 0.17977+309
+Lmxo=1 Lmxkb= 3    BasisType=split      Semic=F
+L=0  Nsemic=0  Cnfigmx=2
+          i=1  nzeta=1  polorb=0  (2s)
+            splnorm:   0.15000    
+               vcte:    0.0000    
+               rinn:    0.0000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000    
+            lambdas:    1.0000    
+L=1  Nsemic=0  Cnfigmx=2
+          i=1  nzeta=1  polorb=1  (2p)
+            splnorm:   0.15000    
+               vcte:    0.0000    
+               rinn:    0.0000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000    
+            lambdas:    1.0000    
+-------------------------------------------------------------------------------
+L=0  Nkbl=1  erefs: 0.17977+309
+L=1  Nkbl=1  erefs: 0.17977+309
+L=2  Nkbl=1  erefs: 0.17977+309
+L=3  Nkbl=1  erefs: 0.17977+309
+===============================================================================
+</basis_specs>
+
+atom: Called for C                     (Z =   6)
+
+read_vps: Pseudopotential generation method:
+read_vps: ATM3      Troullier-Martins                       
+Valence charge for ps generation:    4.00000
+
+read_vps: Pseudopotential includes a core correction:
+read_vps: Pseudo-core for xc-correction
+
+xc_check: Exchange-correlation functional:
+xc_check: Ceperley-Alder
+xc_check: WARNING: Pseudopotential generated with GGA PBE functional
+V l=0 = -2*Zval/r beyond r=  1.5227
+V l=1 = -2*Zval/r beyond r=  1.5227
+V l=2 = -2*Zval/r beyond r=  1.5227
+V l=3 = -2*Zval/r beyond r=  1.5038
+All V_l potentials equal beyond r=  1.5227
+This should be close to max(r_c) in ps generation
+All pots = -2*Zval/r beyond r=  1.5227
+
+VLOCAL1: 99.0% of the norm of Vloc inside     18.722 Ry
+VLOCAL1: 99.9% of the norm of Vloc inside     42.668 Ry
+atom: Maximum radius for 4*pi*r*r*local-pseudopot. charge    1.83678
+atom: Maximum radius for r*vlocal+2*Zval:    1.58088
+
+KBgen: Kleinman-Bylander projectors: 
+GHOST: No ghost state for L =  0
+   l= 0   rc=  1.704034   el= -0.998584   Ekb=  5.327875   kbcos=  0.314897
+GHOST: No ghost state for L =  1
+   l= 1   rc=  1.704034   el= -0.383998   Ekb= -3.785479   kbcos= -0.363289
+GHOST: No ghost state for L =  2
+   l= 2   rc=  1.791422   el=  0.002326   Ekb= -0.971263   kbcos= -0.009325
+GHOST: No ghost state for L =  3
+   l= 3   rc=  1.859892   el=  0.003420   Ekb= -0.399672   kbcos= -0.001232
+
+KBgen: Total number of  Kleinman-Bylander projectors:   16
+atom: -------------------------------------------------------------------------
+
+atom: SANKEY-TYPE ORBITALS:
+
+SPLIT: Orbitals with angular momentum L= 0
+
+SPLIT: Basis orbitals for state 2s
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.020000 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    4.191849
+                 energy =   -0.980459
+                kinetic =    0.881507
+    potential(screened) =   -1.861966
+       potential(ionic) =   -5.449625
+
+SPLIT: Orbitals with angular momentum L= 1
+
+SPLIT: Basis orbitals for state 2p
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.020000 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    4.993604
+                 energy =   -0.366127
+                kinetic =    2.463190
+    potential(screened) =   -2.829316
+       potential(ionic) =   -6.291180
+
+POLgen: Perturbative polarization orbital with L=  2
+
+POLgen: Polarization orbital for state 2p
+
+   izeta = 1
+                     rc =    4.993604
+                 energy =    1.232619
+                kinetic =    2.527283
+    potential(screened) =   -1.294664
+       potential(ionic) =   -4.203101
+atom: Total number of Sankey-type orbitals:  9
+
+atm_pop: Valence configuration (for local Pseudopot. screening):
+ 2s( 2.00)                                                            
+ 2p( 2.00)                                                            
+Vna: chval, zval:    4.00000   4.00000
+
+Vna:  Cut-off radius for the neutral-atom potential:   4.993604
+comcore: Pseudo-core radius Rcore=  1.791422
+
+atom: _________________________________________________________________________
+
+<basis_specs>
+===============================================================================
+N                    Z=   7    Mass=  14.010        Charge= 0.17977+309
+Lmxo=1 Lmxkb= 3    BasisType=split      Semic=F
+L=0  Nsemic=0  Cnfigmx=2
+          i=1  nzeta=1  polorb=0  (2s)
+            splnorm:   0.15000    
+               vcte:    0.0000    
+               rinn:    0.0000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000    
+            lambdas:    1.0000    
+L=1  Nsemic=0  Cnfigmx=2
+          i=1  nzeta=1  polorb=1  (2p)
+            splnorm:   0.15000    
+               vcte:    0.0000    
+               rinn:    0.0000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000    
+            lambdas:    1.0000    
+-------------------------------------------------------------------------------
+L=0  Nkbl=1  erefs: 0.17977+309
+L=1  Nkbl=1  erefs: 0.17977+309
+L=2  Nkbl=1  erefs: 0.17977+309
+L=3  Nkbl=1  erefs: 0.17977+309
+===============================================================================
+</basis_specs>
+
+atom: Called for N                     (Z =   7)
+
+read_vps: Pseudopotential generation method:
+read_vps: ATM3      Troullier-Martins                       
+Valence charge for ps generation:    5.00000
+
+read_vps: Pseudopotential includes a core correction:
+read_vps: Pseudo-core for xc-correction
+
+xc_check: Exchange-correlation functional:
+xc_check: Ceperley-Alder
+xc_check: WARNING: Pseudopotential generated with GGA PBE functional
+V l=0 = -2*Zval/r beyond r=  1.4606
+V l=1 = -2*Zval/r beyond r=  1.4606
+V l=2 = -2*Zval/r beyond r=  1.4606
+V l=3 = -2*Zval/r beyond r=  1.4606
+All V_l potentials equal beyond r=  1.4606
+This should be close to max(r_c) in ps generation
+All pots = -2*Zval/r beyond r=  1.4606
+
+VLOCAL1: 99.0% of the norm of Vloc inside     20.347 Ry
+VLOCAL1: 99.9% of the norm of Vloc inside     46.372 Ry
+atom: Maximum radius for 4*pi*r*r*local-pseudopot. charge    1.76189
+atom: Maximum radius for r*vlocal+2*Zval:    1.53550
+
+KBgen: Kleinman-Bylander projectors: 
+GHOST: No ghost state for L =  0
+   l= 0   rc=  1.634559   el= -1.348537   Ekb=  5.297520   kbcos=  0.333054
+GHOST: No ghost state for L =  1
+   l= 1   rc=  1.614250   el= -0.512415   Ekb= -5.262296   kbcos= -0.428933
+GHOST: No ghost state for L =  2
+   l= 2   rc=  1.718383   el=  0.002346   Ekb= -1.271998   kbcos= -0.007619
+GHOST: No ghost state for L =  3
+   l= 3   rc=  1.761893   el=  0.003449   Ekb= -0.494630   kbcos= -0.001017
+
+KBgen: Total number of  Kleinman-Bylander projectors:   16
+atom: -------------------------------------------------------------------------
+
+atom: SANKEY-TYPE ORBITALS:
+
+SPLIT: Orbitals with angular momentum L= 0
+
+SPLIT: Basis orbitals for state 2s
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.020000 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    3.683980
+                 energy =   -1.330014
+                kinetic =    1.203086
+    potential(screened) =   -2.533100
+       potential(ionic) =   -8.093205
+
+SPLIT: Orbitals with angular momentum L= 1
+
+SPLIT: Basis orbitals for state 2p
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.020000 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    4.388595
+                 energy =   -0.493943
+                kinetic =    3.501321
+    potential(screened) =   -3.995264
+       potential(ionic) =   -9.374806
+
+POLgen: Perturbative polarization orbital with L=  2
+
+POLgen: Polarization orbital for state 2p
+
+   izeta = 1
+                     rc =    4.388595
+                 energy =    1.759924
+                kinetic =    3.542120
+    potential(screened) =   -1.782196
+       potential(ionic) =   -6.226799
+atom: Total number of Sankey-type orbitals:  9
+
+atm_pop: Valence configuration (for local Pseudopot. screening):
+ 2s( 2.00)                                                            
+ 2p( 3.00)                                                            
+Vna: chval, zval:    5.00000   5.00000
+
+Vna:  Cut-off radius for the neutral-atom potential:   4.388595
+comcore: Pseudo-core radius Rcore=  1.554824
+
+atom: _________________________________________________________________________
+
+<basis_specs>
+===============================================================================
+H                    Z=   1    Mass=  1.0100        Charge= 0.17977+309
+Lmxo=0 Lmxkb= 2    BasisType=split      Semic=F
+L=0  Nsemic=0  Cnfigmx=1
+          i=1  nzeta=1  polorb=1  (1s)
+            splnorm:   0.15000    
+               vcte:    0.0000    
+               rinn:    0.0000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000    
+            lambdas:    1.0000    
+-------------------------------------------------------------------------------
+L=0  Nkbl=1  erefs: 0.17977+309
+L=1  Nkbl=1  erefs: 0.17977+309
+L=2  Nkbl=1  erefs: 0.17977+309
+===============================================================================
+</basis_specs>
+
+atom: Called for H                     (Z =   1)
+
+read_vps: Pseudopotential generation method:
+read_vps: ATM3      Troullier-Martins                       
+Valence charge for ps generation:    1.00000
+
+xc_check: Exchange-correlation functional:
+xc_check: Ceperley-Alder
+xc_check: WARNING: Pseudopotential generated with GGA PBE functional
+V l=0 = -2*Zval/r beyond r=  1.2977
+V l=1 = -2*Zval/r beyond r=  1.2815
+V l=2 = -2*Zval/r beyond r=  1.2656
+All V_l potentials equal beyond r=  1.2977
+This should be close to max(r_c) in ps generation
+All pots = -2*Zval/r beyond r=  1.2977
+
+VLOCAL1: 99.0% of the norm of Vloc inside     25.776 Ry
+VLOCAL1: 99.9% of the norm of Vloc inside     58.745 Ry
+atom: Maximum radius for 4*pi*r*r*local-pseudopot. charge    1.52711
+atom: Maximum radius for r*vlocal+2*Zval:    1.28155
+
+KBgen: Kleinman-Bylander projectors: 
+GHOST: No ghost state for L =  0
+   l= 0   rc=  1.434438   el= -0.456815   Ekb= -1.960338   kbcos= -0.349997
+GHOST: No ghost state for L =  1
+   l= 1   rc=  1.508111   el=  0.001431   Ekb= -0.423993   kbcos= -0.025386
+GHOST: No ghost state for L =  2
+   l= 2   rc=  1.546352   el=  0.002365   Ekb= -0.376562   kbcos= -0.002012
+
+KBgen: Total number of  Kleinman-Bylander projectors:    9
+atom: -------------------------------------------------------------------------
+
+atom: SANKEY-TYPE ORBITALS:
+
+SPLIT: Orbitals with angular momentum L= 0
+
+SPLIT: Basis orbitals for state 1s
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.020000 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    4.828263
+                 energy =   -0.438372
+                kinetic =    0.921576
+    potential(screened) =   -1.359947
+       potential(ionic) =   -1.906664
+
+POLgen: Perturbative polarization orbital with L=  1
+
+POLgen: Polarization orbital for state 1s
+
+   izeta = 1
+                     rc =    4.828263
+                 energy =    0.711580
+                kinetic =    1.391494
+    potential(screened) =   -0.679914
+       potential(ionic) =   -1.168115
+atom: Total number of Sankey-type orbitals:  4
+
+atm_pop: Valence configuration (for local Pseudopot. screening):
+ 1s( 1.00)                                                            
+Vna: chval, zval:    1.00000   1.00000
+
+Vna:  Cut-off radius for the neutral-atom potential:   4.828263
+
+atom: _________________________________________________________________________
+
+<basis_specs>
+===============================================================================
+O                    Z=   8    Mass=  16.000        Charge= 0.17977+309
+Lmxo=1 Lmxkb= 3    BasisType=split      Semic=F
+L=0  Nsemic=0  Cnfigmx=2
+          i=1  nzeta=1  polorb=0  (2s)
+            splnorm:   0.15000    
+               vcte:    0.0000    
+               rinn:    0.0000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000    
+            lambdas:    1.0000    
+L=1  Nsemic=0  Cnfigmx=2
+          i=1  nzeta=1  polorb=1  (2p)
+            splnorm:   0.15000    
+               vcte:    0.0000    
+               rinn:    0.0000    
+               qcoe:    0.0000    
+               qyuk:    0.0000    
+               qwid:   0.10000E-01
+                rcs:    0.0000    
+            lambdas:    1.0000    
+-------------------------------------------------------------------------------
+L=0  Nkbl=1  erefs: 0.17977+309
+L=1  Nkbl=1  erefs: 0.17977+309
+L=2  Nkbl=1  erefs: 0.17977+309
+L=3  Nkbl=1  erefs: 0.17977+309
+===============================================================================
+</basis_specs>
+
+atom: Called for O                     (Z =   8)
+
+read_vps: Pseudopotential generation method:
+read_vps: ATM3      Troullier-Martins                       
+Valence charge for ps generation:    6.00000
+
+read_vps: Pseudopotential includes a core correction:
+read_vps: Pseudo-core for xc-correction
+
+xc_check: Exchange-correlation functional:
+xc_check: Ceperley-Alder
+xc_check: WARNING: Pseudopotential generated with GGA PBE functional
+V l=0 = -2*Zval/r beyond r=  1.4482
+V l=1 = -2*Zval/r beyond r=  1.4482
+V l=2 = -2*Zval/r beyond r=  1.4482
+V l=3 = -2*Zval/r beyond r=  1.4482
+All V_l potentials equal beyond r=  1.4482
+This should be close to max(r_c) in ps generation
+All pots = -2*Zval/r beyond r=  1.4482
+
+VLOCAL1: 99.0% of the norm of Vloc inside     20.696 Ry
+VLOCAL1: 99.9% of the norm of Vloc inside     47.167 Ry
+atom: Maximum radius for 4*pi*r*r*local-pseudopot. charge    1.74697
+atom: Maximum radius for r*vlocal+2*Zval:    1.52250
+
+KBgen: Kleinman-Bylander projectors: 
+GHOST: No ghost state for L =  0
+   l= 0   rc=  1.620715   el= -1.738829   Ekb=  4.895054   kbcos=  0.290645
+GHOST: No ghost state for L =  1
+   l= 1   rc=  1.600578   el= -0.650915   Ekb= -6.916539   kbcos= -0.494696
+GHOST: No ghost state for L =  2
+   l= 2   rc=  1.703827   el=  0.002386   Ekb= -1.538961   kbcos= -0.006789
+GHOST: No ghost state for L =  3
+   l= 3   rc=  1.746967   el=  0.003508   Ekb= -0.568530   kbcos= -0.000966
+
+KBgen: Total number of  Kleinman-Bylander projectors:   16
+atom: -------------------------------------------------------------------------
+
+atom: SANKEY-TYPE ORBITALS:
+
+SPLIT: Orbitals with angular momentum L= 0
+
+SPLIT: Basis orbitals for state 2s
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.020000 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    3.305093
+                 energy =   -1.720120
+                kinetic =    1.583509
+    potential(screened) =   -3.303629
+       potential(ionic) =  -11.248859
+
+SPLIT: Orbitals with angular momentum L= 1
+
+SPLIT: Basis orbitals for state 2p
+
+SPLIT: PAO cut-off radius determined from an
+SPLIT: energy shift=  0.020000 Ry
+
+   izeta = 1
+                 lambda =    1.000000
+                     rc =    3.937239
+                 energy =   -0.631844
+                kinetic =    4.616405
+    potential(screened) =   -5.248250
+       potential(ionic) =  -12.927368
+
+POLgen: Perturbative polarization orbital with L=  2
+
+POLgen: Polarization orbital for state 2p
+
+   izeta = 1
+                     rc =    3.937239
+                 energy =    2.368129
+                kinetic =    4.725445
+    potential(screened) =   -2.357315
+       potential(ionic) =   -8.649185
+atom: Total number of Sankey-type orbitals:  9
+
+atm_pop: Valence configuration (for local Pseudopot. screening):
+ 2s( 2.00)                                                            
+ 2p( 4.00)                                                            
+Vna: chval, zval:    6.00000   6.00000
+
+Vna:  Cut-off radius for the neutral-atom potential:   3.937239
+comcore: Pseudo-core radius Rcore=  1.377587
+
+atom: _________________________________________________________________________
+
+prinput: Basis input ----------------------------------------------------------
+
+PAO.BasisType split     
+
+%block ChemicalSpeciesLabel
+    1    6 C                       # Species index, atomic number, species label
+    2    7 N                       # Species index, atomic number, species label
+    3    1 H                       # Species index, atomic number, species label
+    4    8 O                       # Species index, atomic number, species label
+%endblock ChemicalSpeciesLabel
+
+%block PAO.Basis                 # Define Basis set
+C                     2                    # Species label, number of l-shells
+ n=2   0   1                         # n, l, Nzeta 
+   4.192   
+   1.000   
+ n=2   1   1 P   1                   # n, l, Nzeta, Polarization, NzetaPol
+   4.994   
+   1.000   
+N                     2                    # Species label, number of l-shells
+ n=2   0   1                         # n, l, Nzeta 
+   3.684   
+   1.000   
+ n=2   1   1 P   1                   # n, l, Nzeta, Polarization, NzetaPol
+   4.389   
+   1.000   
+H                     1                    # Species label, number of l-shells
+ n=1   0   1 P   1                   # n, l, Nzeta, Polarization, NzetaPol
+   4.828   
+   1.000   
+O                     2                    # Species label, number of l-shells
+ n=2   0   1                         # n, l, Nzeta 
+   3.305   
+   1.000   
+ n=2   1   1 P   1                   # n, l, Nzeta, Polarization, NzetaPol
+   3.937   
+   1.000   
+%endblock PAO.Basis
+
+prinput: ----------------------------------------------------------------------
+
+coor:   Atomic-coordinates input format  =     Cartesian coordinates
+coor:                                          (in Angstroms)
+
+siesta: Atomic coordinates (Bohr) and species
+siesta:     61.36538  57.82592  57.22275  1        1
+siesta:     60.99820  59.50977  56.44755  1        2
+siesta:     61.46551  59.84320  54.64714  1        3
+siesta:     62.29999  58.49280  53.62191  1        4
+siesta:     62.76730  58.82624  51.82148  1        5
+siesta:     63.60179  57.47583  50.79625  1        6
+siesta:     64.06909  57.80927  48.99584  1        7
+siesta:     64.90357  56.45886  47.97060  1        8
+siesta:     65.37088  56.79230  46.17017  1        9
+siesta:     66.20537  55.44190  45.14494  1       10
+siesta:     66.67267  55.77533  43.34453  1       11
+siesta:     67.50716  54.42492  42.31929  1       12
+siesta:     67.97446  54.75837  40.51887  1       13
+siesta:     68.80895  53.40796  39.49363  1       14
+siesta:     69.27625  53.74139  37.69322  1       15
+siesta:     70.11074  52.39098  36.66799  1       16
+siesta:     70.57804  52.72443  34.86756  1       17
+siesta:     71.41253  51.37402  33.84233  1       18
+siesta:     71.87983  51.70745  32.04191  1       19
+siesta:     72.71432  50.35705  31.01668  1       20
+siesta:     73.18162  50.69049  29.21625  1       21
+siesta:     74.01611  49.34008  28.19102  1       22
+siesta:     11.82376  70.70493  72.50301  1       23
+siesta:      9.87241  69.82917  70.63202  1       24
+siesta:     10.59347  68.15829  68.71888  1       25
+siesta:      8.78648  67.34824  67.01902  1       26
+siesta:      6.34362  68.06417  67.09274  2       27
+siesta:      5.62580  69.66200  68.93091  1       28
+siesta:      3.10187  70.37205  69.04044  1       29
+siesta:      2.19065  72.00742  70.90060  1       30
+siesta:      3.83993  72.98873  72.68585  1       31
+siesta:      6.38625  72.31474  72.61336  1       32
+siesta:      7.31906  70.62925  70.75839  1       33
+siesta:     13.66148  69.81727  72.15708  3       34
+siesta:     11.25221  70.20088  74.42643  3       35
+siesta:     12.08347  72.75281  72.36834  3       36
+siesta:     12.52256  67.48539  68.55077  3       37
+siesta:      9.26785  66.04828  65.50509  3       38
+siesta:      1.80187  69.61506  67.64032  3       39
+siesta:      0.19812  72.50273  70.94305  3       40
+siesta:      3.15205  74.26792  74.13795  3       41
+siesta:      7.63956  73.11226  74.03139  3       42
+siesta:     61.29234  60.39601  27.61689  1       43
+siesta:     62.23831  59.10216  25.19144  1       44
+siesta:     60.63088  56.74386  24.70392  1       45
+siesta:     62.12820  60.96183  22.95012  1       46
+siesta:     63.59569  63.30908  23.14127  2       47
+siesta:     66.09912  63.84756  23.30905  1       48
+siesta:     66.73793  66.04761  22.86244  4       49
+siesta:     68.09090  61.78475  23.81979  1       50
+siesta:     70.11673  62.73756  25.71938  1       51
+siesta:     68.91009  63.32464  28.29059  1       52
+siesta:     72.26933  60.83189  26.12677  1       53
+siesta:     69.20122  61.21695  21.35421  2       54
+siesta:     68.35114  59.55578  19.56931  1       55
+siesta:     69.09098  59.81845  17.38492  4       56
+siesta:     66.38167  57.51720  20.28784  1       57
+siesta:     67.10285  54.96150  19.02949  1       58
+siesta:     69.65039  53.98035  19.99601  1       59
+siesta:     65.09221  52.91819  19.46209  1       60
+siesta:     63.97861  58.42202  19.26424  2       61
+siesta:     62.19247  59.99724  20.19802  1       62
+siesta:     60.63123  60.81919  18.66362  4       63
+siesta:     61.38724  59.10056  29.22844  3       64
+siesta:     59.32388  61.01104  27.42147  3       65
+siesta:     62.43824  62.05443  28.08133  3       66
+siesta:     64.14992  58.45209  25.57545  3       67
+siesta:     58.67386  57.24194  24.25351  3       68
+siesta:     60.61019  55.51416  26.36937  3       69
+siesta:     61.39143  55.63451  23.13585  3       70
+siesta:     60.17746  61.69154  23.06427  3       71
+siesta:     62.63538  64.86982  22.56645  3       72
+siesta:     67.23428  60.10245  24.59410  3       73
+siesta:     70.97079  64.48738  25.00389  3       74
+siesta:     68.13378  61.61560  29.16408  3       75
+siesta:     67.38337  64.70697  28.11481  3       76
+siesta:     70.31261  64.12188  29.58812  3       77
+siesta:     71.55077  58.94731  26.59213  3       78
+siesta:     73.49438  61.43518  27.68700  3       79
+siesta:     73.46447  60.67479  24.44596  3       80
+siesta:     70.24236  62.62185  20.55806  3       81
+siesta:     66.23394  57.25744  22.31733  3       82
+siesta:     67.27037  55.23054  16.97752  3       83
+siesta:     69.58497  53.60350  22.02939  3       84
+siesta:     71.17409  55.33054  19.63633  3       85
+siesta:     70.15840  52.21715  19.03580  3       86
+siesta:     64.73641  52.62662  21.47916  3       87
+siesta:     65.70533  51.10910  18.66034  3       88
+siesta:     63.30294  53.41326  18.54988  3       89
+siesta:     63.82868  58.31999  17.35215  3       90
+siesta:     66.96579  10.63227   5.10526  1       91
+siesta:     66.74803   9.27981   7.23262  1       92
+siesta:     64.97451  10.02168   9.37402  1       93
+siesta:     62.37471  11.23545   9.05460  1       94
+siesta:     62.38690  13.76810   8.03357  1       95
+siesta:     64.06340  15.41664   9.57935  1       96
+siesta:     64.19453  18.01526   8.09735  1       97
+siesta:     65.22372  17.59453   4.83008  1       98
+siesta:     63.56059  16.54023   2.67564  1       99
+siesta:     60.73578  17.24261   2.19880  1      100
+siesta:     58.64555  17.12072   4.27660  1      101
+siesta:     58.31267  19.23797   6.30779  1      102
+siesta:     60.39968  19.68761   8.13544  1      103
+siesta:     63.41114  21.10761   6.63555  1      104
+siesta:     66.84657  20.65375   7.48213  1      105
+siesta:     69.39296  20.48316   5.97274  1      106
+siesta:     71.67948  19.75722   7.63482  1      107
+siesta:     68.53666   7.34860   7.59886  4      108
+siesta:     68.04407   5.30568   9.33504  1      109
+siesta:     66.84111   2.98395   7.95162  1      110
+siesta:     68.36027   1.28558   6.15535  1      111
+siesta:     70.41307   4.50642  10.87972  1      112
+siesta:     71.50281   6.21636  12.78021  4      113
+siesta:     70.25360   6.74908  14.99764  1      114
+siesta:     67.97329   6.49987  15.26763  4      115
+siesta:     72.04965   7.87170  17.02679  1      116
+siesta:     72.52984   6.65541  19.68333  1      117
+siesta:     70.42994   6.48750  21.71486  1      118
+siesta:     71.30345   5.24082  24.23283  1      119
+siesta:     69.27320   4.99282  26.33494  1      120
+siesta:     66.91423   3.37908  25.85625  1      121
+siesta:     65.07034   3.98354  23.63519  1      122
+siesta:     63.34881   6.19230  22.79489  1      123
+siesta:     63.19088   8.67787  22.13949  1      124
+siesta:     64.71850  11.14936  22.14433  1      125
+siesta:     65.37669  12.61297  19.62342  1      126
+siesta:     66.66645  15.24960  20.11628  1      127
+siesta:     67.28031  16.77929  17.71642  1      128
+siesta:     68.72158  19.27318  18.20999  1      129
+siesta:     69.48276  20.81420  15.86154  1      130
+siesta:     71.46255  19.55125  14.18099  1      131
+siesta:     70.70578  17.09660  12.90690  1      132
+siesta:     65.83920  12.27058   4.75350  3      133
+siesta:     68.36982  10.27118   3.66410  3      134
+siesta:     66.09977  11.23803  10.61530  3      135
+siesta:     64.42446   8.38249  10.44366  3      136
+siesta:     61.55239  11.50230  10.94183  3      137
+siesta:     61.07667  10.11599   7.92163  3      138
+siesta:     60.44295  14.40905   7.95157  3      139
+siesta:     62.94381  13.76121   6.08611  3      140
+siesta:     66.05438  14.87036   9.61390  3      141
+siesta:     63.36786  15.84667  11.49993  3      142
+siesta:     65.01637  18.79373  10.11202  3      143
+siesta:     63.48390  19.78294   9.43710  3      144
+siesta:     67.04894  16.66424   4.76315  3      145
+siesta:     65.66749  19.52314   3.76214  3      146
+siesta:     63.72826  14.54419   2.90200  3      147
+siesta:     64.61960  16.87064   0.86891  3      148
+siesta:     60.16716  15.81905   0.79083  3      149
+siesta:     60.56651  19.06854   1.22569  3      150
+siesta:     58.63565  15.20122   5.03509  3      151
+siesta:     56.81832  17.20120   3.29552  3      152
+siesta:     56.69265  18.74924   7.53989  3      153
+siesta:     58.16740  21.07326   5.48454  3      154
+siesta:     60.43397  17.76670   8.96899  3      155
+siesta:     60.06920  20.60441   9.95611  3      156
+siesta:     63.08751  22.97915   5.70385  3      157
+siesta:     62.52765  19.89715   4.94977  3      158
+siesta:     67.45827  18.51754   8.08425  3      159
+siesta:     67.22884  21.32013   9.41335  3      160
+siesta:     69.48437  22.31824   5.17557  3      161
+siesta:     69.61376  19.00841   4.51824  3      162
+siesta:     72.03928  21.25782   8.98071  3      163
+siesta:     73.33793  19.43586   6.45079  3      164
+siesta:     71.45774  17.94819   8.60055  3      165
+siesta:     66.67298   5.88508  10.73602  3      166
+siesta:     65.17164   3.62591   6.90707  3      167
+siesta:     66.15823   1.71519   9.44219  3      168
+siesta:     69.35264   2.28488   4.64524  3      169
+siesta:     67.03735  -0.02507   5.22204  3      170
+siesta:     69.71214   0.09144   7.17299  3      171
+siesta:     71.95933   4.10035   9.56337  3      172
+siesta:     69.97670   2.74536  11.87535  3      173
+siesta:     71.53969   9.86548  17.25479  3      174
+siesta:     73.92715   7.89260  16.13163  3      175
+siesta:     74.03435   7.80311  20.54379  3      176
+siesta:     73.32675   4.76434  19.41792  3      177
+siesta:     68.91213   5.37458  20.91659  3      178
+siesta:     69.70090   8.36801  22.16334  3      179
+siesta:     72.85316   6.37596  25.03874  3      180
+siesta:     72.14081   3.37643  23.86822  3      181
+siesta:     68.66984   6.85861  26.97619  3      182
+siesta:     70.24583   4.13672  27.97885  3      183
+siesta:     65.86398   3.17419  27.64581  3      184
+siesta:     67.60226   1.42847  25.52708  3      185
+siesta:     63.69553   2.41360  23.85242  3      186
+siesta:     66.04650   3.40145  21.91951  3      187
+siesta:     61.52036   5.27999  22.36453  3      188
+siesta:     61.28824   9.14526  21.44049  3      189
+siesta:     66.42279  10.92729  23.27534  3      190
+siesta:     63.49959  12.48109  23.18215  3      191
+siesta:     63.67311  12.94067  18.48100  3      192
+siesta:     66.65115  11.45096  18.47377  3      193
+siesta:     68.45126  14.91715  21.11841  3      194
+siesta:     65.47490  16.43995  21.30893  3      195
+siesta:     65.59124  17.18990  16.59305  3      196
+siesta:     68.41520  15.48493  16.64108  3      197
+siesta:     70.43488  18.91533  19.32089  3      198
+siesta:     67.50320  20.48815  19.36332  3      199
+siesta:     70.30934  22.62083  16.50284  3      200
+siesta:     67.81179  21.35426  14.76020  3      201
+siesta:     73.19629  19.23262  15.25686  3      202
+siesta:     71.96965  20.91550  12.71444  3      203
+siesta:     70.40272  15.49761  14.12748  3      204
+siesta:     72.28029  16.39278  11.77885  3      205
+siesta:     69.00556  17.33836  11.76349  3      206
+siesta:      1.48808  75.59478  34.00642  1      207
+siesta:     -0.06896  74.66727  33.47120  1      208
+siesta:      0.07349  73.13981  32.36773  1      209
+siesta:      1.77297  72.53987  31.79947  1      210
+siesta:      1.91542  71.01241  30.69599  1      211
+siesta:      3.61489  70.41247  30.12773  1      212
+siesta:      3.75733  68.88501  29.02426  1      213
+siesta:      5.45682  68.28507  28.45600  1      214
+siesta:      5.59927  66.75761  27.35253  1      215
+siesta:      7.29873  66.15767  26.78427  1      216
+siesta:      7.44118  64.63021  25.68079  1      217
+siesta:      9.14066  64.03027  25.11253  1      218
+siesta:      9.28311  62.50282  24.00906  1      219
+siesta:     10.98260  61.90287  23.44080  1      220
+siesta:     11.12504  60.37542  22.33733  1      221
+siesta:     12.82451  59.77547  21.76906  1      222
+siesta:     12.96696  58.24802  20.66559  1      223
+siesta:     14.66644  57.64808  20.09733  1      224
+siesta:     14.80889  56.12062  18.99386  1      225
+siesta:     16.50835  55.52067  18.42560  1      226
+siesta:     16.65080  53.99322  17.32212  1      227
+siesta:     18.35029  53.39328  16.75386  1      228
+siesta:     18.49273  51.86582  15.65039  1      229
+siesta:     20.19220  51.26588  15.08213  1      230
+siesta:     20.33465  49.73842  13.97866  1      231
+siesta:     22.03413  49.13848  13.41039  1      232
+siesta:     22.17658  47.61102  12.30692  1      233
+siesta:     23.87604  47.01108  11.73866  1      234
+siesta:     24.01849  45.48362  10.63519  1      235
+siesta:     25.71798  44.88368  10.06693  1      236
+siesta:     25.86042  43.35622   8.96345  1      237
+siesta:     27.55989  42.75628   8.39519  4      238
+siesta:     19.90730  54.32079  17.28908  4      239
+siesta:     21.60679  53.72085  16.72082  1      240
+siesta:     21.74924  52.19339  15.61734  1      241
+siesta:     23.44870  51.59345  15.04908  1      242
+siesta:     23.59115  50.06599  13.94561  1      243
+siesta:     25.29063  49.46605  13.37735  1      244
+siesta:     25.43308  47.93859  12.27387  1      245
+siesta:     27.13255  47.33865  11.70561  1      246
+siesta:     27.27499  45.81119  10.60214  1      247
+siesta:     28.97448  45.21125  10.03388  1      248
+siesta:     29.11692  43.68379   8.93041  1      249
+siesta:     30.81639  43.08385   8.36215  1      250
+siesta:     30.95884  41.55639   7.25867  1      251
+siesta:     32.65832  40.95645   6.69041  1      252
+siesta:     32.80077  39.42899   5.58694  1      253
+siesta:     34.50025  38.82905   5.01868  1      254
+siesta:     34.64270  37.30160   3.91520  1      255
+siesta:     36.34217  36.70165   3.34694  1      256
+siesta:     36.48461  35.17420   2.24347  1      257
+siesta:     38.18410  34.57425   1.67521  1      258
+siesta:     38.32655  33.04680   0.57174  1      259
+siesta:     40.02601  32.44685   0.00348  1      260
+siesta:     23.16380  54.64836  17.25603  1      261
+siesta:     24.86329  54.04842  16.68777  4      262
+siesta:     23.02136  56.17581  18.35950  1      263
+siesta:     24.57839  57.10333  18.89472  1      264
+siesta:     26.27786  56.50339  18.32645  1      265
+siesta:     26.42031  54.97593  17.22298  1      266
+siesta:     28.11979  54.37599  16.65472  1      267
+siesta:     28.26224  52.84853  15.55125  1      268
+siesta:     29.96170  52.24859  14.98299  1      269
+siesta:     30.10415  50.72113  13.87951  1      270
+siesta:     31.80363  50.12119  13.31125  1      271
+siesta:     31.94608  48.59373  12.20778  4      272
+siesta:     54.33884   9.82032  64.12720  1      273
+siesta:     55.84428  12.24678  64.42114  1      274
+siesta:     58.41056  11.91899  65.76554  1      275
+siesta:     59.97048  14.33529  66.06332  1      276
+siesta:     59.01226  16.63887  65.12290  1      277
+siesta:     60.36462  18.86593  65.53025  1      278
+siesta:     59.72875  21.31013  64.88908  2      279
+siesta:     58.11005  21.80087  64.02753  3      280
+siesta:     61.51999  22.92810  65.81234  1      281
+siesta:     61.46486  25.67081  65.82849  1      282
+siesta:     59.99492  27.10535  64.23558  1      283
+siesta:     59.95789  29.65033  64.25720  2      284
+siesta:     61.36574  30.89840  65.98331  1      285
+siesta:     61.32143  33.55426  66.00977  1      286
+siesta:     59.97879  34.99580  63.89173  1      287
+siesta:     57.88486  36.71488  64.93117  1      288
+siesta:     61.85570  36.46137  62.18171  1      289
+siesta:     63.81675  34.82255  60.78335  1      290
+siesta:     62.69289  32.92874  58.92968  1      291
+siesta:     62.59875  34.88637  67.93070  1      292
+siesta:     64.01136  33.61554  69.73932  1      293
+siesta:     64.17752  30.99198  69.63648  1      294
+siesta:     62.88130  29.59843  67.76048  1      295
+siesta:     63.02804  26.92776  67.58865  1      296
+siesta:     64.70078  25.34067  69.33765  1      297
+siesta:     65.53911  22.76721  68.22528  1      298
+siesta:     63.36725  21.50452  66.96817  1      299
+siesta:     62.66771  18.92777  66.77917  1      300
+siesta:     63.70654  16.63582  67.60728  1      301
+siesta:     62.35034  14.35048  67.28412  1      302
+siesta:     63.57049  12.00459  68.36731  1      303
+siesta:     62.83903  11.56075  71.14227  1      304
+siesta:     64.01435   9.15345  72.30958  1      305
+siesta:     63.14347   6.80152  70.86813  1      306
+siesta:     66.91510   9.37445  72.46853  1      307
+siesta:     68.21921   7.09691  73.64214  1      308
+siesta:     52.45787  10.26455  63.37911  3      309
+siesta:     54.09078   8.85647  65.93728  3      310
+siesta:     55.25282   8.52968  62.79624  3      311
+siesta:     54.67633  13.58839  65.48679  3      312
+siesta:     56.13345  13.04203  62.52832  3      313
+siesta:     59.53322  10.52964  64.71647  3      314
+siesta:     58.04658  11.14877  67.65615  3      315
+siesta:     57.22286  16.74217  64.14166  3      316
+siesta:     58.77400  26.25796  62.82013  3      317
+siesta:     58.97617  33.66452  62.66489  3      318
+siesta:     58.61210  38.25874  66.09955  3      319
+siesta:     56.55607  35.62042  66.08509  3      320
+siesta:     56.80356  37.55477  63.37738  3      321
+siesta:     62.88880  37.86505  63.30773  3      322
+siesta:     60.78453  37.53482  60.76693  3      323
+siesta:     65.01012  33.81775  62.14428  3      324
+siesta:     65.08616  36.07557  59.72363  3      325
+siesta:     61.31942  31.68105  59.82805  3      326
+siesta:     64.18584  31.72833  58.14446  3      327
+siesta:     61.75869  33.88783  57.35352  3      328
+siesta:     62.51083  36.93963  68.01156  3      329
+siesta:     64.99801  34.64679  71.20500  3      330
+siesta:     65.30357  30.05867  71.07030  3      331
+siesta:     63.63878  25.01949  71.09100  3      332
+siesta:     66.43238  26.36699  69.82043  3      333
+siesta:     66.34506  21.58779  69.72079  3      334
+siesta:     67.02415  23.08522  66.81150  3      335
+siesta:     65.53191  16.64098  68.54997  3      336
+siesta:     65.62754  12.21426  68.21022  3      337
+siesta:     63.10223  10.38392  67.17799  3      338
+siesta:     60.77494  11.44057  71.30391  3      339
+siesta:     63.39567  13.20334  72.28422  3      340
+siesta:     63.28890   8.99644  74.24967  3      341
+siesta:     63.83179   6.80277  68.91928  3      342
+siesta:     61.07589   6.70762  70.82070  3      343
+siesta:     63.81834   5.06461  71.75870  3      344
+siesta:     67.39647  11.04991  73.59225  3      345
+siesta:     67.72615   9.66269  70.58819  3      346
+siesta:     67.43848   6.65878  75.50494  3      347
+siesta:     70.23976   7.48529  73.86208  3      348
+siesta:     68.04567   5.42596  72.43693  3      349
+siesta:     34.97279  24.69156  65.19259  1      350
+siesta:     37.24860  22.98559  64.88025  1      351
+siesta:     39.55798  24.56766  64.06305  1      352
+siesta:     40.02207  26.33475  66.37898  1      353
+siesta:     37.91055  28.34716  66.55714  1      354
+siesta:     35.29370  27.34378  65.83677  1      355
+siesta:     33.31076  29.14364  65.52876  1      356
+siesta:     31.07776  28.24100  64.46867  1      357
+siesta:     30.89850  25.58899  64.11768  1      358
+siesta:     32.63226  23.68112  64.50013  1      359
+siesta:     28.56360  24.86013  63.25371  1      360
+siesta:     27.80135  22.41766  62.99627  1      361
+siesta:     29.56885  20.45349  63.23706  1      362
+siesta:     31.98552  21.20400  64.00470  2      363
+siesta:     28.99274  30.00157  63.85872  1      364
+siesta:     26.61873  29.04539  62.91764  1      365
+siesta:     26.59400  26.51550  62.69454  1      366
+siesta:     33.47291  31.61769  66.06754  2      367
+siesta:     31.43613  33.18161  65.59137  1      368
+siesta:     29.07256  32.51875  64.47630  1      369
+siesta:     26.71249  34.07554  64.20437  1      370
+siesta:     24.33070  32.81230  63.73589  1      371
+siesta:     24.27224  30.29306  63.06126  1      372
+siesta:     22.06538  28.70620  63.22032  1      373
+siesta:     22.03075  26.14257  62.55647  1      374
+siesta:     24.41939  25.09788  62.47530  1      375
+siesta:     26.45340  36.68123  64.57736  1      376
+siesta:     24.19401  37.94031  64.75773  2      377
+siesta:     22.02128  36.57952  64.65726  1      378
+siesta:     22.00458  34.00269  64.25124  1      379
+siesta:     19.57590  32.47989  64.42488  1      380
+siesta:     19.98926  29.67060  64.96490  1      381
+siesta:     39.09689  25.89423  61.44796  1      382
+siesta:     38.56343  24.04639  59.24804  1      383
+siesta:     37.95557  25.33489  56.71744  1      384
+siesta:     35.61404  27.00423  56.83238  1      385
+siesta:     42.68650  27.47591  66.63761  1      386
+siesta:     44.76473  25.49139  66.93886  1      387
+siesta:     29.12749  17.64986  62.84731  1      388
+siesta:     27.33863  16.83677  60.66761  1      389
+siesta:     27.14388  13.98788  60.41396  1      390
+siesta:     24.63488  17.73713  60.90778  1      391
+siesta:     20.48776  28.99712  67.84158  1      392
+siesta:     22.70502  30.17106  69.34412  1      393
+siesta:     25.30988  29.28776  68.62940  1      394
+siesta:     19.61658  38.10747  64.80315  1      395
+siesta:     18.61830  38.46977  67.50495  1      396
+siesta:     16.14286  40.02500  67.59977  1      397
+siesta:     14.01993  38.70957  66.13355  1      398
+siesta:     15.26078  40.62480  70.32856  1      399
+siesta:     14.49392  38.30978  71.89312  1      400
+siesta:     13.58834  39.00014  74.53402  1      401
+siesta:     25.22897  22.66254  62.63613  2      402
+siesta:     28.68334  38.43749  64.66044  1      403
+siesta:     36.89162  21.52841  63.45831  3      404
+siesta:     37.61279  21.98214  66.65517  3      405
+siesta:     41.15661  23.27723  63.83079  3      406
+siesta:     39.81888  25.15833  68.08415  3      407
+siesta:     38.37808  29.92745  65.29731  3      408
+siesta:     37.83569  29.09360  68.49049  3      409
+siesta:     31.78583  35.06762  66.29992  3      410
+siesta:     20.35583  24.96920  62.66461  3      411
+siesta:     18.33382  33.21069  65.90990  3      412
+siesta:     18.57031  32.67864  62.62168  3      413
+siesta:     18.21436  28.68465  64.47993  3      414
+siesta:     40.71420  27.08770  60.95560  3      415
+siesta:     37.48316  27.17555  61.57397  3      416
+siesta:     36.95695  22.81976  59.69506  3      417
+siesta:     40.20564  22.81290  58.98511  3      418
+siesta:     37.63667  23.86672  55.28462  3      419
+siesta:     39.57699  26.44818  56.07328  3      420
+siesta:     33.97870  25.94063  57.52249  3      421
+siesta:     35.15418  27.74553  54.95670  3      422
+siesta:     35.91226  28.62594  58.07701  3      423
+siesta:     42.73182  28.65471  68.34780  3      424
+siesta:     43.12582  28.71610  65.04397  3      425
+siesta:     44.50875  24.40189  68.68225  3      426
+siesta:     46.61881  26.40476  67.04551  3      427
+siesta:     44.82007  24.16790  65.35539  3      428
+siesta:     28.52424  16.82988  64.65177  3      429
+siesta:     30.98671  16.81016  62.43328  3      430
+siesta:     28.09092  17.62562  58.90440  3      431
+siesta:     26.44985  13.14542  62.17217  3      432
+siesta:     28.95997  13.16169  59.90966  3      433
+siesta:     25.78385  13.52406  58.91783  3      434
+siesta:     24.00383  17.71696  62.88833  3      435
+siesta:     23.21518  16.75040  59.78577  3      436
+siesta:     24.62068  19.57174  59.99220  3      437
+siesta:     20.62023  26.93324  68.03592  3      438
+siesta:     18.78037  29.54449  68.88905  3      439
+siesta:     22.52035  29.70057  71.34379  3      440
+siesta:     22.62085  32.23348  69.19028  3      441
+siesta:     25.47811  27.29027  68.14013  3      442
+siesta:     26.86361  29.93437  69.81993  3      443
+siesta:     25.70260  30.35953  67.00612  3      444
+siesta:     18.19550  37.21236  63.58993  3      445
+siesta:     20.00331  39.94568  63.93596  3      446
+siesta:     20.07629  39.40889  68.64061  3      447
+siesta:     18.30391  36.62163  68.38344  3      448
+siesta:     16.50929  41.85033  66.67930  3      449
+siesta:     13.86563  36.71837  66.67641  3      450
+siesta:     14.35753  38.78700  64.09595  3      451
+siesta:     12.19557  39.61964  66.48462  3      452
+siesta:     13.62671  41.90183  70.21062  3      453
+siesta:     16.74425  41.68360  71.31604  3      454
+siesta:     16.08177  36.99485  72.05245  3      455
+siesta:     12.94558  37.30658  70.95664  3      456
+siesta:     15.07596  39.91588  75.64047  3      457
+siesta:     13.00638  37.28571  75.53806  3      458
+siesta:     11.95452  40.26558  74.44863  3      459
+siesta:     23.90865  21.31459  62.75313  3      460
+siesta:     28.10420  40.34489  64.13958  3      461
+siesta:     30.11510  37.85182  63.28461  3      462
+siesta:     29.48744  38.49849  66.56267  3      463
+
+siesta: System type = molecule  
+
+initatomlists: Number of atoms, orbitals, and projectors:    463  3107  5924
+
+coxmol: Writing XMOL coordinates into file siesta.xyz                                                          
+
+siesta: ******************** Simulation parameters ****************************
+siesta:
+siesta: The following are some of the parameters of the simulation.
+siesta: A complete list of the parameters used, including default values,
+siesta: can be found in file out.fdf
+siesta:
+redata: Spin configuration                          = collinear
+redata: Number of spin components                   = 2
+redata: Time-Reversal Symmetry                      = T
+redata: Spin spiral                                 = F
+redata: Long output                                 =   T
+redata: Number of Atomic Species                    =        4
+redata: Charge density info will appear in .RHO file
+redata: Write Mulliken Pop.                         = Atomic and Orbital charges
+redata: Matel table size (NRTAB)                    =     1024
+redata: Mesh Cutoff                                 =   100.0000 Ry
+redata: Net charge of the system                    =     0.0000 |e|
+redata: Min. number of SCF Iter                     =        0
+redata: Max. number of SCF Iter                     =      100
+redata: SCF convergence failure will abort job
+redata: SCF mix quantity                            = Hamiltonian
+redata: Mix DM or H after convergence               =   F
+redata: Recompute H after scf cycle                 =   F
+redata: Mix DM in first SCF step                    =   T
+redata: Write Pulay info on disk                    =   F
+redata: New DM Occupancy tolerance                  = 0.000000000001
+redata: No kicks to SCF
+redata: DM Mixing Weight for Kicks                  =     0.5000
+redata: Require Harris convergence for SCF          =   F
+redata: Harris energy tolerance for SCF             =     0.000100 eV
+redata: Require DM convergence for SCF              =   T
+redata: DM tolerance for SCF                        =     0.001000
+redata: Require EDM convergence for SCF             =   F
+redata: EDM tolerance for SCF                       =     0.001000 eV
+redata: Require H convergence for SCF               =   T
+redata: Hamiltonian tolerance for SCF               =     0.001000 eV
+redata: Require (free) Energy convergence for SCF   =   F
+redata: (free) Energy tolerance for SCF             =     0.000100 eV
+redata: Antiferro initial spin density              =   F
+redata: Using Saved Data (generic)                  =   F
+redata: Use continuation files for DM               =   F
+redata: Neglect nonoverlap interactions             =   F
+redata: Method of Calculation                       = Diagonalization
+redata: Electronic Temperature                      =   299.9869 K
+redata: Fix the spin of the system                  =   F
+redata: Max. number of TDED Iter                    =        1
+redata: Number of TDED substeps                     =        3
+redata: Dynamics option                             = Nose thermostat MD run
+redata: Initial MD time step                        =        1
+redata:   Final MD time step                        =       10
+redata: Length of MD time step                      =     0.5000 fs
+redata: Initial Temperature of MD run               =   300.0000 K
+redata: Perform a MD quench                         =   F
+redata: Nose mass                                   =  1360.5800 eV/fs**2
+redata: Target Temperature                          =   300.0000 Kelvin
+mix.SCF: Pulay mixing                            = Pulay
+mix.SCF:    Variant                              = stable
+mix.SCF:    History steps                        = 3
+mix.SCF:    Linear mixing weight                 =     0.250000
+mix.SCF:    Mixing weight                        =     0.250000
+mix.SCF:    SVD condition                        = 0.1000E-07
+mix.SCF: Spin-component mixing                   all
+redata: ***********************************************************************
+
+%block SCF.Mixers
+  Pulay
+%endblock SCF.Mixers
+
+%block SCF.Mixer.Pulay
+  # Mixing method
+  method pulay
+  variant stable
+
+  # Mixing options
+  weight 0.2500
+  weight.linear 0.2500
+  history 3
+%endblock SCF.Mixer.Pulay
+
+Size of DM history Fstack: 1
+Total number of electrons:  1246.000000
+Total ionic charge:  1246.000000
+ Kpoints in:            1 . Kpoints trimmed:            1
+
+siesta: k-point coordinates (Bohr**-1) and weights:
+siesta:          1  0.000000E+00  0.000000E+00  0.000000E+00   0.100000E+01
+
+siesta: k-grid: Number of k-points =         1
+siesta: k-points from Monkhorst-Pack grid
+siesta: k-cutoff (effective) =    23.607 Ang
+siesta: k-point supercell and displacements
+siesta: k-grid:    1   0   0      0.000
+siesta: k-grid:    0   1   0      0.000
+siesta: k-grid:    0   0   1      0.000
+ Kpoints in:            1 . Kpoints trimmed:            1
+
+siesta: PDOS k-point coordinates (Bohr**-1) and weights:
+siesta:          1  0.000000E+00  0.000000E+00  0.000000E+00   0.100000E+01
+
+siesta: PDOS k-grid: Number of k-points =         1
+siesta: PDOS k-points from Monkhorst-Pack grid
+siesta: PDOS k-cutoff (effective) =     0.000 Ang
+siesta: PDOS k-point supercell and displacements
+siesta: k-grid:    1   0   0      0.000
+siesta: k-grid:    0   1   0      0.000
+siesta: k-grid:    0   0   1      0.000
+
+diag: Algorithm                                     = D&C
+diag: Used triangular part                          = Lower
+diag: Absolute tolerance                            =  0.100E-15
+diag: Orthogonalization factor                      =  0.100E-05
+diag: Memory factor                                 =  1.0000
+Using LatticeConstant from fdf file for BandLinesScale:    1.889727 Bohr
+Beware any cell changes by the end of the run
+Using LatticeConstant from fdf file for BandLinesScale:    1.889727 Bohr
+Beware any cell changes by the end of the run
+
+
+ts: **************************************************************
+ts: Save H and S matrices                           =    F
+ts: Save DM and EDM matrices                        =    F
+ts: Only save the overlap matrix S                  =    F
+ts: **************************************************************
+
+************************ Begin: TS CHECKS AND WARNINGS ************************
+************************ End: TS CHECKS AND WARNINGS **************************
+
+
+                     ====================================
+                        Begin MD step =      1
+                     ====================================
+
+outcoor: Atomic coordinates (Ang):                          
+   32.47314800   30.60014700   30.28096100   1       1  C
+   32.27884700   31.49120200   29.87074700   1       2  C
+   32.52613500   31.66764700   28.91801100   1       3  C
+   32.96772400   30.95304200   28.37548000   1       4  C
+   33.21501200   31.12949300   27.42273600   1       5  C
+   33.65660200   30.41488900   26.88020500   1       6  C
+   33.90389000   30.59133400   25.92746900   1       7  C
+   34.34547900   29.87673000   25.38493800   1       8  C
+   34.59276700   30.05318100   24.43219400   1       9  C
+   35.03435700   29.33857600   23.88966400   1      10  C
+   35.28164500   29.51502100   22.93692700   1      11  C
+   35.72323400   28.80041700   22.39439700   1      12  C
+   35.97052200   28.97686800   21.44165300   1      13  C
+   36.41211200   28.26226300   20.89912200   1      14  C
+   36.65940000   28.43870800   19.94638600   1      15  C
+   37.10098900   27.72410400   19.40385500   1      16  C
+   37.34827700   27.90055500   18.45111100   1      17  C
+   37.78986700   27.18595000   17.90858100   1      18  C
+   38.03715500   27.36239500   16.95584400   1      19  C
+   38.47874400   26.64779100   16.41331400   1      20  C
+   38.72603200   26.82424200   15.46057000   1      21  C
+   39.16762200   26.10963700   14.91803900   1      22  C
+    6.25686400   37.41542300   38.36692400   1      23  C
+    5.22425200   36.95199000   37.37684100   1      24  C
+    5.60582100   36.06779700   36.36445000   1      25  C
+    4.64960200   35.63914200   35.46492300   1      26  C
+    3.35689800   36.01799300   35.50393700   2      27  N
+    2.97704400   36.86352900   36.47665400   1      28  C
+    1.64143800   37.23927200   36.53461300   1      29  C
+    1.15924100   38.10467200   37.51896500   1      30  C
+    2.03200500   38.62395600   38.46368000   1      31  C
+    3.37945400   38.26729700   38.42532000   1      32  C
+    3.87308000   37.37537500   37.44371000   1      33  C
+    7.22933900   36.94569100   38.18386900   3      34  H
+    5.95441200   37.14869200   39.38475600   3      35  H
+    6.39429700   38.49911600   38.29566100   3      36  H
+    6.62665100   35.71171800   36.27549200   3      37  H
+    4.90433400   34.95123000   34.66378900   3      38  H
+    0.95351000   36.83868800   35.79370000   3      39  H
+    0.10483800   38.36677700   37.54143300   3      40  H
+    1.66799100   39.30087600   39.23209700   3      41  H
+    4.04268100   38.68932700   39.17570900   3      42  H
+   32.43449900   31.96018200   14.61422500   1      43  C
+   32.93508400   31.27550300   13.33073200   1      44  C
+   32.08446500   30.02754700   13.07274800   1      45  C
+   32.87681700   32.25959700   12.14467400   1      46  C
+   33.65337900   33.50170700   12.24582600   2      47  N
+   34.97813300   33.78665900   12.33461400   1      48  C
+   35.31617900   34.95087500   12.09828000   4      49  O
+   36.03214000   32.69506700   12.60488400   1      50  C
+   37.10416200   33.19927400   13.61010300   1      51  C
+   36.46563700   33.50994100   14.97073100   1      52  C
+   38.24326500   32.19083700   13.82568800   1      53  C
+   36.61969600   32.39460000   11.30015600   2      54  N
+   36.16985100   31.51554800   10.35563000   1      55  C
+   36.56135900   31.65454900    9.19970000   4      56  O
+   35.12765300   30.43678100   10.73585900   1      57  C
+   35.50928300   29.08436300   10.06996800   1      58  C
+   36.85738500   28.56516200   10.58142800   1      59  C
+   34.44530100   28.00308700   10.29889100   1      60  C
+   33.85601000   30.91559100   10.19419500   2      61  N
+   32.91082700   31.74916100   10.68832600   1      62  C
+   32.08465100   32.18411900    9.87635900   4      63  O
+   32.48471800   31.27465700   15.46701600   3      64  H
+   31.39283500   32.28563800   14.51081300   3      65  H
+   33.04087800   32.83777700   14.85999500   3      66  H
+   33.94666100   30.93150000   13.53394000   3      67  H
+   31.04885500   30.29111600   12.83440200   3      68  H
+   32.07352000   29.37681700   13.95406500   3      69  H
+   32.48693300   29.44050400   12.24296200   3      70  H
+   31.84452700   32.64574500   12.20507900   3      71  H
+   33.14520100   34.32761700   11.94164700   3      72  H
+   35.57883600   31.80483400   13.01463400   3      73  H
+   37.55611100   34.12523800   13.23148500   3      74  H
+   36.05482800   32.60556000   15.43296300   3      75  H
+   35.65772800   34.24143800   14.87771300   3      76  H
+   37.20781600   33.93182200   15.65735000   3      77  H
+   37.86302000   31.19356200   14.07194100   3      78  H
+   38.89153800   32.51008400   14.65132400   3      79  H
+   38.87570800   32.10770200   12.93623900   3      80  H
+   37.17064100   33.13804200   10.87885100   3      81  H
+   35.04947600   30.29932200   11.80981600   3      82  H
+   35.59793400   29.22673200    8.98411300   3      83  H
+   36.82276400   28.36573900   11.65744800   3      84  H
+   37.66369400   29.27964700   10.39109500   3      85  H
+   37.12621400   27.63211700   10.07330600   3      86  H
+   34.25701700   27.84879500   11.36627500   3      87  H
+   34.76974900   27.04575900    9.87462400   3      88  H
+   33.49846100   28.26506900    9.81616800   3      89  H
+   33.77667100   30.86159900    9.18236000   3      90  H
+   35.43675800    5.62635400    2.70158600   1      91  C
+   35.32152100    4.91066400    3.82733600   1      92  C
+   34.38301600    5.30324200    4.96051700   1      93  C
+   33.00726300    5.94554400    4.79148700   1      94  C
+   33.01371300    7.28576000    4.25118100   1      95  C
+   33.90087900    8.15813000    5.06917200   1      96  C
+   33.97026900    9.53326200    4.28492900   1      97  C
+   34.51489300    9.31062300    2.55596600   1      98  C
+   33.63480400    8.75270900    1.41588700   1      99  C
+   32.13997800    9.12439500    1.16355600   1     100  C
+   31.03387600    9.05989200    2.26307900   1     101  C
+   30.85772300   10.18029100    3.33793600   1     102  C
+   31.96212200   10.41823300    4.30508700   1     103  C
+   33.55571800   11.16966100    3.51138100   1     104  C
+   35.37366900   10.92948700    3.95936900   1     105  C
+   36.72115900   10.83921900    3.16063400   1     106  C
+   37.93113200   10.45506500    4.04017100   1     107  C
+   36.26802500    3.88870800    4.02114400   4     108  O
+   36.00735800    2.80764200    4.93988600   1     109  C
+   35.37078000    1.57903700    4.20781500   1     110  C
+   36.17468400    0.68029800    3.25727200   1     111  C
+   37.26097700    2.38469500    5.75729900   1     112  C
+   37.83764000    3.28955500    6.76299100   4     113  O
+   37.17658800    3.57145900    7.93640600   1     114  C
+   35.96990200    3.43958400    8.07927700   4     115  O
+   38.12701500    4.16552100    9.01018700   1     116  C
+   38.38112400    3.52188900   10.41596500   1     117  C
+   37.26990600    3.43303600   11.49100300   1     118  C
+   37.73214700    2.77332300   12.82345500   1     119  C
+   36.65778400    2.64208600   13.93584500   1     120  C
+   35.40947000    1.78813200   13.68253400   1     121  C
+   34.43372800    2.10799800   12.50719800   1     122  C
+   33.52273200    3.27682500   12.06253100   1     123  C
+   33.43916000    4.59212800   11.71571000   1     124  C
+   34.24754100    5.89998500   11.71826800   1     125  C
+   34.59584100    6.67449500   10.38426000   1     126  C
+   35.27835100    8.06973900   10.64507200   1     127  C
+   35.60319300    8.87921400    9.37512200   1     128  C
+   36.36588200   10.19892300    9.63630700   1     129  C
+   36.76867800   11.01439700    8.39356000   1     130  C
+   37.81633600   10.34607400    7.50425400   1     131  C
+   37.41587100    9.04712500    6.83003400   1     132  C
+   34.84059000    6.49331100    2.51544300   3     133  H
+   36.17973400    5.43527300    1.93895900   3     134  H
+   34.97847800    5.94690700    5.61737300   3     135  H
+   34.09194200    4.43582100    5.52654300   3     136  H
+   32.57210700    6.08675400    5.79016700   3     137  H
+   32.32036900    5.35315100    4.19194200   3     138  H
+   31.98501800    7.62493900    4.20778700   3     139  H
+   33.30841400    7.28211600    3.22062700   3     140  H
+   34.95445600    7.86905200    5.08745600   3     141  H
+   33.53281300    8.38569100    6.08549800   3     142  H
+   34.40516900    9.94521000    5.35104700   3     143  H
+   33.59422200   10.46867700    4.99389600   3     144  H
+   35.48075900    8.81833500    2.52055000   3     145  H
+   34.74972700   10.33119700    1.99083900   3     146  H
+   33.72353200    7.69645100    1.53567200   3     147  H
+   34.19520400    8.92755300    0.45980800   3     148  H
+   31.83907800    8.37107900    0.41849100   3     149  H
+   32.05040500   10.09063400    0.64860500   3     150  H
+   31.02863700    8.04413800    2.66445200   3     151  H
+   30.06694900    9.10247700    1.74391500   3     152  H
+   30.00044900    9.92166900    3.98993700   3     153  H
+   30.78085100   11.15148400    2.90229000   3     154  H
+   31.98026500    9.40172800    4.74618100   3     155  H
+   31.78723700   10.90338100    5.26854400   3     156  H
+   33.38445700   12.16003700    3.01834500   3     157  H
+   33.08819600   10.52911300    2.61930600   3     158  H
+   35.69736300    9.79905800    4.27800100   3     159  H
+   35.57595500   11.28212400    4.98132700   3     160  H
+   36.76953200   11.81029800    2.73879400   3     161  H
+   36.83800300   10.05881500    2.39095100   3     162  H
+   38.12153100   11.24914900    4.75238400   3     163  H
+   38.80874700   10.28501100    3.41361000   3     164  H
+   37.81379000    9.49777100    4.55121300   3     165  H
+   35.28180500    3.11425000    5.68125500   3     166  H
+   34.48733400    1.91874700    3.65506000   3     167  H
+   35.00941400    0.90763900    4.99658900   3     168  H
+   36.69982300    1.20910800    2.45815400   3     169  H
+   35.47462600   -0.01326700    2.76338600   3     170  H
+   36.89005900    0.04838800    3.79578100   3     171  H
+   38.07922000    2.16981100    5.06071300   3     172  H
+   37.03005900    1.45278300    6.28416100   3     173  H
+   37.85715700    5.22058400    9.13084000   3     174  H
+   39.12054700    4.17658000    8.53648800   3     175  H
+   39.17727300    4.12922400   10.87130300   3     176  H
+   38.80283000    2.52117800   10.27551600   3     177  H
+   36.46671200    2.84410400   11.06858000   3     178  H
+   36.88411100    4.42815800   11.72832900   3     179  H
+   38.55221800    3.37401200   13.24992500   3     180  H
+   38.17525800    1.78672900   12.63051500   3     181  H
+   36.33850200    3.62942100   14.27517900   3     182  H
+   37.17247500    2.18905900   14.80576200   3     183  H
+   34.85370400    1.67971000   14.62952900   3     184  H
+   35.77356100    0.75591200   13.50834500   3     185  H
+   33.70621000    1.27722200   12.62215300   3     186  H
+   34.95028700    1.79997100   11.59929900   3     187  H
+   32.55516000    2.79405100   11.83479400   3     188  H
+   32.43232900    4.83946100   11.34581200   3     189  H
+   35.14941400    5.78247300   12.31677700   3     190  H
+   33.60252000    6.60470800   12.26746000   3     191  H
+   33.69434500    6.84790600    9.77972100   3     192  H
+   35.27025800    6.05958400    9.77589300   3     193  H
+   36.22283300    7.89381500   11.17537800   3     194  H
+   34.64781000    8.69964500   11.27619400   3     195  H
+   34.70937800    9.09650100    8.78065900   3     196  H
+   36.20374900    8.19426900    8.80607500   3     197  H
+   37.27251800   10.00955800   10.22416800   3     198  H
+   35.72114300   10.84186000   10.24662600   3     199  H
+   37.20608600   11.97042500    8.73292600   3     200  H
+   35.88444000   11.30018400    7.81076100   3     201  H
+   38.73379500   10.17745800    8.07357700   3     202  H
+   38.08468500   11.06800400    6.72818800   3     203  H
+   37.25550200    8.20097900    7.47593700   3     204  H
+   38.24906600    8.67468200    6.23309900   3     205  H
+   36.51615600    9.17506000    6.22496700   3     206  H
+    0.78745700   40.00302000   17.99541300   1     207  C
+   -0.03649100   39.51220100   17.71219000   1     208  C
+    0.03888900   38.70390600   17.12825800   1     209  C
+    0.93821700   38.38643000   16.82754700   1     210  C
+    1.01359700   37.57813600   16.24361400   1     211  C
+    1.91291500   37.26065900   15.94290400   1     212  C
+    1.98829500   36.45236400   15.35897100   1     213  C
+    2.88762300   36.13488900   15.05826100   1     214  C
+    2.96300300   35.32659400   14.47432800   1     215  C
+    3.86232100   35.00911800   14.17361800   1     216  C
+    3.93770100   34.20082300   13.58968500   1     217  C
+    4.83702900   33.88334700   13.28897500   1     218  C
+    4.91240900   33.07505300   12.70504200   1     219  C
+    5.81173700   32.75757700   12.40433100   1     220  C
+    5.88711700   31.94928200   11.82039900   1     221  C
+    6.78643500   31.63180600   11.51968800   1     222  C
+    6.86181500   30.82351100   10.93575500   1     223  C
+    7.76114300   30.50603600   10.63504500   1     224  C
+    7.83652300   29.69774100   10.05111200   1     225  C
+    8.73584100   29.38026400    9.75040200   1     226  C
+    8.81122100   28.57197000    9.16646900   1     227  C
+    9.71054900   28.25449400    8.86575900   1     228  C
+    9.78592900   27.44619900    8.28182600   1     229  C
+   10.68524700   27.12872300    7.98111600   1     230  C
+   10.76062700   26.32042800    7.39718300   1     231  C
+   11.65995500   26.00295300    7.09647200   1     232  C
+   11.73533500   25.19465800    6.51254000   1     233  C
+   12.63465300   24.87718100    6.21182900   1     234  C
+   12.71003300   24.06888700    5.62789600   1     235  C
+   13.60936100   23.75141100    5.32718600   1     236  C
+   13.68474100   22.94311600    4.74325300   1     237  C
+   14.58405900   22.62564000    4.44254300   4     238  O
+   10.53448700   28.74531200    9.14898100   4     239  O
+   11.43381500   28.42783700    8.84827100   1     240  C
+   11.50919500   27.61954200    8.26433800   1     241  C
+   12.40851300   27.30206500    7.96362800   1     242  C
+   12.48389300   26.49377100    7.37969500   1     243  C
+   13.38322100   26.17629500    7.07898500   1     244  C
+   13.45860100   25.36800000    6.49505200   1     245  C
+   14.35791900   25.05052400    6.19434100   1     246  C
+   14.43329900   24.24222900    5.61040900   1     247  C
+   15.33262700   23.92475400    5.30969800   1     248  C
+   15.40800700   23.11645900    4.72576500   1     249  C
+   16.30732500   22.79898200    4.42505500   1     250  C
+   16.38270500   21.99068800    3.84112200   1     251  C
+   17.28203300   21.67321200    3.54041200   1     252  C
+   17.35741300   20.86491700    2.95647900   1     253  C
+   18.25674100   20.54744200    2.65576900   1     254  C
+   18.33212100   19.73914700    2.07183600   1     255  C
+   19.23143900   19.42167100    1.77112600   1     256  C
+   19.30681900   18.61337600    1.18719300   1     257  C
+   20.20614700   18.29590000    0.88648200   1     258  C
+   20.28152700   17.48760600    0.30255000   1     259  C
+   21.18084500   17.17012900    0.00183900   1     260  C
+   12.25775200   28.91865500    9.13149300   1     261  C
+   13.15708000   28.60117900    8.83078300   4     262  O
+   12.18237200   29.72694900    9.71542600   1     263  C
+   13.00632000   30.21776800    9.99864900   1     264  C
+   13.90563700   29.90029200    9.69793800   1     265  C
+   13.98101800   29.09199700    9.11400600   1     266  C
+   14.88034500   28.77452200    8.81329500   1     267  C
+   14.95572600   27.96622700    8.22936200   1     268  C
+   15.85504300   27.64875000    7.92865200   1     269  C
+   15.93042400   26.84045600    7.34471900   1     270  C
+   16.82975100   26.52298000    7.04400900   1     271  C
+   16.90513200   25.71468500    6.46007600   4     272  O
+   28.75486200    5.19668900   33.93464100   1     273  C
+   29.55150700    6.48071400   34.09018300   1     274  C
+   30.90952400    6.30725800   34.80160900   1     275  C
+   31.73499900    7.58590400   34.95918800   1     276  C
+   31.22793000    8.80490700   34.46153900   1     277  C
+   31.94356900    9.98341800   34.67710300   1     278  C
+   31.60708200   11.27683300   34.33780700   2     279  N
+   30.75050400   11.53651800   33.88189700   3     280  H
+   32.55496400   12.13302200   34.82637400   1     281  C
+   32.52579100   13.58440400   34.83492500   1     282  C
+   31.74793400   14.34352600   33.99199300   1     283  C
+   31.72833900   15.69027100   34.00343000   2     284  N
+   32.47334000   16.35072000   34.91685000   1     285  C
+   32.44989000   17.75614100   34.93085100   1     286  C
+   31.73939600   18.51897100   33.81003300   1     287  C
+   30.63133900   19.42867200   34.36008200   1     288  C
+   32.73261400   19.29452100   32.90513100   1     289  C
+   33.77035700   18.42729300   32.16515100   1     290  C
+   33.17563600   17.42513400   31.18423300   1     291  C
+   33.12582000   18.46106700   35.94736300   1     292  C
+   33.87333900   17.78857100   36.90444200   1     293  C
+   33.96126900   16.40024400   36.85002400   1     294  C
+   33.27533700   15.66281000   35.85728800   1     295  C
+   33.35299000   14.24955000   35.76635900   1     296  C
+   34.23816500   13.40970200   36.69189200   1     297  C
+   34.68178800   12.04788600   36.10324800   1     298  C
+   33.53249000   11.37969700   35.43801300   1     299  C
+   33.16230900   10.01614200   35.33799900   1     300  C
+   33.71203500    8.80329500   35.77621600   1     301  C
+   32.99436800    7.59394600   35.60520700   1     302  C
+   33.64003900    6.35255300   36.17840900   1     303  C
+   33.25296900    6.11768400   37.64685500   1     304  C
+   33.87492100    4.84379700   38.26456400   1     305  C
+   33.41407400    3.59920700   37.50178700   1     306  C
+   35.40993200    4.96074200   38.34868000   1     307  C
+   36.10003800    3.75552200   38.96972700   1     308  C
+   27.75949600    5.43176600   33.53876700   3     309  H
+   28.62359700    4.68664000   34.89249400   3     310  H
+   29.23852200    4.51371200   33.23032500   3     311  H
+   28.93345600    7.19066300   34.65410400   3     312  H
+   29.70452900    6.90154200   33.08855000   3     313  H
+   31.50361300    5.57204500   34.24646800   3     314  H
+   30.71691400    5.89967200   35.80207900   3     315  H
+   30.28101900    8.85957100   33.94229100   3     316  H
+   31.10185100   13.89510900   33.24296600   3     317  H
+   31.20883200   17.81449100   33.16081600   3     318  H
+   31.01617600   20.24564300   34.97836400   3     319  H
+   29.92817400   18.84950800   34.97070800   3     320  H
+   30.05914000   19.87311800   33.53785300   3     321  H
+   33.27930400   20.03731500   33.50099400   3     322  H
+   32.16577700   19.86256600   32.15646100   3     323  H
+   34.40186100   17.89557300   32.88532200   3     324  H
+   34.44210100   19.09036100   31.60437000   3     325  H
+   32.44882500   16.76488500   31.65963000   3     326  H
+   33.96567100   16.78990200   30.76870900   3     327  H
+   32.68127800   17.93266000   30.35016500   3     328  H
+   33.07929100   19.54760400   35.99015100   3     329  H
+   34.39545000   18.33428400   37.68004700   3     330  H
+   34.55714500   15.90635700   37.60876700   3     331  H
+   33.67617700   13.23973900   37.61972300   3     332  H
+   35.15448800   13.95280400   36.94736700   3     333  H
+   35.10827800   11.42376200   36.89464000   3     334  H
+   35.46764000   12.21616800   35.35510900   3     335  H
+   34.67797800    8.80602200   36.27506700   3     336  H
+   34.72858400    6.46350600   36.09528200   3     337  H
+   33.39224700    5.49492900   35.54904500   3     338  H
+   32.16070000    6.05408500   37.73239100   3     339  H
+   33.54753100    6.98690500   38.25114900   3     340  H
+   33.49103100    4.76070900   39.29121800   3     341  H
+   33.77831300    3.59986800   36.47050000   3     342  H
+   32.31995800    3.54951900   37.47668500   3     343  H
+   33.77119800    2.68007300   37.97305600   3     344  H
+   35.66466100    5.84735600   38.94332700   3     345  H
+   35.83912300    5.11327100   37.35364900   3     346  H
+   35.68689400    3.52367500   39.95547600   3     347  H
+   37.16926600    3.96104300   39.08611400   3     348  H
+   36.00820100    2.87129100   38.33195900   3     349  H
+   18.50679800   13.06620600   34.49841900   1     350  C
+   19.71110300   12.16344500   34.33313400   1     351  C
+   20.93317200   13.00064100   33.90069200   1     352  C
+   21.17876000   13.93574600   35.12623100   1     353  C
+   20.06139000   15.00066400   35.22050800   1     354  C
+   18.67661600   14.46970200   34.83930600   1     355  C
+   17.62728600   15.42214600   34.67631000   1     356  C
+   16.44563500   14.94449000   34.11534000   1     357  C
+   16.35077600   13.54110500   33.92960300   1     358  C
+   17.26824000   12.53150200   34.13198400   1     359  C
+   15.11520100   13.15540800   33.47240700   1     360  C
+   14.71183700   11.86291000   33.33617600   1     361  C
+   15.64715600   10.82351500   33.46359700   1     362  C
+   16.92600200   11.22066700   33.86981600   2     363  N
+   15.34228900   15.87613900   33.79256800   1     364  C
+   14.08602000   15.37015300   33.29457000   1     365  C
+   14.07293400   14.03139500   33.17651000   1     366  C
+   17.71309400   16.73135600   34.96142300   2     367  N
+   16.63527900   17.55894400   34.70944500   1     368  C
+   15.38452800   17.20817500   34.11937300   1     369  C
+   14.13563700   18.03199300   33.97547500   1     370  C
+   12.87524700   17.36351300   33.72756600   1     371  C
+   12.84431100   16.03039300   33.37056900   1     372  C
+   11.67649200   15.19066000   33.45474100   1     373  C
+   11.65816500   13.83404500   33.10344600   1     374  C
+   12.92217800   13.28122200   33.06049200   1     375  C
+   13.99852900   19.41086300   34.17285300   1     376  C
+   12.80291300   20.07714200   34.26830000   2     377  N
+   11.65315500   19.35704100   34.21513300   1     378  C
+   11.64431700   17.99344300   34.00027900   1     379  C
+   10.35911700   17.18761100   34.09216600   1     380  C
+   10.57785400   15.70099800   34.37793200   1     381  C
+   20.68917400   13.70263300   32.51684600   1     382  C
+   20.40688100   12.72479700   31.35270000   1     383  C
+   20.08521500   13.40664200   30.01356600   1     384  C
+   18.84613200   14.29001900   30.07439000   1     385  C
+   22.58871300   14.53962200   35.26308800   1     386  C
+   23.68846500   13.48945800   35.42250300   1     387  C
+   15.41359700    9.33990100   33.25735100   1     388  C
+   14.46697200    8.90963100   32.10390400   1     389  C
+   14.36391600    7.40206500   31.96967700   1     390  C
+   13.03621400    9.38608200   32.23099400   1     391  C
+   10.84165000   15.34460900   35.90020500   1     392  C
+   12.01497600   15.96583000   36.69531600   1     393  C
+   13.39340700   15.49840800   36.31710100   1     394  C
+   10.38064300   20.16559700   34.29233500   1     395  C
+    9.85237400   20.35731700   35.72206900   1     396  C
+    8.54243100   21.18030900   35.77224500   1     397  C
+    7.41902400   20.48421600   34.99635300   1     398  C
+    8.07565300   21.49770900   37.21625600   1     399  C
+    7.66984700   20.27265500   38.04418600   1     400  C
+    7.19063900   20.63797700   39.44169000   1     401  C
+   13.35059200   11.99249600   33.14559800   2     402  N
+   15.17856600   20.34023600   34.21681800   1     403  C
+   19.52219800   11.39233700   33.58067800   3     404  H
+   19.90382100   11.63244500   35.27238100   3     405  H
+   21.77913400   12.31777600   33.77778800   3     406  H
+   21.07123500   13.31321100   36.02856500   3     407  H
+   20.30879900   15.83691700   34.55383700   3     408  H
+   20.02177500   15.39566500   36.24359300   3     409  H
+   16.82032900   18.55698000   35.08439300   3     410  H
+   10.77183900   13.21312700   33.16067000   3     411  H
+    9.70183700   17.57433400   34.87800400   3     412  H
+    9.82698200   17.29278500   33.13795400   3     413  H
+    9.63861800   15.17925600   34.12129800   3     414  H
+   21.54502000   14.33418900   32.25630100   3     415  H
+   19.83522800   14.38067600   32.58353000   3     416  H
+   19.55676900   12.07569000   31.58925500   3     417  H
+   21.27589800   12.07206200   31.21356600   3     418  H
+   19.91646100   12.62971700   29.25535200   3     419  H
+   20.94323100   13.99576600   29.67268800   3     420  H
+   17.98074500   13.72718500   30.43957800   3     421  H
+   18.60278200   14.68229700   29.08182000   3     422  H
+   19.00394300   15.14819100   30.73301900   3     423  H
+   22.61269700   15.16341600   36.16808200   3     424  H
+   22.82119000   15.19590200   34.41977500   3     425  H
+   23.55300900   12.91291800   36.34506600   3     426  H
+   24.66960300   13.97279200   35.47894000   3     427  H
+   23.71775100   12.78909800   34.58456800   3     428  H
+   15.09437400    8.90598400   34.21222800   3     429  H
+   16.39745200    8.89555100   33.03825400   3     430  H
+   14.86507000    9.32707300   31.17085400   3     431  H
+   13.99665200    6.95625300   32.90008300   3     432  H
+   15.32494800    6.96486100   31.70281400   3     433  H
+   13.64421800    7.15662200   31.17796200   3     434  H
+   12.70227400    9.37541000   33.27905700   3     435  H
+   12.28493900    8.86392600   31.63725200   3     436  H
+   13.02869500   10.35691300   31.74649300   3     437  H
+   10.91175200   14.25245000   36.00304600   3     438  H
+    9.93813800   15.63426200   36.45450000   3     439  H
+   11.91725300   15.71685600   37.75349500   3     440  H
+   11.97043600   17.05721700   36.61390700   3     441  H
+   13.48242800   14.44138300   36.05818900   3     442  H
+   14.21560200   15.84058000   36.94710200   3     443  H
+   13.60122400   16.06556300   35.45810000   3     444  H
+    9.62864000   19.69192500   33.65032800   3     445  H
+   10.58529200   21.13833300   33.83343900   3     446  H
+   10.62390900   20.85427900   36.32303300   3     447  H
+    9.68600700   19.37932300   36.18694500   3     448  H
+    8.73633400   22.14623100   35.28515400   3     449  H
+    7.33737000   19.43051500   35.28362400   3     450  H
+    7.59767500   20.52518900   33.91810400   3     451  H
+    6.45361600   20.96580200   35.18213200   3     452  H
+    7.21094200   22.17348600   37.15384500   3     453  H
+    8.86067100   22.05800100   37.73881000   3     454  H
+    8.51010400   19.57682300   38.12849900   3     455  H
+    6.85050100   19.74178500   37.54862100   3     456  H
+    7.97785300   21.12256500   40.02719900   3     457  H
+    6.88267900   19.73074200   39.97300500   3     458  H
+    6.32605700   21.30761800   39.39650200   3     459  H
+   12.65190900   11.27919300   33.20751400   3     460  H
+   14.87209800   21.34958800   33.94119100   3     461  H
+   15.93621900   20.03031200   33.48876000   3     462  H
+   15.60407400   20.37251300   35.22343200   3     463  H
+
+outcell: Unit cell vectors (Ang):
+       47.213764    0.000000    0.000000
+        0.000000   48.016287    0.000000
+        0.000000    0.000000   48.025360
+
+outcell: Cell vector modules (Ang)   :   47.213764   48.016287   48.025360
+outcell: Cell angles (23,13,12) (deg):     90.0000     90.0000     90.0000
+outcell: Cell volume (Ang**3)        : 108874.9147
+<dSpData1D:S at geom step 1
+  <sparsity:sparsity for geom step 1
+    nrows_g=3107 nrows=3107 sparsity=.0723 nnzs=698397, refcount: 7>
+  <dData1D:(new from dSpData1D) n=698397, refcount: 1>
+refcount: 1>
+new_DM -- step:     1
+Initializing Density Matrix...
+DM filled with atomic data:
+<dSpData2D:DM initialized from atoms
+  <sparsity:sparsity for geom step 1
+    nrows_g=3107 nrows=3107 sparsity=.0723 nnzs=698397, refcount: 8>
+  <dData2D:DM n=698397 m=2, refcount: 1>
+refcount: 1>
+     spin moment: S , {S} =  724.00000       0.0       0.0 724.00000
+No. of atoms with KB's overlaping orbs in proc 0. Max # of overlaps:     463     220
+
+InitMesh: MESH = 288 x 300 x 300 = 25920000
+InitMesh: Mesh cutoff (required, used) =   100.000   102.837 Ry
+New grid distribution [1]: sub = 2
+
+stepf: Fermi-Dirac step function
+
+siesta: Program's energy decomposition (eV):
+siesta: Ebs     =    -16219.385381
+siesta: Eions   =     73226.789934
+siesta: Ena     =     15007.848369
+siesta: Ekin    =     35642.390293
+siesta: Enl     =     -5128.491480
+siesta: Eso     =         0.000000
+siesta: Edftu   =         0.000000
+siesta: DEna    =     -1989.519381
+siesta: DUscf   =      1058.491357
+siesta: DUext   =         0.000000
+siesta: Exc     =    -17121.389835
+siesta: eta*DQ  =         0.000000
+siesta: Emadel  =         0.000000
+siesta: Emeta   =         0.000000
+siesta: Emolmec =         0.000000
+siesta: Ekinion =         0.000000
+siesta: Eharris =    -43261.500091
+siesta: Etot    =    -45757.460610
+siesta: FreeEng =    -45757.647222
+
+        iscf     Eharris(eV)        E_KS(eV)     FreeEng(eV)     dDmax    Ef(eV) dHmax(eV)
+   scf:    1   -43261.500091   -45757.460610   -45757.647222  0.919137 -6.135301 62.571423
+     spin moment: S , {S} =   57.55643       0.0       0.0  57.55643
+timer: Routine,Calls,Time,% = IterSCF        1     146.879  81.01
+   scf:    2   -18196.266591   -38310.946396   -38311.056122  0.869500 -4.030762199.377536
+     spin moment: S , {S} =   53.29890       0.0       0.0  53.29890
+   scf:    3   -46794.493189   -46341.634508   -46341.700258  0.810435 -4.872007 28.463187
+     spin moment: S , {S} =   33.07368       0.0       0.0  33.07368
+   scf:    4   -46505.805682   -46530.201382   -46530.275740  0.584637 -4.672288 14.341864
+     spin moment: S , {S} =   26.85854       0.0       0.0  26.85854
+   scf:    5   -46272.690241   -46491.935479   -46492.000129  0.522779 -4.763979 23.262377
+     spin moment: S , {S} =   25.57273       0.0       0.0  25.57273
+   scf:    6   -46540.093012   -46561.594574   -46561.630991  0.523458 -4.658337 14.908741
+     spin moment: S , {S} =   19.81845       0.0       0.0  19.81845
+   scf:    7   -46559.701878   -46577.910346   -46577.951106  0.478834 -4.464733  7.219872
+     spin moment: S , {S} =   18.63665       0.0       0.0  18.63665
+   scf:    8   -46434.965583   -46543.784054   -46543.839617  0.410303 -4.431955 22.615996
+     spin moment: S , {S} =   17.21199       0.0       0.0  17.21199
+   scf:    9   -46581.080920   -46585.521127   -46585.582237  0.414432 -4.479111  7.717018
+     spin moment: S , {S} =   14.25664       0.0       0.0  14.25664
+   scf:   10   -46582.279407   -46587.490880   -46587.560786  0.282299 -4.384079  4.638322
+     spin moment: S , {S} =   14.75925       0.0       0.0  14.75925
+   scf:   11   -46577.629186   -46587.658666   -46587.739152  0.261832 -4.367364  7.908506
+     spin moment: S , {S} =   12.26223       0.0       0.0  12.26223
+   scf:   12   -46573.626557   -46587.063689   -46587.117356  0.164121 -4.378047  7.341355
+     spin moment: S , {S} =   10.73867       0.0       0.0  10.73867
+   scf:   13   -46584.262724   -46590.003777   -46590.023562  0.352543 -4.404804  5.522620
+     spin moment: S , {S} =   11.97385       0.0       0.0  11.97385
+   scf:   14   -46555.725043   -46582.527029   -46582.583737  0.367579 -4.336198 11.450031
+     spin moment: S , {S} =   11.16386       0.0       0.0  11.16386
+   scf:   15   -46576.633240   -46587.981864   -46588.010676  0.288802 -4.342515  6.048366
+     spin moment: S , {S} =   10.23499       0.0       0.0  10.23499
+   scf:   16   -46583.555891   -46590.402326   -46590.422765  0.125168 -4.389922  5.548587
+     spin moment: S , {S} =    9.98348       0.0       0.0   9.98348
+   scf:   17   -46554.185059   -46582.250603   -46582.308168  0.370075 -4.482001 12.296405
+     spin moment: S , {S} =    9.93155       0.0       0.0   9.93155
+   scf:   18   -46567.845243   -46587.111369   -46587.188131  0.284191 -4.339249  9.637921
+     spin moment: S , {S} =   10.25920       0.0       0.0  10.25920
+   scf:   19   -46577.643339   -46588.433486   -46588.462780  0.300456 -4.455294  5.230020
+     spin moment: S , {S} =    9.70600       0.0       0.0   9.70600
+   scf:   20   -46550.251105   -46581.515446   -46581.554772  0.292497 -4.449708 11.675265
+     spin moment: S , {S} =    9.63106       0.0       0.0   9.63106
+   scf:   21   -46550.338992   -46581.071562   -46581.113630  0.387933 -4.464825 15.256259
+     spin moment: S , {S} =    9.39560       0.0       0.0   9.39560
+   scf:   22   -46544.196701   -46580.656421   -46580.708269  0.363622 -4.353375 12.038394
+     spin moment: S , {S} =    8.35143       0.0       0.0   8.35143
+   scf:   23   -46544.334913   -46579.987832   -46580.027916  0.298796 -4.468659  9.926026
+     spin moment: S , {S} =    8.79110       0.0       0.0   8.79110
+   scf:   24   -46523.967984   -46574.472195   -46574.518225  0.508306 -4.459753 18.900829
+     spin moment: S , {S} =    9.21598       0.0       0.0   9.21598
+   scf:   25   -46542.869553   -46580.052311   -46580.076204  0.508077 -4.462598 16.104784
+     spin moment: S , {S} =    8.27175       0.0       0.0   8.27175
+   scf:   26   -46479.465635   -46558.424664   -46558.477159  0.397448 -4.264492 19.689207
+     spin moment: S , {S} =    7.28155       0.0       0.0   7.28155
+   scf:   27   -46434.400459   -46546.995659   -46547.034285  0.405059 -4.389887 17.723469
+     spin moment: S , {S} =    6.36388       0.0       0.0   6.36388
+   scf:   28   -46424.264721   -46552.262749   -46552.292679  0.520645 -4.380895 27.551547
+     spin moment: S , {S} =    7.89890       0.0       0.0   7.89890
+   scf:   29   -46530.507419   -46574.338306   -46574.387540  0.516613 -4.446855 16.040076
+     spin moment: S , {S} =    6.70256       0.0       0.0   6.70256
+   scf:   30   -46384.735256   -46527.987222   -46528.043255  0.415976 -4.131599 26.905599
+     spin moment: S , {S} =    5.03032       0.0       0.0   5.03032
+   scf:   31   -46172.191199   -46469.508412   -46469.559530  0.564267 -4.372190 35.800059
+     spin moment: S , {S} =    5.81204       0.0       0.0   5.81204
+   scf:   32   -46427.519897   -46557.785267   -46557.831845  0.561308 -4.367372 20.770320
+     spin moment: S , {S} =    7.59486       0.0       0.0   7.59486
+   scf:   33   -46462.376866   -46557.423327   -46557.444465  0.495075 -4.456861 16.688710
+     spin moment: S , {S} =    6.05355       0.0       0.0   6.05355
+   scf:   34   -46375.579212   -46525.199445   -46525.265617  0.403288 -4.204136 24.983794
+     spin moment: S , {S} =    4.59346       0.0       0.0   4.59346
+   scf:   35   -46249.674034   -46487.221423   -46487.257573  0.507441 -4.394778 34.173248
+     spin moment: S , {S} =    4.70240       0.0       0.0   4.70240
+   scf:   36   -46279.898690   -46511.433105   -46511.486919  0.505651 -4.326420 22.876013
+     spin moment: S , {S} =    4.42249       0.0       0.0   4.42249
+   scf:   37   -46311.118094   -46514.598613   -46514.652174  0.494811 -4.573359 25.696032
+     spin moment: S , {S} =    3.57630       0.0       0.0   3.57630
+   scf:   38   -46048.219451   -46429.623373   -46429.693506  0.495271 -3.981388 39.548928
+     spin moment: S , {S} =    3.81089       0.0       0.0   3.81089
+   scf:   39   -46186.800130   -46473.695123   -46473.714236  0.479576 -4.396054 34.210432
+     spin moment: S , {S} =    4.02597       0.0       0.0   4.02597
+   scf:   40   -46070.623817   -46446.230439   -46446.275388  0.485369 -4.358618 30.485251
+     spin moment: S , {S} =    3.36721       0.0       0.0   3.36721
+   scf:   41   -46097.430814   -46460.623227   -46460.678376  0.460613 -4.538038 34.479264
+     spin moment: S , {S} =    3.43493       0.0       0.0   3.43493
+   scf:   42   -45998.605790   -46412.471625   -46412.565004  0.509413 -3.902287 42.101401
+     spin moment: S , {S} =    3.46375       0.0       0.0   3.46375
+   scf:   43   -45836.224485   -46371.432035   -46371.458161  0.526939 -4.445002 42.970354
+     spin moment: S , {S} =    1.66641       0.0       0.0   1.66641
+   scf:   44   -45763.860507   -46360.126632   -46360.163351  0.524917 -4.268134 37.893695
+     spin moment: S , {S} =    2.26302       0.0       0.0   2.26302
+   scf:   45   -45986.795599   -46428.825854   -46428.875061  0.509452 -4.501843 39.626686
+     spin moment: S , {S} =    3.12932       0.0       0.0   3.12932
+   scf:   46   -45604.574798   -46284.057793   -46284.139653  0.541142 -3.991998 51.782972
+     spin moment: S , {S} =    2.49580       0.0       0.0   2.49580
+   scf:   47   -45385.029400   -46265.140170   -46265.149864  0.534314 -4.626058 56.265713
+     spin moment: S , {S} =    0.07986       0.0       0.0   0.07986
+   scf:   48   -45961.396467   -46418.348680   -46418.406604  0.530068 -4.391376 32.826975
+     spin moment: S , {S} =    1.88481       0.0       0.0   1.88481
+   scf:   49   -45793.286010   -46380.121924   -46380.156788  0.531477 -4.438019 47.444734
+     spin moment: S , {S} =    2.47277       0.0       0.0   2.47277
+   scf:   50   -45484.569193   -46257.639689   -46257.712178  0.545534 -4.060789 53.191116
+     spin moment: S , {S} =    1.74888       0.0       0.0   1.74888
+   scf:   51   -45514.996811   -46298.082975   -46298.108766  0.533493 -4.616493 52.847251
+     spin moment: S , {S} =    0.31637       0.0       0.0   0.31637
+   scf:   52   -45654.357811   -46323.201650   -46323.267850  0.530317 -4.469998 41.423430
+     spin moment: S , {S} =    1.62490       0.0       0.0   1.62490
+   scf:   53   -45752.031333   -46364.555777   -46364.631223  0.544577 -4.373770 43.190397
+     spin moment: S , {S} =    2.01627       0.0       0.0   2.01627
+   scf:   54   -45141.813051   -46148.543176   -46148.592430  0.545619 -4.006050 60.374974
+     spin moment: S , {S} =    0.69753       0.0       0.0   0.69753
+   scf:   55   -45194.675834   -46192.433064   -46192.444359  0.536682 -4.656091 58.008950
+     spin moment: S , {S} =    0.06046       0.0       0.0   0.06046
+   scf:   56   -45208.214560   -46178.452085   -46178.484237  0.530512 -4.487325 56.395448
+     spin moment: S , {S} =    0.36975       0.0       0.0   0.36975
+   scf:   57   -44995.803924   -46177.317998   -46177.324675  0.595915 -4.562509 60.381313
+     spin moment: S , {S} =    0.03727       0.0       0.0   0.03727
+   scf:   58   -44822.212558   -46032.289072   -46032.337543  0.561415 -3.952106 64.887816
+     spin moment: S , {S} =    0.31521       0.0       0.0   0.31521
+   scf:   59   -43864.707369   -45763.775611   -45763.868955  0.554788 -4.890757 80.441369
+     spin moment: S , {S} =    0.31266       0.0       0.0   0.31266
+   scf:   60   -43423.556754   -45679.670035   -45679.793222  0.551852 -4.735325 84.507486
+     spin moment: S , {S} =    1.62968       0.0       0.0   1.62968
+   scf:   61   -44532.134087   -46053.713573   -46053.775617  0.606566 -4.603699 69.878323
+     spin moment: S , {S} =    0.36076       0.0       0.0   0.36076
+   scf:   62   -41982.163109   -45110.607665   -45110.677170  0.600473 -4.063679 96.556841
+     spin moment: S , {S} =    0.22757       0.0       0.0   0.22757
+   scf:   63   -42857.375196   -45554.661521   -45554.671747  0.590489 -4.459803 95.731175
+     spin moment: S , {S} =    0.03147       0.0       0.0   0.03147
+   scf:   64   -42116.653621   -45315.236740   -45315.287140  0.558710 -4.847310 95.393348
+     spin moment: S , {S} =    0.95277       0.0       0.0   0.95277
+   scf:   65   -43158.229301   -45667.673964   -45667.762457  0.634231 -4.838637 86.257232
+     spin moment: S , {S} =    0.45641       0.0       0.0   0.45641
+   scf:   66   -40179.942298   -44529.857225   -44529.867011  0.650939 -4.134610108.287217
+     spin moment: S , {S} =    0.02248       0.0       0.0   0.02248
+   scf:   67   -41340.816571   -45136.588848   -45136.617608  0.630604 -4.363429108.807460
+     spin moment: S , {S} =    0.05394       0.0       0.0   0.05394
+   scf:   68   -41013.731233   -44992.913314   -44992.952501  0.646868 -4.929133102.899134
+     spin moment: S , {S} =    0.36630       0.0       0.0   0.36630
+   scf:   69   -39694.778594   -44749.785711   -44749.840389  0.664121 -5.082239111.174512
+     spin moment: S , {S} =    0.32596       0.0       0.0   0.32596
+   scf:   70   -39858.659937   -44430.624803   -44430.629216  0.660940 -3.934237111.652183
+     spin moment: S , {S} =    0.00267       0.0       0.0   0.00267
+   scf:   71   -41281.962652   -45105.575420   -45105.652300  0.649369 -4.337227111.365805
