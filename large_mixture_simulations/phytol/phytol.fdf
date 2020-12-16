@@ -42,9 +42,9 @@ LongOutput .true.
 WriteCoorXmol .true.
 LatticeConstant 1 Ang
 %block LatticeVectors
-  30 0.0 0.0
-  0.0 30 0.0
-0.0 0.0 30
+  50 0.0 0.0
+  0.0 50 0.0
+0.0 0.0 50
 %endblock LatticeVectors
 
 
