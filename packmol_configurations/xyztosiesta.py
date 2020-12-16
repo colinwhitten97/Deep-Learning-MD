@@ -1,11 +1,16 @@
 import sys
 #file1 = open(sys.argv[0], 'r')
 #myfile = open(sys.argv[1], 'w')
+
+
+#EDIT INPUT AND OUTPUT FILES HERE
 file1 = open('peptidederivativemixture.xyz', 'r')
 myfile = open('peptidederivative.fdf', 'w')
+
+#NAME ELEMENTS HERE
 elements = {'C' : 1, 'O' : 2, 'N' : 3, 'H' : 4}
 timesteps = 50
-
+length_time_step = "1.0 fs"
 atomicnumber = {'C' : 6, 'O': 8, 'N': 7, 'H': 1}
 
 num_species = len(elements)
@@ -29,7 +34,7 @@ myfile.write("#TotalSpin" + "\n")
 myfile.write("NumberOfSpecies " + "\n" +"\n" + "\n")
 myfile.write("MD.TypeOfRun  nose" + "\n")
 myfile.write("MD.FinalTimeStep " + str(timesteps) + "\n")
-myfile.write("MD.LengthTimeStep 1.0  fs" + "\n")
+myfile.write("MD.LengthTimeStep " + length_time_step + "\n")
 myfile.write("MD.InitialTemperature 300 K" + "\n")
 myfile.write("MD.TargetTemperature  300  K" +"\n" +"\n" + "\n")
 myfile.write("%block ChemicalSpeciesLabel" + "\n")
@@ -59,6 +64,7 @@ myfile.write("LongOutput .true." + "\n")
 myfile.write("WriteCoorXmol .true." + "\n")
 myfile.write("LatticeConstant 1 Ang" + "\n")
 myfile.write("%block LatticeVectors" + "\n")
+# Lattice vectors depend on system size: for systems < 3000 atoms, something around ~30 is fine. For larger systems, a fair rule of thumb is for every thousand atoms above 3000, increase the lattice vectors by 10
 myfile.write("  30 0.0 0.0" + "\n")
 myfile.write("  0.0 30 0.0" + "\n")
 myfile.write("0.0 0.0 30" + "\n")

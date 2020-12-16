@@ -1,0 +1,95 @@
+NumberOfAtoms 28
+SpinPolarized yes
+#FixSpin .true.
+#TotalSpin 
+NumberOfSpecies 3
+
+ 
+MD.TypeOfRun  nose
+MD.FinalTimeStep 250
+MD.LengthTimeStep 1.0  fs
+MD.InitialTemperature 300 K 
+MD.TargetTemperature  300  K
+
+
+%block ChemicalSpeciesLabel
+1  6  c
+2  7  n
+3  1  h
+%endblock ChemicalSpeciesLabel
+
+PAO.BasisSize dzp 
+ PAO.EnergyShift 0.02 Ry 
+ 
+MeshCutoff          100 Ry
+MaxSCFIterations    100  
+DM.NumberPulay       3  
+DM.Tolerance         1e-3
+WriteDenchar	.true.
+
+%block ProjectedDensityOfStates
+-10.0 10.0 0.200 500 eV
+%endblock ProjectedDensityOfStates
+NetCharge 0.00
+
+%block BandLines
+1  1.000  1.000 1.000  L
+20 0.00   0.00   0.00  \Gamma
+25 2.00   0.000  0.00  X
+30 2.00   2.00   2.00  \Gamma
+%endblock BandLines
+
+
+LongOutput .true.
+WriteCoorXmol .true.
+LatticeConstant 1 Ang
+%block LatticeVectors
+  17.78962 0.0 0.0
+  0.0 15.87448 0.0
+  0.0 0.0 10.2092
+%endblock LatticeVectors
+
+
+ 
+
+#UseSaveData .true.  
+%block kgrid_Monkhorst_Pack
+1 0 0 0.0 
+ 0 1 0 0.0 
+ 0 0 1 0.0 
+
+%endblock kgrid_Monkhorst_Pack
+WriteMDXmol .true.
+AtomicCoordinatesFormat Ang
+%block AtomicCoordinatesAndAtomicSpecies
+0.94354  -0.15264 -0.12244  1 
+2.44126  -0.10167 -0.10328  1 
+3.11210  1.11112 -0.09150  1 
+4.50104  1.12416 0.07153  1 
+5.18634  2.34909 0.15064  1 
+6.56377  2.39074 0.41899  1 
+7.27107  3.58578 0.57828  1 
+8.58847  3.66309 0.88160  2 
+9.24174  2.49399 1.02139  1 
+8.64813  1.25329 0.85845  1 
+7.28055  1.19277 0.55749  1 
+6.60153  -0.03323 0.42140  1 
+5.20161  -0.09436 0.19537  1 
+4.43892  -1.28235 0.10882  1 
+5.02692  -2.65626 0.24574  1 
+3.08553  -1.28357 -0.02263  2 
+0.50355  0.83835 -0.27111  3 
+0.58339  -0.54402 0.83500  3 
+0.59606  -0.80751 -0.92651  3 
+2.55361  2.03945 -0.16357  3 
+4.63834  3.28117 0.04402  3 
+6.77712  4.54874 0.48165  3 
+10.29317  2.57853 1.28269  3 
+9.23976  0.35231 0.98614  3 
+7.17596  -0.94774 0.52622  3 
+6.10518  -2.69276 0.08125  3 
+4.57423  -3.32574 -0.49440  3 
+4.81084  -3.04908 1.24474  3 
+ %endblock AtomicCoordinatesAndAtomicSpecies
+
+
