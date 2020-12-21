@@ -16,6 +16,7 @@
    + [Freeze Model](#freeze-model)
    + [Use model to run simulation with native MD code](#use-model-to-run-simulation-with-native-md-code)
    + [Use model with LAMMPS to run simulation](#use-model-with-lammps-to-run-simulation)
+- [Workflow from 0](Workflow-from-0)
 - [Pitfalls/Troubleshooting](#pitfalls-and-troubleshooting)
   * [Linux OS](#linux-os)
   * [Installing C++ Interface](#installing-c++-interface)
