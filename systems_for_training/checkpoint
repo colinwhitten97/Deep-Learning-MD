@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/colin/Deep-Learning-MD/sytems_for_training/model.ckpt"
+all_model_checkpoint_paths: "/home/colin/Deep-Learning-MD/sytems_for_training/model.ckpt"
