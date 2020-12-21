@@ -16,7 +16,7 @@
    + [Freeze Model](#freeze-model)
    + [Use model to run simulation with native MD code](#use-model-to-run-simulation-with-native-md-code)
    + [Use model with LAMMPS to run simulation](#use-model-with-lammps-to-run-simulation)
-- [Workflow from 0](Workflow-from-0)
+- [Workflow from 0](#Workflow-from-0)
 - [Pitfalls/Troubleshooting](#pitfalls-and-troubleshooting)
   * [Linux OS](#linux-os)
   * [Installing C++ Interface](#installing-c++-interface)
@@ -182,6 +182,7 @@ pair_coeff
 The command `deepmd` in the input file calls the DeePMD model to compute the atomic interactions in the MD simulations. The parameter `graph.pb` is the file containing the frozen model. `pair.coeff` should be left blank.
 
 # Workflow from 0
+Here is the most simple and straightforward explanation on how to go from 0 to a deep learning MD model with a very barebones approach:
 
 First, you need .xyz files to describe the coordinate systems for the molecules you wish to simulate. You can draw molecules and generate .xyz files easily and for free [here.](https://www.cheminfo.org/Chemistry/Cheminformatics/FormatConverter/index.html) All of the files of this type used in my project are given as examples in the folder "molecule_files."
 
