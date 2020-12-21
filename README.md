@@ -180,6 +180,26 @@ pair_coeff
 `
 The command `deepmd` in the input file calls the DeePMD model to compute the atomic interactions in the MD simulations. The parameter `graph.pb` is the file containing the frozen model. `pair.coeff` should be left blank.
 
+# Workflow from 0
+
+First, you need .xyz files to describe the coordinate systems for the molecules you wish to simulate. You can draw molecules and generate .xyz files easily and for free [here.](https://www.cheminfo.org/Chemistry/Cheminformatics/FormatConverter/index.html) All of the files of this type used in my project are given as examples in the folder "molecule_files."
+
+If you'd like to generate randomly sampled configurations use [PACKMOL.](http://m3g.iqm.unicamp.br/packmol/home.shtml). The packmol configurations I used are in the folders "packmol_configurations" and "large_mixture_simulations."
+
+In order to obtain ab initio first principles data from SIESTA, the executable file generated from install is necessary to run a simulation. The "packmol_configurations" folder contains a python script "xyztosiesta.py" which converts .xyz files to very simple SIESTA inputs. Some user input is required, but not much at all. To run the SIESTA simulation, you need to navigate to the folder containing the SIESTA input .fdf file and the pseudopotentials (.psf) for each element in the atomic configurations. For this project, the pseudopotentials were acquired from the [SIESTA GGA pseudopotentials database.](https://departments.icmab.es/leem/SIESTA_MATERIAL/Databases/Pseudopotentials/periodictable-gga-abinit.html) Then, enter into the command prompt the navigation to the /Obj directory containing the SIESTA executable:
+`../../Obj/siesta < input.fdf > output.out`
+
+I have some examples of SIESTA inputs in the folder "single_SIESTA_inputs" and outputs in the "single_SIESTA_outputs" folder. The inputs and outputs for my other atomic configurations are in the "pair_simulations" folder. 
+
+Then, convert the SIESTA (or whatever first-principles data you obtained) output files to the .npy sets used by deepmd-kit. First install dpdata:
+
+`pip install dpdata`
+
+There is a very simple python script which converts SIESTA outputs to .npy system sets "2siestatonpy.py." After converting all these systems into systems, and follow the training process outlined in the folder "systems_for_training." The correct configuration of systems is outlined here, along with an example .JSON script. Invoke the training by:
+`python -m deepmd train input.json`
+
+
+
 
 # Pitfalls and Troubleshooting
 
